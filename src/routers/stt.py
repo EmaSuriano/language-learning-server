@@ -2,7 +2,6 @@
 
 import shutil
 from pathlib import Path
-from typing import Optional
 
 from fastapi import APIRouter, File, UploadFile
 from faster_whisper import WhisperModel  # type: ignore
@@ -15,21 +14,35 @@ DEVICE = "cuda"
 model = WhisperModel(MODEL_SIZE, device=DEVICE, compute_type="float16")
 
 
-def transcribe_audio(file_path: str, language: Optional[str] = "en"):
+def transcribe_audio(file_path: str, language: str):
     """Transcribe audio file"""
     segments, info = model.transcribe(file_path, beam_size=5, language=language)
+    transcription_text = ""
+    start_time = None
+    end_time = None
+
+    for segment in segments:
+        transcription_text += segment.text + " "
+        if start_time is None:
+            start_time = segment.start
+        end_time = segment.end
+
     return {
         "language": info.language,
         "language_probability": info.language_probability,
-        "transcription": [
-            {"start": seg.start, "end": seg.end, "text": seg.text} for seg in segments
-        ],
+        "text": transcription_text.strip(),
+        "start": start_time,
+        "end": end_time,
     }
 
 
 @router.post("/transcribe")
-async def transcribe(file: UploadFile = File(...), language: Optional[str] = None):
+async def transcribe(file: UploadFile = File(...), language: str = "en"):
     """Transcribe audio file"""
+
+    if language not in model.supported_languages:
+        raise ValueError(f"Language {language} is not supported")
+
     temp_audio_path = Path("temp_audio.mp3")
 
     with temp_audio_path.open("wb") as buffer:

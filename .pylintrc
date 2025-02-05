@@ -1,2 +1,6 @@
 [MASTER]
 source-roots=src/
+
+
+[MESSAGES CONTROL]
+disable=C0116, C0115

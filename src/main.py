@@ -1,6 +1,6 @@
 """Entry point of the application"""
 
-import pretty_errors
+import pretty_errors  # type: ignore
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -9,6 +9,7 @@ from routers.assistant import router as assistant_router
 from routers.items import router as items_router
 from routers.stt import router as stt_router
 from routers.tts import router as tts_router
+from routers.user import router as user_router
 
 pretty_errors.replace_stderr()
 
@@ -25,6 +26,7 @@ app.include_router(items_router)
 app.include_router(stt_router)
 app.include_router(tts_router)
 app.include_router(assistant_router)
+app.include_router(user_router)
 
 
 app.add_middleware(

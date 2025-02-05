@@ -1,6 +1,5 @@
 """Router for the assistant endpoint"""
 
-import asyncio
 import json
 from collections.abc import AsyncIterator
 from textwrap import dedent
@@ -34,7 +33,7 @@ def _generate_system_prompt(context: ConversationContext) -> str:
     cefr_level = CEFR_LEVEL[context.user_level - 1]
 
     return dedent(
-        f"""You are a helpful language learning partner having a natural conversation. 
+        f"""You are a helpful language learning partner having a natural conversation.
 
             Situation:
                 - You are a seller in a coffe shop and the customer is asking about the menu.
@@ -74,7 +73,7 @@ class ChatRequest(BaseModel):
 
 async def generate_stream(
     request_data: ChatRequest,
-) -> AsyncIterator[str | list[str | dict], None]:
+) -> AsyncIterator[str | list[str | dict]]:
     """
     Generator function that streams responses from Ollama with proper error handling
     """
@@ -111,8 +110,7 @@ async def generate_stream(
         async for chunk in llm.astream(messages):
             # Each chunk is a BaseMessageChunk; yield its content.
             yield chunk.content
-            await asyncio.sleep(0.01)  # mimic a small pause between chunks if desired
-    except Exception as e:
+    except ValueError as e:
         yield f"Error: {str(e)}"
 
 
@@ -128,7 +126,7 @@ async def chat(request_data: ChatRequest, request: Request):
                 if await request.is_disconnected():
                     break
                 yield f"data: {json.dumps({'content': chunk})}\n\n"
-        except Exception as e:
+        except ValueError as e:
             yield f"data: {json.dumps({'error': str(e)})}\n\n"
         finally:
             yield "data: [DONE]\n\n"
@@ -154,7 +152,13 @@ async def chat_full(request_data: ChatRequest):
     try:
         async for chunk in generate_stream(request_data):
             full_content.append(chunk)
-    except Exception as e:
+    except ValueError as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
 
-    return {"content": "".join(full_content)}
+    flattened_content = [
+        item if isinstance(item, str) else json.dumps(item)
+        for sublist in full_content
+        for item in (sublist if isinstance(sublist, list) else [sublist])
+    ]
+
+    return {"content": "".join(flattened_content)}
