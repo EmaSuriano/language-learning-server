@@ -3,28 +3,12 @@
 from sqlalchemy.orm import Session
 
 from database.connection import engine
-from database.models import Base, Interest, Language
+from database.models import Base, Language
 
-DEFAULT_INTERESTS = [
-    "Travel",
-    "Music",
-    "Movies",
-    "Sports",
-    "Reading",
-    "Cooking",
-    "Technology",
-    "Art",
-    "History",
-    "Science",
-    "Business",
-    "Nature",
-    "Politics",
-    "Fashion",
-    "Gaming",
-]
+# Taken from kokoro-tts config
+TTS_LANGUAGES = {"en", "es", "fr", "hi", "it", "pt", "ja", "zh"}
 
-TTS_LANGUAGES = {"en-us", "en-gb", "es", "fr-fr", "hi", "it", "pt-br", "ja", "zh"}
-
+# Taken from Whisper config
 ALL_LANGUAGES = [
     ("af", "Afrikaans"),
     ("am", "Amharic"),
@@ -136,9 +120,6 @@ def reset_db():
     Base.metadata.create_all(bind=engine)
 
     session = Session(engine)
-
-    for interest in DEFAULT_INTERESTS:
-        session.add(Interest(interest=interest))
 
     for code, name in ALL_LANGUAGES:
         session.add(Language(code=code, name=name, has_tts=(code in TTS_LANGUAGES)))

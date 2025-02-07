@@ -1,12 +1,34 @@
 """Database models"""
 
 import enum
+import json
+from typing import List, Any, Optional
 
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, Table
+from sqlalchemy import Boolean, ForeignKey, Integer, String, Text
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, Mapped, mapped_column
+from sqlalchemy.types import TypeDecorator
 
 Base = declarative_base()
+
+
+class ArrayType(TypeDecorator):
+    """Custom type to store arrays as JSON strings"""
+
+    impl = Text
+    cache_ok = True
+
+    def process_bind_param(
+        self, value: Optional[List[str]], dialect: Any
+    ) -> Optional[str]:
+        if value is not None:
+            return json.dumps(value)
+        return None
+
+    def process_result_value(self, value: Optional[str], dialect: Any) -> List[str]:
+        if value is not None:
+            return json.loads(value)
+        return []
 
 
 class CEFRLevel(enum.IntEnum):
@@ -20,48 +42,34 @@ class CEFRLevel(enum.IntEnum):
     C2 = 6
 
 
-user_interests = Table(
-    "user_interests",
-    Base.metadata,
-    Column("user_id", Integer, ForeignKey("users.id")),
-    Column("interest_id", Integer, ForeignKey("interests.id")),
-)
-
-user_languages = Table(
-    "user_languages",
-    Base.metadata,
-    Column("user_id", Integer, ForeignKey("users.id")),
-    Column("language_id", Integer, ForeignKey("languages.id")),
-    Column("level", Integer, default=1),  # CEFRLevel as integer
-)
-
-
-class Interest(Base):
-    """Interest model for users"""
-
-    __tablename__ = "interests"
-    id = Column(Integer, primary_key=True)
-    interest = Column(String, unique=True)
-
-
 class Language(Base):
     """Language model"""
 
     __tablename__ = "languages"
-    id = Column(Integer, primary_key=True)
-    code = Column(String(5), unique=True)
-    name = Column(String, unique=True)
-    has_tts = Column(Boolean, default=False)
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    code: Mapped[str] = mapped_column(String(5), unique=True)
+    name: Mapped[str] = mapped_column(String, unique=True)
+    has_tts: Mapped[bool] = mapped_column(Boolean, default=False)
 
 
 class User(Base):
-    """User model with interests"""
+    """User model with interests and current language"""
 
     __tablename__ = "users"
 
-    id = Column(Integer, primary_key=True, index=True)
-    email = Column(String, unique=True, index=True)
-    hashed_password = Column(String)
+    id: Mapped[int] = mapped_column(primary_key=True, index=True)
+    email: Mapped[str] = mapped_column(String, unique=True, index=True)
+    hashed_password: Mapped[str] = mapped_column(String)
 
-    languages = relationship("Language", secondary=user_languages)
-    user_interests = relationship("Interest", secondary=user_interests)
+    # Store interests as JSON string
+    interests: Mapped[List[str]] = mapped_column(ArrayType)
+
+    # One-to-one relationship with Language
+    current_language_id: Mapped[Optional[int]] = mapped_column(
+        ForeignKey("languages.id")
+    )
+    current_language: Mapped[Optional[Language]] = relationship("Language")
+
+    # Store CEFR level directly in user
+    language_level: Mapped[CEFRLevel] = mapped_column(Integer, default=CEFRLevel.A1)

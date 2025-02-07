@@ -439,6 +439,19 @@ wheels = [
 ]
 
 [[package]]
+name = "fastapi-pretty-errors"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "fastapi" },
+    { name = "pretty-errors" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3e/28/dc300d2167c367dffb1fb215a8ca22cd006078c4d88e930741e695b5f92b/fastapi_pretty_errors-0.1.1.tar.gz", hash = "sha256:050a8f598ea7b3f71e630ab74701de8467ddb2dc79c466be9213749c9234d801", size = 2589 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/38/32/bbbd951f19758380b94c589ca405aeeb9ed1825860de7f99f03fbe607eb5/fastapi_pretty_errors-0.1.1-py3-none-any.whl", hash = "sha256:b1fdf6deeb79479ebe25c6fb53ed8eadf21b387fb105aff29cf3d9664aa12835", size = 3219 },
+]
+
+[[package]]
 name = "faster-whisper"
 version = "1.1.1"
 source = { registry = "https://pypi.org/simple" }
@@ -766,6 +779,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "bcrypt" },
     { name = "fastapi" },
+    { name = "fastapi-pretty-errors" },
     { name = "faster-whisper" },
     { name = "huggingface-hub" },
     { name = "kokoro" },
@@ -786,6 +800,7 @@ dependencies = [
 requires-dist = [
     { name = "bcrypt", specifier = ">=4.2.1" },
     { name = "fastapi", specifier = ">=0.115.8" },
+    { name = "fastapi-pretty-errors", specifier = ">=0.1.1" },
     { name = "faster-whisper", specifier = ">=1.1.1" },
     { name = "huggingface-hub", specifier = ">=0.28.1" },
     { name = "kokoro", specifier = ">=0.7.6" },

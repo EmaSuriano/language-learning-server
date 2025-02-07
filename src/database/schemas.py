@@ -7,8 +7,6 @@ from pydantic import BaseModel, EmailStr, Field, field_validator
 
 
 class CEFRLevel(IntEnum):
-    """Common European Framework of Reference for Languages (CEFR) levels"""
-
     A1 = 1
     A2 = 2
     B1 = 3
@@ -17,10 +15,17 @@ class CEFRLevel(IntEnum):
     C2 = 6
 
 
-class UserLanguage(BaseModel):
+class LanguageBase(BaseModel):
     code: str
     name: str
-    level: CEFRLevel
+    has_tts: bool = False
+
+
+class Language(LanguageBase):
+    id: int
+
+    class Config:
+        from_attributes = True
 
 
 class UserBase(BaseModel):
@@ -29,15 +34,13 @@ class UserBase(BaseModel):
 
 class UserCreate(UserBase):
     password: str
-    languages: List[str] = Field(min_length=1)
+    language_code: str = Field(
+        "en", description="Language code the user wants to learn"
+    )
+    language_level: CEFRLevel = Field(
+        CEFRLevel.A1, description="CEFR level of the user"
+    )
     interests: List[str] = Field(min_length=1)
-
-    @field_validator("languages")
-    @classmethod
-    def validate_languages(cls, v: List[str]) -> List[str]:
-        if not v:
-            raise ValueError("At least one language is required")
-        return v
 
     @field_validator("interests")
     @classmethod
@@ -49,13 +52,15 @@ class UserCreate(UserBase):
 
 class UserUpdate(BaseModel):
     email: Optional[EmailStr] = None
-    languages: Optional[List[str]] = None
+    language_code: Optional[str] = None
+    language_level: Optional[CEFRLevel] = None
     interests: Optional[List[str]] = None
 
 
 class User(UserBase):
     id: int
-    languages: List[UserLanguage]
+    current_language: Language
+    language_level: CEFRLevel
     interests: List[str]
 
     class Config:
