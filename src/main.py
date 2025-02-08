@@ -11,6 +11,7 @@ from routers.stt import router as stt_router
 from routers.tts import router as tts_router
 from routers.users import router as users_router
 from routers.languages import router as languages_router
+from routers.situations import router as situations_router
 
 app = FastAPI()
 
@@ -38,6 +39,7 @@ app.include_router(tts_router)
 app.include_router(assistant_router)
 app.include_router(users_router)
 app.include_router(languages_router)
+app.include_router(situations_router)
 
 # Allow uvicorn to be executed using `uv run`
 if __name__ == "__main__":

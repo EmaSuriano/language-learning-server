@@ -53,6 +53,19 @@ class Language(Base):
     has_tts: Mapped[bool] = mapped_column(Boolean, default=False)
 
 
+class Situation(Base):
+    """Situation for roleplay model"""
+
+    __tablename__ = "situations"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str] = mapped_column(String, unique=True)
+    scenario_description: Mapped[str] = mapped_column(String)
+    user_goals: Mapped[List[str]] = mapped_column(ArrayType)
+    system_role: Mapped[str] = mapped_column(String)
+    system_instructions: Mapped[List[str]] = mapped_column(ArrayType)
+
+
 class User(Base):
     """User model with interests and current language"""
 

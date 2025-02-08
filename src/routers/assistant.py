@@ -1,128 +1,63 @@
 """Router for the assistant endpoint"""
 
 import json
-from collections.abc import AsyncIterator
-from textwrap import dedent
-from typing import Any, Dict, List, Literal, Optional, Set
+from typing import List
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import JSONResponse, StreamingResponse
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
-from langchain_ollama import ChatOllama
 from pydantic import BaseModel
+from sqlalchemy.orm import Session
+
+import database.db as DB
+from database.connection import get_db
+from agents.assistant import (
+    ChatMessage,
+    generate_stream,
+    generate_chat_hint,
+    get_chat_progress,
+)
 
 router = APIRouter(tags=["assistant"], prefix="/assistant")
 
 
-CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
-OLLAMA_URL = "http://localhost:11434"
-
-
-class ConversationContext(BaseModel):
-    """'Context of the conversation"""
-
-    current_topic: str
-    user_level: int  # CEFR level: 1=A1, 2=A2, 3=B1, 4=B2, 5=C1, 6=C2
-    recent_vocabulary: Set[str]
-    grammar_patterns: Set[str]
-    user_interests: List[str]
-    target_language: str = "English"
-
-
-def _generate_system_prompt(context: ConversationContext) -> str:
-    cefr_level = CEFR_LEVEL[context.user_level - 1]
-
-    return dedent(
-        f"""You are a helpful language learning partner having a natural conversation.
-
-            Situation:
-                - You are a seller in a coffe shop and the customer is asking about the menu.
-                - Engage with the customer and provide information about the menu.
-                - Ask him for different options of coffee and pastries.
-                - Ask him if he wants to sit in or take away.
-                - Ask him if he wants to pay by cash or card.
-                - Ask him if he wants to add a tip.
-                - Ask him if he wants a receipt.
-                - Greet the user and thank him for his visit.
-
-            Guidelines:
-                - Keep responses concise and engaging, no more than a tweet length
-                - Stay in context of the conversation
-                - You can only answer back in {context.target_language}
-                - Adapt your language to CEFR level {cefr_level}.
-            """
-    )
-
-
-class ToolCall(BaseModel):
-    name: str
-    arguments: Dict[str, Any]
-
-
-class Message(BaseModel):
-    role: Literal["user", "assistant"]
-    content: str
-    tool_call_id: Optional[str] = None
-
-
 class ChatRequest(BaseModel):
-    messages: List[Message] = [Message(role="user", content="Hello")]
-    language: str = "English"
-    temperature: float = 0.3
+    messages: List[ChatMessage] = [ChatMessage(role="human", content="Hello")]
+    user_id: int
+    situation_id: int
+    temperature: float = 0.2
 
 
-async def generate_stream(
-    request_data: ChatRequest,
-) -> AsyncIterator[str | list[str | dict]]:
-    """
-    Generator function that streams responses from Ollama with proper error handling
-    """
-    system_prompt = _generate_system_prompt(
-        ConversationContext(
-            current_topic="general",
-            user_level=1,
-            recent_vocabulary=set(),
-            grammar_patterns=set(),
-            user_interests=["music", "movies"],
-            target_language=request_data.language,
-        )
-    )
-
-    messages: List[BaseMessage] = [SystemMessage(content=system_prompt)]
-
-    for msg in request_data.messages:
-        if msg.role.lower() == "user":
-            messages.append(HumanMessage(content=msg.content))
-        else:
-            messages.append(AIMessage(content=msg.content))
-
-    llm = ChatOllama(
-        model="phi4",  # or any model available in your Ollama instance
-        temperature=request_data.temperature,
-        base_url=OLLAMA_URL,  # adjust if your Ollama endpoint is different
-    )
-
-    # If tool definitions are provided, bind them to the model
-    # if request_data.tools:
-    #     llm = llm.bind_tools(request_data.tools)
-
-    try:
-        async for chunk in llm.astream(messages):
-            # Each chunk is a BaseMessageChunk; yield its content.
-            yield chunk.content
-    except ValueError as e:
-        yield f"Error: {str(e)}"
+class ReportRequest(BaseModel):
+    messages: List[ChatMessage] = [ChatMessage(role="human", content="Hello")]
+    user_id: int
+    situation_id: int
 
 
 @router.post("/chat")
-async def chat(request_data: ChatRequest, request: Request):
+async def chat(
+    request_data: ChatRequest, request: Request, db: Session = Depends(get_db)
+):
     """
     Endpoint that streams chat responses from Ollama with proper headers
     """
 
+    user = DB.get_user(db, request_data.user_id)
+    situation = DB.get_situation(db, request_data.situation_id)
+
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    if situation is None:
+        raise HTTPException(status_code=404, detail="Situation not found")
+
     async def event_stream():
         try:
-            async for chunk in generate_stream(request_data):
+            async for chunk in generate_stream(
+                user=user,
+                situation=situation,
+                chat_messages=request_data.messages,
+                temperature=request_data.temperature,
+            ):
                 if await request.is_disconnected():
                     break
                 yield f"data: {json.dumps({'content': chunk})}\n\n"
@@ -144,13 +79,28 @@ async def chat(request_data: ChatRequest, request: Request):
 
 
 @router.post("/chat/no-stream")
-async def chat_full(request_data: ChatRequest):
+async def chat_full(request_data: ChatRequest, db: Session = Depends(get_db)):
     """
     Non-streaming chat response that returns the full content at once.
     """
+
+    user = DB.get_user(db, request_data.user_id)
+    situation = DB.get_situation(db, request_data.situation_id)
+
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    if situation is None:
+        raise HTTPException(status_code=404, detail="Situation not found")
+
     full_content = []
     try:
-        async for chunk in generate_stream(request_data):
+        async for chunk in generate_stream(
+            user=user,
+            situation=situation,
+            chat_messages=request_data.messages,
+            temperature=request_data.temperature,
+        ):
             full_content.append(chunk)
     except ValueError as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
@@ -162,3 +112,44 @@ async def chat_full(request_data: ChatRequest):
     ]
 
     return {"content": "".join(flattened_content)}
+
+
+@router.post("/hint")
+async def chat_hint(request_data: ChatRequest, db: Session = Depends(get_db)):
+    user = DB.get_user(db, request_data.user_id)
+    situation = DB.get_situation(db, request_data.situation_id)
+
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    if situation is None:
+        raise HTTPException(status_code=404, detail="Situation not found")
+
+    chat_hint = generate_chat_hint(
+        user=user,
+        situation=situation,
+        chat_messages=request_data.messages,
+        temperature=request_data.temperature,
+    )
+
+    return {"hint": chat_hint}
+
+
+@router.post("/chat/progress")
+async def chat_progress(request_data: ChatRequest, db: Session = Depends(get_db)):
+    user = DB.get_user(db, request_data.user_id)
+    situation = DB.get_situation(db, request_data.situation_id)
+
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    if situation is None:
+        raise HTTPException(status_code=404, detail="Situation not found")
+
+    progress = get_chat_progress(
+        user=user,
+        situation=situation,
+        chat_messages=request_data.messages,
+    )
+
+    return {"progress": progress}

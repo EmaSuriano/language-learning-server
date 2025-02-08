@@ -15,17 +15,34 @@ class CEFRLevel(IntEnum):
     C2 = 6
 
 
-class LanguageBase(BaseModel):
+class Language(BaseModel):
+    id: int
     code: str
     name: str
     has_tts: bool = False
 
+    class Config:
+        from_attributes = True
 
-class Language(LanguageBase):
+
+class BaseSituation(BaseModel):
     id: int
+    name: str = Field(description="Name of the situation")
 
     class Config:
         from_attributes = True
+
+
+class SituationClient(BaseSituation):
+    scenario_description: str = Field(description="Description of the scenario")
+    user_goals: List[str] = Field(min_length=1, description="Goals for the user")
+
+
+class SituationSystem(SituationClient):
+    system_role: str = Field(description="Role for the system prompt")
+    system_instructions: List[str] = Field(
+        min_length=1, description="Instructions for the situation"
+    )
 
 
 class UserBase(BaseModel):
