@@ -3,7 +3,7 @@
 import shutil
 from pathlib import Path
 
-from fastapi import APIRouter, File, UploadFile
+from fastapi import APIRouter, File, Query, UploadFile
 from faster_whisper import WhisperModel  # type: ignore
 
 router = APIRouter(prefix="/stt", tags=["speech-to-text"])
@@ -37,7 +37,10 @@ def transcribe_audio(file_path: str, language: str):
 
 
 @router.post("/transcribe")
-async def transcribe(file: UploadFile = File(...), language: str = "en"):
+async def transcribe(
+    language: str = Query(..., description="Language code for transcription"),
+    file: UploadFile = File(...),
+):
     """Transcribe audio file"""
 
     if language not in model.supported_languages:

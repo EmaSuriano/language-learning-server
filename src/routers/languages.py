@@ -13,7 +13,7 @@ router = APIRouter(prefix="/languages", tags=["languages"])
 
 
 @router.get("/", response_model=List[schemas.Language])
-async def get_languages(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+async def get_languages(db: Session = Depends(get_db)):
     """Get all languages"""
 
-    return DB.get_languages(db, skip=skip, limit=limit)
+    return DB.get_languages(db)

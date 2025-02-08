@@ -27,6 +27,7 @@ def _user_to_schema(user: models.User) -> schemas.User:
         # Convert between model and schema enum
         language_level=schemas.CEFRLevel(user.language_level),
         interests=user.interests,
+        voice_id=user.voice_id,
     )
 
 
@@ -105,10 +106,8 @@ def delete_user(db: Session, user_id: int) -> bool:
     return bool(result)
 
 
-def get_languages(
-    db: Session, skip: int = 0, limit: int = 100
-) -> List[schemas.Language]:
-    languages = db.query(models.Language).offset(skip).limit(limit).all()
+def get_languages(db: Session) -> List[schemas.Language]:
+    languages = db.query(models.Language).all()
     return [
         schemas.Language(
             id=lang.id,

@@ -16,8 +16,12 @@ from pydantic import BaseModel
 router = APIRouter(prefix="/tts", tags=["text-to-speech"])
 
 DEFAULT_LANGUAGE = "en-us"
-DEFAULT_VOICE = "af_bella"
 api = HfApi()
+
+SUPPORTED_LANGUAGES = set(lang.split("-")[0] for lang in list(ALIASES.keys()))
+LANGUAGE_ALIAS_MAP = {key.split("-")[0]: value for key, value in ALIASES.items()}
+
+LANGUAGE_CODES = {key.split("-")[0]: key for key in ALIASES.keys()}
 
 
 class PipelineManager:
@@ -84,16 +88,24 @@ class CreateSpeechRequestBody(BaseModel):
     """Request body for the /v1/audio/speech endpoint"""
 
     input: str
-    voice: str = DEFAULT_VOICE
-    language: str = DEFAULT_LANGUAGE
+    voice: str
+    language: str
     speed: float = 1.0
 
 
 def generate_wav_audio(body: CreateSpeechRequestBody) -> io.BytesIO:
     """Generate a WAV audio file from text-to-speech input."""
 
+    if body.language not in SUPPORTED_LANGUAGES:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Language '{body.language}' not supported.",
+        )
+
     text = clean_text(body.input)
-    manager.update_pipeline(body.language)
+
+    # We need to use the kokoro code for the language
+    manager.update_pipeline(LANGUAGE_CODES[body.language])
 
     generator = manager.pipeline(
         text,
@@ -149,10 +161,7 @@ async def synthesize_file(body: CreateSpeechRequestBody):
 @router.get("/languages")
 def get_supported_languages():
     """Get supported languages"""
-
-    languages = list(ALIASES.keys())
-
-    return languages
+    return SUPPORTED_LANGUAGES
 
 
 @router.get("/voices/{language}")
@@ -167,7 +176,7 @@ def get_voices_by_language(language: str):
     files = api.list_repo_files(repo_id=repo_id)
 
     # Validate that the language is supported
-    if language not in ALIASES:
+    if language not in LANGUAGE_ALIAS_MAP:
         raise HTTPException(
             status_code=404,
             detail=f"Language '{language}' not supported.",
@@ -181,7 +190,7 @@ def get_voices_by_language(language: str):
     ]
 
     # Get the voices only for the specified language
-    alias = ALIASES[language]
+    alias = LANGUAGE_ALIAS_MAP[language]
     language_voice = [file for file in all_voices if file.startswith(alias)]
 
     return language_voice

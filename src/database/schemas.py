@@ -41,6 +41,7 @@ class UserCreate(UserBase):
         CEFRLevel.A1, description="CEFR level of the user"
     )
     interests: List[str] = Field(min_length=1)
+    voice_id: str = Field("af_alloy", description="Voice for the TTS service")
 
     @field_validator("interests")
     @classmethod
@@ -55,12 +56,14 @@ class UserUpdate(BaseModel):
     language_code: Optional[str] = None
     language_level: Optional[CEFRLevel] = None
     interests: Optional[List[str]] = None
+    voice_id: Optional[str] = None
 
 
 class User(UserBase):
     id: int
     current_language: Language
     language_level: CEFRLevel
+    voice_id: str | None
     interests: List[str]
 
     class Config:

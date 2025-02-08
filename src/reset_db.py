@@ -3,114 +3,36 @@
 from sqlalchemy.orm import Session
 
 from database.connection import engine
-from database.models import Base, Language
+from database.models import Base, Language, User
 
 # Taken from kokoro-tts config
 TTS_LANGUAGES = {"en", "es", "fr", "hi", "it", "pt", "ja", "zh"}
 
-# Taken from Whisper config
+# Subset of most used langugages
 ALL_LANGUAGES = [
-    ("af", "Afrikaans"),
-    ("am", "Amharic"),
     ("ar", "Arabic"),
-    ("as", "Assamese"),
-    ("az", "Azerbaijani"),
-    ("ba", "Bashkir"),
-    ("be", "Belarusian"),
-    ("bg", "Bulgarian"),
-    ("bn", "Bengali"),
-    ("bo", "Tibetan"),
-    ("br", "Breton"),
-    ("bs", "Bosnian"),
-    ("ca", "Catalan"),
     ("cs", "Czech"),
-    ("cy", "Welsh"),
     ("da", "Danish"),
     ("de", "German"),
-    ("el", "Greek"),
     ("en", "English"),
     ("es", "Spanish"),
-    ("et", "Estonian"),
-    ("eu", "Basque"),
-    ("fa", "Persian"),
-    ("fi", "Finnish"),
-    ("fo", "Faroese"),
     ("fr", "French"),
-    ("gl", "Galician"),
-    ("gu", "Gujarati"),
-    ("ha", "Hausa"),
-    ("haw", "Hawaiian"),
-    ("he", "Hebrew"),
     ("hi", "Hindi"),
-    ("hr", "Croatian"),
-    ("ht", "Haitian"),
-    ("hu", "Hungarian"),
-    ("hy", "Armenian"),
-    ("id", "Indonesian"),
-    ("is", "Icelandic"),
     ("it", "Italian"),
     ("ja", "Japanese"),
-    ("jw", "Javanese"),
-    ("ka", "Georgian"),
-    ("kk", "Kazakh"),
-    ("km", "Khmer"),
-    ("kn", "Kannada"),
     ("ko", "Korean"),
-    ("la", "Latin"),
-    ("lb", "Luxembourgish"),
-    ("ln", "Lingala"),
-    ("lo", "Lao"),
-    ("lt", "Lithuanian"),
-    ("lv", "Latvian"),
-    ("mg", "Malagasy"),
-    ("mi", "Maori"),
-    ("mk", "Macedonian"),
-    ("ml", "Malayalam"),
-    ("mn", "Mongolian"),
-    ("mr", "Marathi"),
-    ("ms", "Malay"),
-    ("mt", "Maltese"),
-    ("my", "Myanmar"),
-    ("ne", "Nepali"),
     ("nl", "Dutch"),
-    ("nn", "Nynorsk"),
-    ("no", "Norwegian"),
-    ("oc", "Occitan"),
-    ("pa", "Punjabi"),
     ("pl", "Polish"),
-    ("ps", "Pashto"),
     ("pt", "Portuguese"),
     ("ro", "Romanian"),
     ("ru", "Russian"),
-    ("sa", "Sanskrit"),
-    ("sd", "Sindhi"),
-    ("si", "Sinhala"),
-    ("sk", "Slovak"),
-    ("sl", "Slovenian"),
-    ("sn", "Shona"),
-    ("so", "Somali"),
-    ("sq", "Albanian"),
-    ("sr", "Serbian"),
-    ("su", "Sundanese"),
     ("sv", "Swedish"),
-    ("sw", "Swahili"),
-    ("ta", "Tamil"),
-    ("te", "Telugu"),
-    ("tg", "Tajik"),
-    ("th", "Thai"),
-    ("tk", "Turkmen"),
-    ("tl", "Tagalog"),
     ("tr", "Turkish"),
-    ("tt", "Tatar"),
     ("uk", "Ukrainian"),
-    ("ur", "Urdu"),
-    ("uz", "Uzbek"),
-    ("vi", "Vietnamese"),
-    ("yi", "Yiddish"),
-    ("yo", "Yoruba"),
     ("zh", "Chinese"),
-    ("yue", "Cantonese"),
 ]
+
+DEFAULT_LANGUAGE = "en"
 
 
 def reset_db():
@@ -122,7 +44,23 @@ def reset_db():
     session = Session(engine)
 
     for code, name in ALL_LANGUAGES:
-        session.add(Language(code=code, name=name, has_tts=(code in TTS_LANGUAGES)))
+        language = Language(code=code, name=name, has_tts=(code in TTS_LANGUAGES))
+
+        if code == DEFAULT_LANGUAGE:
+            current_language = language
+
+        session.add(language)
+
+    session.add(
+        User(
+            email="example@mail.com",
+            hashed_password="hashed_password",
+            interests=["music", "sports"],
+            current_language=current_language,
+            language_level=1,
+            voice_id="af_alloy",
+        )
+    )
 
     session.commit()
     session.close()

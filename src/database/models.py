@@ -70,6 +70,7 @@ class User(Base):
         ForeignKey("languages.id")
     )
     current_language: Mapped[Optional[Language]] = relationship("Language")
+    voice_id: Mapped[str | None] = mapped_column(String)
 
     # Store CEFR level directly in user
     language_level: Mapped[CEFRLevel] = mapped_column(Integer, default=CEFRLevel.A1)
