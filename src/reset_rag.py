@@ -14,15 +14,13 @@ from rag.rag_language_retrieval import (
 OLLAMA_URL = "http://localhost:11434"
 
 
-def load_examples_from_directory(
-    examples_dir: str = "data/language_examples",
-) -> List[LanguageExample]:
+def load_examples_from_directory(dir_path: str) -> List[LanguageExample]:
     """Load all JSON files from the examples directory"""
     examples = []
-    examples_path = Path(examples_dir)
+    examples_path = Path(dir_path)
 
     if not examples_path.exists():
-        raise FileNotFoundError(f"Examples directory not found: {examples_dir}")
+        raise FileNotFoundError(f"Examples directory not found: {dir_path}")
 
     # Load each JSON file in the directory
     for json_file in examples_path.glob("*.json"):
@@ -41,7 +39,9 @@ def load_examples_from_directory(
 
 def reset_vector_store():
     """Reset and initialize the vector store with language examples"""
-    persist_directory = "./language_examples_db"
+    persist_directory = os.path.join(
+        os.path.dirname(__file__), "rag", "language_examples_db"
+    )
 
     # Remove existing vector store if it exists
     if os.path.exists(persist_directory):
@@ -53,8 +53,9 @@ def reset_vector_store():
         persist_directory=persist_directory, base_url=OLLAMA_URL
     )
 
+    examples_dir = os.path.join(os.path.dirname(__file__), "data", "language_examples")
     # Load examples from JSON files
-    examples = load_examples_from_directory()
+    examples = load_examples_from_directory(dir_path=examples_dir)
 
     if not examples:
         print("No examples found! Please check the data directory.")

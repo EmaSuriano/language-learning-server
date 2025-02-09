@@ -17,7 +17,7 @@ class LanguageExample(BaseModel):
 class RAGLanguageEvaluator:
     def __init__(
         self,
-        persist_directory: str = "./language_examples_db",
+        persist_directory,
         base_url: str = OLLAMA_URL,
     ):
         self.embedding_model = OllamaEmbeddings(

@@ -1,14 +1,18 @@
 """Router for the evaluator endpoint"""
 
+import json
 from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 import database.db as DB
 from database.connection import get_db
-from agents.evaluator import ChatMessage, get_chat_metrics
+from agents.evaluator import ChatMessage, get_chat_report
+from rag.connection import get_rag_evaluator
+from rag.rag_language_retrieval import RAGLanguageEvaluator
 
 router = APIRouter(tags=["evaluator"], prefix="/evaluator")
 
@@ -19,8 +23,12 @@ class ReportRequest(BaseModel):
     situation_id: int
 
 
-@router.post("/metrics")
-async def metrics(request_data: ReportRequest, db: Session = Depends(get_db)):
+@router.post("/report")
+async def generate_report(
+    request_data: ReportRequest,
+    db: Session = Depends(get_db),
+    rag_evaluator: RAGLanguageEvaluator = Depends(get_rag_evaluator),
+):
     user = DB.get_user(db, request_data.user_id)
     situation = DB.get_situation(db, request_data.situation_id)
 
@@ -30,10 +38,27 @@ async def metrics(request_data: ReportRequest, db: Session = Depends(get_db)):
     if situation is None:
         raise HTTPException(status_code=404, detail="Situation not found")
 
-    metrics = get_chat_metrics(
-        user=user,
-        situation=situation,
-        chat_messages=request_data.messages,
-    )
+    async def event_stream():
+        try:
+            async for chunk in get_chat_report(
+                user=user,
+                situation=situation,
+                chat_messages=request_data.messages,
+                rag_evaluator=rag_evaluator,
+            ):
+                yield f"data: {json.dumps({'content': chunk})}\n\n"
+        except ValueError as e:
+            yield f"data: {json.dumps({'error': str(e)})}\n\n"
+        finally:
+            yield "data: [DONE]\n\n"
 
-    return {"metrics": metrics}
+    return StreamingResponse(
+        event_stream(),
+        headers={
+            "Content-Type": "text/event-stream",
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "Transfer-Encoding": "chunked",
+        },
+        media_type="text/event-stream",
+    )
