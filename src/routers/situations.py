@@ -12,6 +12,7 @@ from database import schemas
 router = APIRouter(prefix="/situations", tags=["situations"])
 
 
+# TODO: Add support for multiple languages
 @router.get("/", response_model=List[schemas.SituationClient])
 async def get_situations(db: Session = Depends(get_db)):
     """Get all situations"""

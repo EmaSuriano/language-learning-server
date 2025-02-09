@@ -40,6 +40,7 @@ def _generate_system_prompt(
             2. Proficiency: Use language appropriate for CEFR level {cefr_level}
             3. Style: Write natural, conversational responses
             4. Length: Keep responses concise (max 120 characters)
+            5. Answer in first person assuming yor role of {context.situation.system_role}
 
             Interaction Rules:
             - Ask only ONE question per response
@@ -98,6 +99,7 @@ chat = ChatOllama(
 llm = OllamaLLM(
     model="phi4",
     base_url=OLLAMA_URL,
+    num_predict=128,
 )
 
 
@@ -199,11 +201,14 @@ def get_chat_progress(
 
     Conversation:
     {conversation}
-
-    Return the response as a JSON object with the format:
+    
+    Expected output:
     {goals_json}
 
-    Only return the JSON object, no explanations.
+    Guidelines:
+    - Go through the conversation step by step.
+    - Pay attention only to the messages from the HUMAN.
+    - Provide only the expected output.
     """,
     )
 
@@ -228,8 +233,10 @@ def get_chat_progress(
             "system_prompt": system_prompt,
             "conversation": conversation_text,
             "goals_json": goals_json,
-        }
+        },
     )
+
+    print(result)
 
     json_match = re.search(r"\[.*\]", result, re.DOTALL)
     if json_match:

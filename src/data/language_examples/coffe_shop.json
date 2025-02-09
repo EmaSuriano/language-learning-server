@@ -1,0 +1,92 @@
+[
+    {
+        "phrase": "A coffee, please.",
+        "level": "A1",
+        "context": "Basic coffee order"
+    },
+    {
+        "phrase": "How much is it?",
+        "level": "A1",
+        "context": "Asking for price"
+    },
+    {
+        "phrase": "Can I have a medium latte with soy milk, please?",
+        "level": "A2",
+        "context": "Specific coffee order"
+    },
+    {
+        "phrase": "Do you have any pastries?",
+        "level": "A2",
+        "context": "Asking about food options"
+    },
+    {
+        "phrase": "I'd like to try your house blend as a pour-over.",
+        "level": "B1",
+        "context": "Detailed coffee order"
+    },
+    {
+        "phrase": "Could you recommend something if I prefer less acidic coffee?",
+        "level": "B1",
+        "context": "Asking for coffee recommendations"
+    },
+    {
+        "phrase": "I was wondering if you could tell me about your coffee sourcing practices?",
+        "level": "B2",
+        "context": "Asking about coffee sourcing"
+    },
+    {
+        "phrase": "I'm particularly interested in single-origin beans.",
+        "level": "C1",
+        "context": "Detailed coffee discussion"
+    },
+    {
+        "phrase": "Would you mind elaborating on how the different processing methods affect the cup profile?",
+        "level": "C2",
+        "context": "Expert coffee inquiry"
+    },
+    {
+        "phrase": "Can I get a decaf espresso?",
+        "level": "A1",
+        "context": "Basic coffee order"
+    },
+    {
+        "phrase": "Do you have almond milk?",
+        "level": "A1",
+        "context": "Asking for milk options"
+    },
+    {
+        "phrase": "I'd like a cappuccino with an extra shot, please.",
+        "level": "A2",
+        "context": "Specific coffee order"
+    },
+    {
+        "phrase": "What kind of teas do you have?",
+        "level": "A2",
+        "context": "Asking about tea options"
+    },
+    {
+        "phrase": "Can you make that with oat milk?",
+        "level": "B1",
+        "context": "Specific milk request"
+    },
+    {
+        "phrase": "Do you offer any vegan pastries?",
+        "level": "B1",
+        "context": "Asking about food options"
+    },
+    {
+        "phrase": "Could you tell me more about your cold brew process?",
+        "level": "B2",
+        "context": "Asking about coffee preparation"
+    },
+    {
+        "phrase": "I'm interested in trying a new blend. What do you recommend?",
+        "level": "C1",
+        "context": "Asking for coffee recommendations"
+    },
+    {
+        "phrase": "Can you explain the difference between a flat white and a latte?",
+        "level": "C2",
+        "context": "Detailed coffee inquiry"
+    }
+]
