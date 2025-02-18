@@ -14,6 +14,7 @@ from routers.languages import router as languages_router
 from routers.situations import router as situations_router
 from routers.evaluator import router as evaluator_router
 
+
 app = FastAPI()
 
 # middlewares

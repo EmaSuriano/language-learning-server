@@ -9,7 +9,6 @@ from langchain_ollama import ChatOllama, OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel
 
-
 from database import schemas
 
 CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
