@@ -52,3 +52,6 @@ class Whisper:
 
     def get_supported_languages(self):
         return self.model.supported_languages
+
+    def is_language_supported(self, lang: str):
+        return lang in self.model.supported_languages

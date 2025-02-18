@@ -60,7 +60,7 @@ class Kokoro:
         text = emoji_pattern.sub(r"", text)
         return re.sub(r"\s+", " ", text).strip()
 
-    def update_language(self, new_lang: str):
+    def _update_language(self, new_lang: str):
         """Updates the pipeline only if the language has changed"""
         if new_lang != self.lang_code:
             self.pipeline = KPipeline(lang_code=new_lang)
@@ -78,7 +78,7 @@ class Kokoro:
         clean_text = self._clean_text(text)
 
         # Update pipeline if needed
-        self.update_language(self.language_codes[language])
+        self._update_language(self.language_codes[language])
 
         # Generate audio
         generator = self.pipeline(
@@ -104,6 +104,10 @@ class Kokoro:
 
         wav_buffer.seek(0)
         return wav_buffer
+
+    def is_language_supported(self, lang: str) -> bool:
+        """Get set of supported languages"""
+        return lang in self.supported_languages
 
     def get_supported_languages(self) -> set:
         """Get set of supported languages"""

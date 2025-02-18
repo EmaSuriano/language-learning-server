@@ -6,10 +6,20 @@ from pathlib import Path
 from fastapi import APIRouter, File, Query, UploadFile
 
 from models.whisper import Whisper
+from dotenv import load_dotenv
+import os
 
 router = APIRouter(prefix="/stt", tags=["speech-to-text"])
 
-whisper = Whisper()
+
+load_dotenv()
+
+# Initialize
+whisper = Whisper(
+    model_size=os.getenv("WHISPER_MODEL_SIZE", "base"),
+    device=os.getenv("WHISPER_DEVICE", "auto"),
+    compute_type=os.getenv("WHISPER_COMPUTE_TYPE", "default"),
+)
 
 
 @router.post("/transcribe")
@@ -19,7 +29,7 @@ async def transcribe(
 ):
     """Transcribe audio file"""
 
-    if language not in whisper.get_supported_languages():
+    if not whisper.is_language_supported(language):
         raise ValueError(f"Language {language} is not supported")
 
     temp_audio_path = Path("temp_audio.mp3")
