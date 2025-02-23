@@ -63,6 +63,7 @@ class Situation(Base):
     scenario_description: Mapped[str] = mapped_column(String)
     user_goals: Mapped[List[str]] = mapped_column(ArrayType)
     system_role: Mapped[str] = mapped_column(String)
+    difficulty: Mapped[str] = mapped_column(String)
     system_instructions: Mapped[List[str]] = mapped_column(ArrayType)
 
 

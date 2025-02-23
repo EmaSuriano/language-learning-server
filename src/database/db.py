@@ -134,6 +134,7 @@ def get_situations(db: Session) -> List[schemas.SituationSystem]:
             user_goals=sit.user_goals,
             system_role=sit.system_role,
             system_instructions=sit.system_instructions,
+            difficulty=sit.difficulty,
         )
         for sit in situations
     ]

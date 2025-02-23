@@ -36,6 +36,7 @@ class BaseSituation(BaseModel):
 class SituationClient(BaseSituation):
     scenario_description: str = Field(description="Description of the scenario")
     user_goals: List[str] = Field(min_length=1, description="Goals for the user")
+    difficulty: str = Field(description="Difficulty level of the situation")
 
 
 class SituationSystem(SituationClient):

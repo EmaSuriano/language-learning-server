@@ -36,22 +36,6 @@ ALL_LANGUAGES = [
 
 DEFAULT_LANGUAGE = "en"
 
-SITUATIONS = [
-    {
-        "name": "Coffee shop",
-        "role": "You are a seller in a coffe shop and the customer is asking about the menu.",
-        "instructions": [
-            "Welcome customers warmly and offer to explain the menu",
-            "Guide them through coffee options and daily pastry selections",
-            "Help them choose between dine-in or takeaway service",
-            "Process their payment (cash or card)",
-            "Politely handle the tipping process",
-            "Offer a receipt for their purchase",
-            "Close the interaction with a genuine thank you and farewell",
-        ],
-    },
-]
-
 
 def reset_db():
     """Reset the database"""

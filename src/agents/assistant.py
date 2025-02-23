@@ -1,9 +1,11 @@
 from collections.abc import AsyncIterator
 import json
+import os
 import re
 from textwrap import dedent
-from typing import Any, Dict, List, Literal, Optional
+from typing import Any, Dict, List, Literal
 
+from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_ollama import ChatOllama, OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
@@ -12,7 +14,15 @@ from pydantic import BaseModel
 from database import schemas
 
 CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
-OLLAMA_URL = "http://localhost:11434"
+
+load_dotenv()
+
+# Get configuration from environment
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
+OLLAMA_URL = os.getenv("OLLAMA_URL")
+
+assert OLLAMA_MODEL is not None, "OLLAMA_MODEL is not set"
+assert OLLAMA_URL is not None, "OLLAMA_URL is not set"
 
 
 class ConversationContext(BaseModel):
@@ -89,14 +99,14 @@ class ChatMessage(BaseModel):
 
 # used for chat communication
 chat = ChatOllama(
-    model="phi4",  # or any model available in your Ollama instance
+    model=OLLAMA_MODEL,  # or any model available in your Ollama instance
     temperature=0.2,
     base_url=OLLAMA_URL,  # adjust if your Ollama endpoint is different
 )
 
 # used for analysis and reports
 llm = OllamaLLM(
-    model="phi4",
+    model=OLLAMA_MODEL,
     base_url=OLLAMA_URL,
     num_predict=128,
 )
@@ -118,8 +128,6 @@ async def generate_stream(
         ConversationContext(situation=situation, user=user),
         role="ai",
     )
-
-    print("SYSTEM PROMPT:", system_prompt)
 
     messages: List[BaseMessage] = [SystemMessage(content=system_prompt)]
 
@@ -153,8 +161,6 @@ def generate_chat_hint(
         ConversationContext(situation=situation, user=user),
         role="human",
     )
-
-    print("SYSTEM PROMPT:", system_prompt)
 
     messages: List[BaseMessage] = [SystemMessage(content=system_prompt)]
 

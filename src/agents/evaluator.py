@@ -1,10 +1,12 @@
 import asyncio
 from collections.abc import AsyncIterator
 import json
+import os
 import re
 from textwrap import dedent
 from typing import Any, AsyncGenerator, Dict, List, Literal, Optional
 
+from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_ollama import ChatOllama, OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
@@ -15,7 +17,12 @@ from database import schemas
 from rag.rag_language_retrieval import LanguageExample, RAGLanguageEvaluator
 
 CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
-OLLAMA_URL = "http://localhost:11434"
+
+load_dotenv()
+
+# Get configuration from environment
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
+OLLAMA_URL = os.getenv("OLLAMA_URL")
 
 
 class ConversationContext(BaseModel):
@@ -62,7 +69,7 @@ def _generate_system_prompt(
 
 
 # used for analysis and reports
-llm = OllamaLLM(model="phi4", base_url=OLLAMA_URL, temperature=0)
+llm = OllamaLLM(model=OLLAMA_MODEL, base_url=OLLAMA_URL, temperature=0)
 
 
 async def get_chat_report(
