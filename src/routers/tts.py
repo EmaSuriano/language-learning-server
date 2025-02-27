@@ -3,7 +3,6 @@
 import io
 import os
 
-from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse, StreamingResponse
 from huggingface_hub import HfApi
@@ -15,8 +14,6 @@ router = APIRouter(prefix="/tts", tags=["text-to-speech"])
 
 api = HfApi()
 
-# Load environment variables
-load_dotenv()
 
 KOKORO_LANGUAGE = os.getenv("KOKORO_LANGUAGE", "en")
 

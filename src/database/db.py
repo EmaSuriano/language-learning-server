@@ -126,18 +126,7 @@ def get_language_by_code(db: Session, code: str) -> schemas.Language | None:
 
 def get_situations(db: Session) -> List[schemas.SituationSystem]:
     situations = db.query(models.Situation).all()
-    return [
-        schemas.SituationSystem(
-            id=sit.id,
-            name=sit.name,
-            scenario_description=sit.scenario_description,
-            user_goals=sit.user_goals,
-            system_role=sit.system_role,
-            system_instructions=sit.system_instructions,
-            difficulty=sit.difficulty,
-        )
-        for sit in situations
-    ]
+    return [sit for sit in situations]
 
 
 def get_situation(db: Session, id: int) -> schemas.SituationSystem | None:

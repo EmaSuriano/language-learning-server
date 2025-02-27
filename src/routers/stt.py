@@ -6,13 +6,10 @@ from pathlib import Path
 from fastapi import APIRouter, File, Query, UploadFile
 
 from models.whisper import Whisper
-from dotenv import load_dotenv
 import os
 
 router = APIRouter(prefix="/stt", tags=["speech-to-text"])
 
-
-load_dotenv()
 
 # Initialize
 whisper = Whisper(

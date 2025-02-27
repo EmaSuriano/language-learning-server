@@ -125,7 +125,7 @@ async def chat_hint(request_data: ChatRequest, db: Session = Depends(get_db)):
     if situation is None:
         raise HTTPException(status_code=404, detail="Situation not found")
 
-    chat_hint = generate_chat_hint(
+    chat_hint = await generate_chat_hint(
         user=user,
         situation=situation,
         chat_messages=request_data.messages,
@@ -146,10 +146,10 @@ async def chat_progress(request_data: ChatRequest, db: Session = Depends(get_db)
     if situation is None:
         raise HTTPException(status_code=404, detail="Situation not found")
 
-    progress = get_chat_progress(
+    progress = await get_chat_progress(
         user=user,
         situation=situation,
         chat_messages=request_data.messages,
     )
 
-    return {"progress": progress}
+    return progress

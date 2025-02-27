@@ -5,7 +5,6 @@ import re
 from textwrap import dedent
 from typing import Any, Dict, List, Literal
 
-from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_ollama import ChatOllama, OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
@@ -14,8 +13,6 @@ from pydantic import BaseModel
 from database import schemas
 
 CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
-
-load_dotenv()
 
 # Get configuration from environment
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
@@ -97,11 +94,13 @@ class ChatMessage(BaseModel):
     content: str
 
 
+print(OLLAMA_MODEL)
+
 # used for chat communication
 chat = ChatOllama(
-    model=OLLAMA_MODEL,  # or any model available in your Ollama instance
+    model=OLLAMA_MODEL,
     temperature=0.2,
-    base_url=OLLAMA_URL,  # adjust if your Ollama endpoint is different
+    base_url=OLLAMA_URL,
 )
 
 # used for analysis and reports
@@ -109,6 +108,7 @@ llm = OllamaLLM(
     model=OLLAMA_MODEL,
     base_url=OLLAMA_URL,
     num_predict=128,
+    temperature=0,
 )
 
 
@@ -137,15 +137,29 @@ async def generate_stream(
         else:
             messages.append(AIMessage(content=msg.content))
 
+    full_response = ""
     try:
         async for chunk in chat.astream(messages):
-            # Each chunk is a BaseMessageChunk; yield its content.
-            yield chunk.content
+            content = chunk.content
+            full_response += content
+
+            # Check if a horizontal line appears in the accumulated response
+            if "---" in full_response:
+                # Only yield the content before the horizontal line
+                cleaned_response = full_response.split("---")[0].strip()
+                # Only yield if we haven't already yielded this exact content
+                if cleaned_response != full_response:
+                    yield cleaned_response
+                # Stop the streaming
+                return
+
+            # Otherwise continue streaming normally
+            yield content
     except ValueError as e:
         yield f"Error: {str(e)}"
 
 
-def generate_chat_hint(
+async def generate_chat_hint(
     user: schemas.User,
     situation: schemas.SituationSystem,
     chat_messages: List[ChatMessage],
@@ -176,18 +190,18 @@ def generate_chat_hint(
         )
     )
 
-    response = chat.invoke(messages).content
+    response = await chat.ainvoke(messages)
 
-    match = re.search(r'"(.*?)"', str(response))
+    match = re.search(r'"(.*?)"', str(response.content))
 
     # This in case the response is not in first person
     if match:
         return match.group(1)
 
-    return chat.invoke(messages).content
+    return response.content
 
 
-def get_chat_progress(
+async def get_chat_progress(
     user: schemas.User,
     situation: schemas.SituationSystem,
     chat_messages: List[ChatMessage],
@@ -233,7 +247,7 @@ def get_chat_progress(
     )
 
     # Run the chain
-    result = chain.invoke(
+    result = await chain.ainvoke(
         {
             "system_prompt": system_prompt,
             "conversation": conversation_text,

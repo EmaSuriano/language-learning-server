@@ -1,12 +1,9 @@
-from dotenv import load_dotenv
 from stable_baselines3 import PPO
 import numpy as np
 from typing import List, Tuple, Dict
 from dataclasses import dataclass
 import shutil
 import os
-
-load_dotenv()
 
 # Get configuration from environment
 MODEL_PATH = os.getenv("LEVEL_MANAGER_PATH")

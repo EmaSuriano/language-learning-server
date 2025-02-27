@@ -14,6 +14,9 @@ from routers.languages import router as languages_router
 from routers.situations import router as situations_router
 from routers.evaluator import router as evaluator_router
 
+from dotenv import load_dotenv
+
+load_dotenv(".env", override=True)
 
 app = FastAPI()
 

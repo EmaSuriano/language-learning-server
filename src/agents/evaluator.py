@@ -6,7 +6,6 @@ import re
 from textwrap import dedent
 from typing import Any, AsyncGenerator, Dict, List, Literal, Optional
 
-from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_ollama import ChatOllama, OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
@@ -18,7 +17,6 @@ from rag.rag_language_retrieval import LanguageExample, RAGLanguageEvaluator
 
 CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
 
-load_dotenv()
 
 # Get configuration from environment
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")

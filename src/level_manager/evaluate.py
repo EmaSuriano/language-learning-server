@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -6,8 +5,6 @@ from typing import List, Dict
 
 from stable_baselines3 import PPO
 import os
-
-load_dotenv()
 
 # Get configuration from environment
 MODEL_PATH = os.getenv("LEVEL_MANAGER_PATH")
