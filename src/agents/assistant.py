@@ -1,5 +1,4 @@
 from collections.abc import AsyncIterator
-import json
 import os
 import re
 from textwrap import dedent
@@ -107,7 +106,6 @@ chat = ChatOllama(
 llm = OllamaLLM(
     model=OLLAMA_MODEL,
     base_url=OLLAMA_URL,
-    num_predict=128,
     temperature=0,
 )
 
@@ -141,7 +139,11 @@ async def generate_stream(
     try:
         async for chunk in chat.astream(messages):
             content = chunk.content
-            full_response += content
+
+            if isinstance(content, str):
+                full_response += content
+            elif isinstance(content, list):
+                full_response += "".join(str(item) for item in content)
 
             # Check if a horizontal line appears in the accumulated response
             if "---" in full_response:
@@ -201,35 +203,34 @@ async def generate_chat_hint(
     return response.content
 
 
-async def get_chat_progress(
+async def _get_goal_progress(
     user: schemas.User,
     situation: schemas.SituationSystem,
     chat_messages: List[ChatMessage],
-) -> list[dict]:
-    """
-    Get a hint for the user based on the current situation
-    """
-
+    goal: str,
+) -> bool:
     system_prompt = _generate_system_prompt(
         ConversationContext(situation=situation, user=user),
         role="human",
     )
 
     prompt = ChatPromptTemplate.from_template(
-        """{system_prompt}
+        dedent("""{system_prompt}
 
-    Conversation:
-    {conversation}
-    
-    Expected output:
-    {goals_json}
+        Conversation:
+        {conversation}
 
-    Guidelines:
-    - Go through the conversation step by step.
-    - Pay attention only to the messages from the HUMAN.
-    - Provide only the expected output.
-    """,
+        User goal:
+        {goal}
+
+        IMPORTANT:
+        - Provide only 0 or 1 as the ouput.
+        - 0 means the user has not achieved the goal.
+        - 1 means the user has achieved the goal.
+        """),
     )
+
+    llm.num_predict = 1
 
     # Create an LLM chain
     chain = prompt | llm
@@ -239,11 +240,51 @@ async def get_chat_progress(
         [f"{msg.role.upper()}: {msg.content}" for msg in chat_messages]
     )
 
-    progress = [{"name": goal, "done": False} for goal in situation.user_goals]
+    # Run the chain
+    result = await chain.ainvoke(
+        {
+            "system_prompt": system_prompt,
+            "conversation": conversation_text,
+            "goal": goal,
+        },
+    )
 
-    goals_json = json.dumps(
-        progress,
-        indent=2,  # Pretty-print for better LLM handling
+    return result == "1"
+
+
+async def _get_conversation_over(
+    user: schemas.User,
+    situation: schemas.SituationSystem,
+    chat_messages: List[ChatMessage],
+) -> bool:
+    system_prompt = _generate_system_prompt(
+        ConversationContext(situation=situation, user=user),
+        role="ai",
+    )
+
+    prompt = ChatPromptTemplate.from_template(
+        dedent("""{system_prompt}
+
+        Conversation:
+        {conversation}
+
+        Identify if the conversation has ended.
+
+        IMPORTANT:
+        - Provide only 0 or 1 as the ouput.
+        - 0 means the conversation is not over.
+        - 1 means the conversation is over.
+        """),
+    )
+
+    llm.num_predict = 1
+
+    # Create an LLM chain
+    chain = prompt | llm
+
+    # Format the conversation as a single string
+    conversation_text = "\n".join(
+        [f"{msg.role.upper()}: {msg.content}" for msg in chat_messages]
     )
 
     # Run the chain
@@ -251,21 +292,38 @@ async def get_chat_progress(
         {
             "system_prompt": system_prompt,
             "conversation": conversation_text,
-            "goals_json": goals_json,
         },
     )
 
-    print(result)
+    return result == "1"
 
-    json_match = re.search(r"\[.*\]", result, re.DOTALL)
-    if json_match:
-        json_text = json_match.group(0)
-        try:
-            parsed_goals = json.loads(json_text)
-            return parsed_goals
-        except json.JSONDecodeError:
-            print("Error: Couldn't parse extracted JSON.")
-    else:
-        print("Error: No JSON found in response.")
 
-    return progress
+async def get_chat_progress(
+    user: schemas.User,
+    situation: schemas.SituationSystem,
+    chat_messages: List[ChatMessage],
+) -> Dict[str, Any]:
+    """
+    Get a hint for the user based on the current situation
+    """
+
+    goals = [{"name": goal, "done": False} for goal in situation.user_goals]
+
+    for goal in goals:
+        # Run the chain
+        result = await _get_goal_progress(
+            user=user,
+            situation=situation,
+            chat_messages=chat_messages,
+            goal=str(goal["name"]),
+        )
+
+        goal["done"] = result
+
+    conversation_over = await _get_conversation_over(
+        user=user,
+        situation=situation,
+        chat_messages=chat_messages,
+    )
+
+    return {"goals": goals, "conversation_over": conversation_over}

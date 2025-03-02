@@ -1,19 +1,14 @@
-import asyncio
-from collections.abc import AsyncIterator
-import json
 import os
-import re
 from textwrap import dedent
-from typing import Any, AsyncGenerator, Dict, List, Literal, Optional
+from typing import Any, AsyncGenerator, Dict, List, Literal
 
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
-from langchain_ollama import ChatOllama, OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_ollama import OllamaLLM
 from pydantic import BaseModel
-
 
 from database import schemas
 from rag.rag_language_retrieval import LanguageExample, RAGLanguageEvaluator
+from agents.translator import translate_text
 
 CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
 
@@ -21,6 +16,11 @@ CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
 # Get configuration from environment
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
 OLLAMA_URL = os.getenv("OLLAMA_URL")
+
+assert OLLAMA_MODEL is not None, "OLLAMA_MODEL is not set"
+assert OLLAMA_URL is not None, "OLLAMA_URL is not set"
+
+llm = OllamaLLM(model=OLLAMA_MODEL, base_url=OLLAMA_URL, temperature=0)
 
 
 class ConversationContext(BaseModel):
@@ -39,6 +39,19 @@ class ConversationMetrics(BaseModel):
     grammar: int = 50
     vocabulary: int = 50
     fluency: int = 50
+
+
+def _generate_system_prompt_new(
+    context: ConversationContext,
+) -> str:
+    cefr_level = CEFR_LEVEL[context.user.language_level - 1]
+
+    return dedent(
+        f"""Role: You are a language evaluator, and you are evaluating a conversation between a user and a system.
+
+        User Level: {cefr_level}
+     """
+    )
 
 
 def _generate_system_prompt(
@@ -64,10 +77,6 @@ def _generate_system_prompt(
         {"\n".join(f"• {goal}" for goal in context.situation.user_goals)}
      """
     )
-
-
-# used for analysis and reports
-llm = OllamaLLM(model=OLLAMA_MODEL, base_url=OLLAMA_URL, temperature=0)
 
 
 async def get_chat_report(
@@ -133,3 +142,111 @@ async def get_chat_report(
         }
     ):
         yield chunk
+
+
+async def _get_conversation_metric(
+    user: schemas.User,
+    situation: schemas.SituationSystem,
+    messages: List[ChatMessage],
+    examples: List[LanguageExample],
+    metric: str,
+) -> int:
+    system_prompt = _generate_system_prompt_new(
+        ConversationContext(situation=situation, user=user)
+    )
+
+    prompt = ChatPromptTemplate.from_template(
+        dedent("""{system_prompt}
+               
+        IMPORTANT:
+        You MUST return ONLY a number between 0 and 100, with NO additional text.
+               
+        Rules:
+        - Return ONLY a number (0-100)
+        - NO explanations
+        - NO additional text
+        - The number represents the quality score for the metric
+        - Higher numbers mean better quality
+        - Base the score on HUMAN messages only
+        - Be critical in your evaluation
+
+        Conversation:
+        {conversation}
+
+        Evaluate and return a single number (0-100) for:
+        {metric}
+        """),
+    )
+
+    llm.num_predict = 1
+
+    # Create an LLM chain
+    chain = prompt | llm
+
+    # Format the conversation as a single string
+    conversation_text = "\n".join(
+        [f"{msg.role.upper()}: {msg.content}" for msg in messages]
+    )
+
+    examples_text = "\n".join([msg.phrase for msg in examples])
+
+    # Run the chain
+    result = await chain.ainvoke(
+        {
+            "system_prompt": system_prompt,
+            "conversation": conversation_text,
+            "examples": examples_text,
+            "metric": metric,
+        },
+    )
+
+    # Add error handling for non-numeric responses
+    try:
+        cleaned_result = result.strip().split()[0]  # Take first word only
+        return int(cleaned_result)
+    except (ValueError, IndexError):
+        return 50  # Default fallback value
+
+
+async def get_overview(
+    user: schemas.User,
+    situation: schemas.SituationSystem,
+    messages: List[ChatMessage],
+    rag_evaluator: RAGLanguageEvaluator,
+) -> ConversationMetrics:
+    context = [situation.name, situation.scenario_description, *situation.user_goals]
+    examples = rag_evaluator.get_relevant_examples(
+        query=" ".join(context),
+        level=CEFR_LEVEL[user.language_level - 1],
+        k=5,
+    )
+
+    for example in examples:
+        translated_phrase = await translate_text(
+            example.phrase, user.current_language, user.language_level
+        )
+        example.phrase = translated_phrase
+
+    metrics = [
+        {"name": "grammar", "description": "Grammatical accuracy"},
+        {
+            "name": "vocabulary",
+            "description": "Appropriate use of vocabulary for level",
+        },
+        {"name": "fluency", "description": "Natural and smooth communication"},
+    ]
+
+    results = {}
+
+    for metric in metrics:
+        result = await _get_conversation_metric(
+            user=user,
+            situation=situation,
+            messages=messages,
+            examples=examples,
+            metric=f"{metric['name']}: {metric['description']}",
+        )
+
+        results[metric["name"]] = result
+
+    return ConversationMetrics(**results)

@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 
 import database.db as DB
 from database.connection import get_db
-from agents.evaluator import ChatMessage, get_chat_report
+from agents.evaluator import ChatMessage, get_chat_report, get_overview
 from rag.connection import get_rag_evaluator
 from rag.rag_language_retrieval import RAGLanguageEvaluator
 
@@ -62,3 +62,28 @@ async def generate_report(
         },
         media_type="text/event-stream",
     )
+
+
+@router.post("/overview")
+async def generate_overview(
+    request_data: ReportRequest,
+    db: Session = Depends(get_db),
+    rag_evaluator: RAGLanguageEvaluator = Depends(get_rag_evaluator),
+):
+    user = DB.get_user(db, request_data.user_id)
+    situation = DB.get_situation(db, request_data.situation_id)
+
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    if situation is None:
+        raise HTTPException(status_code=404, detail="Situation not found")
+
+    overview = await get_overview(
+        user=user,
+        situation=situation,
+        messages=request_data.messages,
+        rag_evaluator=rag_evaluator,
+    )
+
+    return overview
