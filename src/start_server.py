@@ -13,6 +13,7 @@ from routers.users import router as users_router
 from routers.languages import router as languages_router
 from routers.situations import router as situations_router
 from routers.evaluator import router as evaluator_router
+from routers.learning_session import router as learning_session_router
 
 from dotenv import load_dotenv
 
@@ -46,6 +47,7 @@ app.include_router(users_router)
 app.include_router(languages_router)
 app.include_router(situations_router)
 app.include_router(evaluator_router)
+app.include_router(learning_session_router)
 
 # Allow uvicorn to be executed using `uv run`
 if __name__ == "__main__":

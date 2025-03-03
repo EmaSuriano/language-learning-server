@@ -1,12 +1,23 @@
 """CRUD operations"""
 
+import os
 from typing import List
 
 from fastapi import HTTPException
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
+from sqlalchemy import desc
+
+from models.level_manager import LevelManager, PerformanceMetrics
 
 from . import models, schemas
+
+# Initialize the LevelManager
+MODEL_PATH = os.getenv("LEVEL_MANAGER_PATH")
+
+assert MODEL_PATH is not None, "Please set the LEVEL_MANAGER_PATH environment variable"
+
+level_manager = LevelManager(model_path=MODEL_PATH)
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -26,7 +37,6 @@ def _user_to_schema(user: models.User) -> schemas.User:
         ),
         # Convert between model and schema enum
         language_level=schemas.CEFRLevel(user.language_level),
-        interests=user.interests,
         voice_id=user.voice_id,
     )
 
@@ -61,7 +71,6 @@ def create_user(db: Session, user: schemas.UserCreate) -> schemas.User:
     db_user = models.User(
         email=user.email,
         hashed_password=pwd_context.hash(user.password),
-        interests=user.interests,  # Now directly stored as a list
         current_language=language,
         language_level=user.language_level,
     )
@@ -131,3 +140,180 @@ def get_situations(db: Session) -> List[schemas.SituationSystem]:
 
 def get_situation(db: Session, id: int) -> schemas.SituationSystem | None:
     return db.query(models.Situation).filter(models.Situation.id == id).first()
+
+
+def _session_to_schema(session: models.LearningHistory) -> schemas.LearningHistory:
+    """Convert DB model to Pydantic schema"""
+    return schemas.LearningHistory(
+        id=session.id,
+        user_id=session.user_id,
+        situation_id=session.situation_id,
+        language_id=session.language_id,
+        level=schemas.CEFRLevel(session.level),
+        grammar_score=session.grammar_score,
+        vocabulary_score=session.vocabulary_score,
+        fluency_score=session.fluency_score,
+        goals_score=session.goals_score,
+        level_change=schemas.LevelChangeType(session.level_change),
+    )
+
+
+def _session_to_detail_schema(
+    session: models.LearningHistory,
+) -> schemas.LearningHistoryDetail:
+    """Convert DB model to detailed Pydantic schema with relationships"""
+    return schemas.LearningHistoryDetail(
+        id=session.id,
+        user_id=session.user_id,
+        user=_user_to_schema(session.user),
+        situation_id=session.situation_id,
+        situation=schemas.SituationClient(
+            id=session.situation.id,
+            name=session.situation.name,
+            scenario_description=session.situation.scenario_description,
+            user_goals=session.situation.user_goals,
+            difficulty=session.situation.difficulty,
+        )
+        if session.situation
+        else None,
+        language_id=session.language_id,
+        language=schemas.Language(
+            id=session.language.id,
+            code=session.language.code,
+            name=session.language.name,
+            has_tts=session.language.has_tts,
+        ),
+        level=schemas.CEFRLevel(session.level),
+        grammar_score=session.grammar_score,
+        vocabulary_score=session.vocabulary_score,
+        fluency_score=session.fluency_score,
+        goals_score=session.goals_score,
+        level_change=schemas.LevelChangeType(session.level_change),
+    )
+
+
+def calculate_level_change(
+    db: Session, metrics: PerformanceMetrics, user: schemas.User
+) -> str:
+    # Get recent sessions for this user (last 5 or fewer)
+    recent_sessions = (
+        db.query(models.LearningHistory)
+        .filter(models.LearningHistory.user_id == user.id)
+        .order_by(desc(models.LearningHistory.date))
+        .limit(4)
+        .all()
+    )
+
+    # If there are fewer than 5 sessions, don't run the level manager
+    if len(recent_sessions) < 4:
+        return schemas.LevelChangeType.MAINTAIN
+
+    # Convert to PerformanceMetrics objects
+    metrics_history = [
+        PerformanceMetrics(
+            s.grammar_score / 100,
+            s.vocabulary_score / 100,
+            s.fluency_score / 100,
+            s.goals_score / 100,
+        )
+        for s in recent_sessions
+    ]
+
+    metrics_history.append(metrics)
+
+    # Get prediction from the level manager
+    result = level_manager.predict(metrics_history, user.language_level)
+
+    # Return the decision (increase, maintain, or decrease)
+    return schemas.LevelChangeType(result["decision"].upper())
+
+
+def get_learning_session(
+    db: Session, session_id: int
+) -> schemas.LearningHistory | None:
+    """Get a specific learning session by ID"""
+    session = (
+        db.query(models.LearningHistory)
+        .filter(models.LearningHistory.id == session_id)
+        .first()
+    )
+    return _session_to_schema(session) if session else None
+
+
+def get_learning_session_detail(
+    db: Session, session_id: int
+) -> schemas.LearningHistoryDetail | None:
+    """Get a detailed learning session by ID with related entities"""
+    session = (
+        db.query(models.LearningHistory)
+        .filter(models.LearningHistory.id == session_id)
+        .first()
+    )
+    return _session_to_detail_schema(session) if session else None
+
+
+def get_user_learning_sessions(
+    db: Session, user: models.User, skip: int = 0, limit: int = 100
+) -> List[schemas.LearningHistory]:
+    """Get all learning sessions for a specific user"""
+    sessions = (
+        db.query(models.LearningHistory)
+        .filter(models.LearningHistory.user_id == user.id)
+        .offset(skip)
+        .limit(limit)
+        .all()
+    )
+    return [_session_to_schema(session) for session in sessions]
+
+
+def create_learning_session(
+    db: Session, session: schemas.LearningHistoryBase
+) -> schemas.LearningHistory:
+    """Create a new learning session"""
+    # Verify the user exists
+    user = db.query(models.User).filter(models.User.id == session.user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    # Verify the language exists
+    language = (
+        db.query(models.Language)
+        .filter(models.Language.id == session.language_id)
+        .first()
+    )
+    if not language:
+        raise HTTPException(status_code=404, detail="Language not found")
+
+    # Verify the situation exists if provided
+    if session.situation_id is not None:
+        situation = (
+            db.query(models.Situation)
+            .filter(models.Situation.id == session.situation_id)
+            .first()
+        )
+        if not situation:
+            raise HTTPException(status_code=404, detail="Situation not found")
+
+    # Create session model from schema data
+
+    # Create session model from schema data
+    session_data = session.model_dump()
+
+    metrics = PerformanceMetrics(
+        session.grammar_score / 100,
+        session.vocabulary_score / 100,
+        session.fluency_score / 100,
+        session.goals_score / 100,
+    )
+    # Calculate level change using the level manager
+    level_change = calculate_level_change(db, metrics, user)
+
+    session_data["level_change"] = level_change
+
+    db_session = models.LearningHistory(**session_data)
+
+    db.add(db_session)
+    db.commit()
+    db.refresh(db_session)
+
+    return _session_to_schema(db_session)

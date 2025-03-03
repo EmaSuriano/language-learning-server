@@ -10,41 +10,6 @@
         "context": "Asking for price"
     },
     {
-        "phrase": "Can I have a medium latte with soy milk, please?",
-        "level": "A2",
-        "context": "Specific coffee order"
-    },
-    {
-        "phrase": "Do you have any pastries?",
-        "level": "A2",
-        "context": "Asking about food options"
-    },
-    {
-        "phrase": "I'd like to try your house blend as a pour-over.",
-        "level": "B1",
-        "context": "Detailed coffee order"
-    },
-    {
-        "phrase": "Could you recommend something if I prefer less acidic coffee?",
-        "level": "B1",
-        "context": "Asking for coffee recommendations"
-    },
-    {
-        "phrase": "I was wondering if you could tell me about your coffee sourcing practices?",
-        "level": "B2",
-        "context": "Asking about coffee sourcing"
-    },
-    {
-        "phrase": "I'm particularly interested in single-origin beans.",
-        "level": "C1",
-        "context": "Detailed coffee discussion"
-    },
-    {
-        "phrase": "Would you mind elaborating on how the different processing methods affect the cup profile?",
-        "level": "C2",
-        "context": "Expert coffee inquiry"
-    },
-    {
         "phrase": "Can I get a decaf espresso?",
         "level": "A1",
         "context": "Basic coffee order"
@@ -53,6 +18,46 @@
         "phrase": "Do you have almond milk?",
         "level": "A1",
         "context": "Asking for milk options"
+    },
+    {
+        "phrase": "One small coffee.",
+        "level": "A1",
+        "context": "Basic coffee order"
+    },
+    {
+        "phrase": "Coffee to go, please.",
+        "level": "A1",
+        "context": "Takeaway order"
+    },
+    {
+        "phrase": "Do you have sugar?",
+        "level": "A1",
+        "context": "Asking for condiments"
+    },
+    {
+        "phrase": "Is this table free?",
+        "level": "A1",
+        "context": "Finding seating"
+    },
+    {
+        "phrase": "Where is the bathroom?",
+        "level": "A1",
+        "context": "Asking for facilities"
+    },
+    {
+        "phrase": "Do you have wifi?",
+        "level": "A1",
+        "context": "Asking about amenities"
+    },
+    {
+        "phrase": "Can I have a medium latte with soy milk, please?",
+        "level": "A2",
+        "context": "Specific coffee order"
+    },
+    {
+        "phrase": "Do you have any pastries?",
+        "level": "A2",
+        "context": "Asking about food options"
     },
     {
         "phrase": "I'd like a cappuccino with an extra shot, please.",
@@ -65,6 +70,46 @@
         "context": "Asking about tea options"
     },
     {
+        "phrase": "Can I get this heated up?",
+        "level": "A2",
+        "context": "Food preparation request"
+    },
+    {
+        "phrase": "Is the wifi password on the receipt?",
+        "level": "A2",
+        "context": "Asking about amenities"
+    },
+    {
+        "phrase": "Do you have any gluten-free options?",
+        "level": "A2",
+        "context": "Dietary requirements"
+    },
+    {
+        "phrase": "How long will it take?",
+        "level": "A2",
+        "context": "Asking about wait time"
+    },
+    {
+        "phrase": "Can I pay by card?",
+        "level": "A2",
+        "context": "Payment inquiry"
+    },
+    {
+        "phrase": "What time do you close today?",
+        "level": "A2",
+        "context": "Asking about hours"
+    },
+    {
+        "phrase": "I'd like to try your house blend as a pour-over.",
+        "level": "B1",
+        "context": "Detailed coffee order"
+    },
+    {
+        "phrase": "Could you recommend something if I prefer less acidic coffee?",
+        "level": "B1",
+        "context": "Asking for coffee recommendations"
+    },
+    {
         "phrase": "Can you make that with oat milk?",
         "level": "B1",
         "context": "Specific milk request"
@@ -75,9 +120,89 @@
         "context": "Asking about food options"
     },
     {
+        "phrase": "Is this coffee single-origin or a blend?",
+        "level": "B1",
+        "context": "Coffee origin inquiry"
+    },
+    {
+        "phrase": "Could I get that with light ice, please?",
+        "level": "B1",
+        "context": "Specific preparation request"
+    },
+    {
+        "phrase": "Do you roast your own beans?",
+        "level": "B1",
+        "context": "Asking about coffee production"
+    },
+    {
+        "phrase": "How would you describe the flavor profile of this blend?",
+        "level": "B1",
+        "context": "Asking about coffee taste"
+    },
+    {
+        "phrase": "I usually prefer medium roasts. What would you suggest?",
+        "level": "B1",
+        "context": "Seeking recommendations"
+    },
+    {
+        "phrase": "Do you offer any seasonal specials?",
+        "level": "B1",
+        "context": "Asking about menu options"
+    },
+    {
+        "phrase": "I was wondering if you could tell me about your coffee sourcing practices?",
+        "level": "B2",
+        "context": "Asking about coffee sourcing"
+    },
+    {
         "phrase": "Could you tell me more about your cold brew process?",
         "level": "B2",
         "context": "Asking about coffee preparation"
+    },
+    {
+        "phrase": "How long do you typically roast your dark blend?",
+        "level": "B2",
+        "context": "Detailed coffee production inquiry"
+    },
+    {
+        "phrase": "I've noticed your Ethiopian beans have a floral note to them. Is that typical for that region?",
+        "level": "B2",
+        "context": "Regional coffee characteristics"
+    },
+    {
+        "phrase": "Would you say this coffee has more chocolate or fruity notes?",
+        "level": "B2",
+        "context": "Detailed flavor inquiry"
+    },
+    {
+        "phrase": "I'm curious about the environmental impact of your to-go cups. Are they compostable?",
+        "level": "B2",
+        "context": "Environmental practices inquiry"
+    },
+    {
+        "phrase": "Do you adjust your brewing parameters seasonally as the beans age?",
+        "level": "B2",
+        "context": "Technical brewing question"
+    },
+    {
+        "phrase": "I'd be interested to know how you decide on your roast profiles for different origins.",
+        "level": "B2",
+        "context": "Roasting methodology inquiry"
+    },
+    {
+        "phrase": "Have you considered offering a coffee subscription service?",
+        "level": "B2",
+        "context": "Business model inquiry"
+    },
+    {
+        "phrase": "What water filtration system do you use for your espresso machine?",
+        "level": "B2",
+        "context": "Technical equipment question"
+    },
+    {
+        "phrase": "I'm particularly interested in single-origin beans.",
+        "level": "C1",
+        "context": "Detailed coffee discussion"
     },
     {
         "phrase": "I'm interested in trying a new blend. What do you recommend?",
@@ -85,8 +210,93 @@
         "context": "Asking for coffee recommendations"
     },
     {
+        "phrase": "I've been experimenting with different brewing methods at home and find that my V60 brings out more acidity than my Chemex.",
+        "level": "C1",
+        "context": "Home brewing discussion"
+    },
+    {
+        "phrase": "Would you mind sharing your thoughts on how altitude affects the flavor development in coffee beans?",
+        "level": "C1",
+        "context": "Advanced coffee knowledge inquiry"
+    },
+    {
+        "phrase": "I've noticed that washed processed coffees from Ethiopia tend to have a cleaner, more tea-like body compared to natural processed ones.",
+        "level": "C1",
+        "context": "Processing methods discussion"
+    },
+    {
+        "phrase": "Have you found that the third wave coffee movement has influenced customer expectations regarding transparency in the supply chain?",
+        "level": "C1",
+        "context": "Coffee industry trends"
+    },
+    {
+        "phrase": "I'm curious about your perspective on the correlation between price points and ethical sourcing in specialty coffee.",
+        "level": "C1",
+        "context": "Coffee economics discussion"
+    },
+    {
+        "phrase": "Do you find that certain varietals respond differently to various extraction methods?",
+        "level": "C1",
+        "context": "Technical extraction discussion"
+    },
+    {
+        "phrase": "I'd be interested to hear your thoughts on the debate between traditional Italian-style espresso and more modern, lighter roasted espresso approaches.",
+        "level": "C1",
+        "context": "Espresso philosophy discussion"
+    },
+    {
+        "phrase": "How do you balance acidity and sweetness when designing your espresso blends?",
+        "level": "C1",
+        "context": "Blend formulation inquiry"
+    },
+    {
+        "phrase": "Would you mind elaborating on how the different processing methods affect the cup profile?",
+        "level": "C2",
+        "context": "Expert coffee inquiry"
+    },
+    {
         "phrase": "Can you explain the difference between a flat white and a latte?",
         "level": "C2",
         "context": "Detailed coffee inquiry"
+    },
+    {
+        "phrase": "I'm fascinated by the interplay between terroir and varietal expression in coffee; have you observed particular microclimates within the same region producing noticeably different flavor profiles in the same cultivar?",
+        "level": "C2",
+        "context": "Advanced coffee terroir discussion"
+    },
+    {
+        "phrase": "To what extent do you believe that innovations in fermentation techniques are redefining traditional notions of origin character in specialty coffee?",
+        "level": "C2",
+        "context": "Fermentation innovation discussion"
+    },
+    {
+        "phrase": "I've been contemplating the dichotomy between the scientific approach to extraction optimization and the more intuitive, sensory-driven methodology employed by many artisan roasters.",
+        "level": "C2",
+        "context": "Coffee philosophy discussion"
+    },
+    {
+        "phrase": "Would you consider the proliferation of refractometers and other precision tools to be indicative of a maturing industry, or perhaps reflective of an over-reliance on quantitative metrics at the expense of qualitative experience?",
+        "level": "C2",
+        "context": "Industry measurement practices"
+    },
+    {
+        "phrase": "I'm curious whether you've observed any correlation between the structural complexity of certain flavor compounds in coffee and their persistence in long-term sensory memory.",
+        "level": "C2",
+        "context": "Sensory science discussion"
+    },
+    {
+        "phrase": "Have you found that the discourse surrounding coffee quality has evolved beyond mere preference to encompass a more nuanced understanding of objective quality indicators?",
+        "level": "C2",
+        "context": "Quality assessment philosophy"
+    },
+    {
+        "phrase": "To what extent do you believe that post-harvest processing innovations are democratizing quality potential across previously overlooked growing regions?",
+        "level": "C2",
+        "context": "Global coffee production trends"
+    },
+    {
+        "phrase": "I find the intersection between coffee ritual and productivity culture to be a fascinating sociological phenomenon worthy of more critical examination.",
+        "level": "C2",
+        "context": "Coffee sociology discussion"
     }
 ]
