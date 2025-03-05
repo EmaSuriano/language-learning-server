@@ -6,9 +6,7 @@ from typing import List, Dict
 from stable_baselines3 import PPO
 import os
 
-# Get configuration from environment
-MODEL_PATH = os.getenv("LEVEL_MANAGER_PATH")
-SAVE_DIR_PATH = os.path.join(os.path.dirname(__file__), "scenario_test_results")
+from config import Config
 
 
 def create_test_scenarios() -> List[Dict]:
@@ -286,7 +284,7 @@ def test_model_scenarios(
     save_dir: str = "scenario_test_results",
 ):
     """Run complete scenario testing and generate visualizations"""
-    os.makedirs(SAVE_DIR_PATH, exist_ok=True)
+    os.makedirs(save_dir, exist_ok=True)
 
     # Load model
     model = load_model(model_path)
@@ -323,8 +321,7 @@ def test_model_scenarios(
 
 
 if __name__ == "__main__":
-    model_path = f"{MODEL_PATH}_final"
+    model_path = Config.level_manager_path()
+    save_dir = os.path.join(os.path.dirname(__file__), "scenario_test_results")
 
-    results, scenarios = test_model_scenarios(
-        model_path=model_path, save_dir=SAVE_DIR_PATH
-    )
+    results, scenarios = test_model_scenarios(model_path=model_path, save_dir=save_dir)

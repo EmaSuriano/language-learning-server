@@ -1,6 +1,5 @@
 """CRUD operations"""
 
-import os
 from typing import List
 
 from fastapi import HTTPException
@@ -9,16 +8,11 @@ from sqlalchemy.orm import Session
 from sqlalchemy import desc
 
 from models.level_manager import LevelManager, PerformanceMetrics
+from config import Config
 
 from . import models, schemas
 
-# Initialize the LevelManager
-MODEL_PATH = os.getenv("LEVEL_MANAGER_PATH")
-
-assert MODEL_PATH is not None, "Please set the LEVEL_MANAGER_PATH environment variable"
-
-level_manager = LevelManager(model_path=MODEL_PATH)
-
+level_manager = LevelManager(model_path=Config.level_manager_path())
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 

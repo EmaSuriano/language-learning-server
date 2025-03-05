@@ -2,9 +2,10 @@
 
 import os
 import time
-from dotenv import load_dotenv
 from models.kokoro import Kokoro
 import wave
+
+from src.config import Config
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 output_path = os.path.join(current_directory, "assets/example-tts.mp3")
@@ -13,12 +14,9 @@ TEST_TEXT = "Hello, this is a test of the text to speech system. How does it sou
 
 
 def main():
-    # Load environment variables
-    load_dotenv()
-
     # Get configuration from environment
-    KOKORO_LANGUAGE = os.getenv("KOKORO_LANGUAGE")
-    KOKORO_VOICE = os.getenv("KOKORO_VOICE")
+    KOKORO_LANGUAGE = Config.kokoro_language()
+    KOKORO_VOICE = Config.kokoro_voice()
 
     print("\n-----------------------------")
     print("Testing Kokoro configuration:")

@@ -1,5 +1,4 @@
 from collections.abc import AsyncIterator
-import os
 import re
 from textwrap import dedent
 from typing import Any, Dict, List, Literal
@@ -10,15 +9,13 @@ from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel
 
 from database import schemas
+from config import Config
 
 CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
 
 # Get configuration from environment
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
-OLLAMA_URL = os.getenv("OLLAMA_URL")
-
-assert OLLAMA_MODEL is not None, "OLLAMA_MODEL is not set"
-assert OLLAMA_URL is not None, "OLLAMA_URL is not set"
+OLLAMA_MODEL = Config.ollama_model()
+OLLAMA_URL = Config.ollama_url()
 
 
 class ConversationContext(BaseModel):
@@ -92,8 +89,6 @@ class ChatMessage(BaseModel):
     role: Literal["human", "ai"]
     content: str
 
-
-print(OLLAMA_MODEL)
 
 # used for chat communication
 chat = ChatOllama(

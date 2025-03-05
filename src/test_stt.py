@@ -2,8 +2,8 @@
 
 import os
 import time
-from dotenv import load_dotenv
 from models.whisper import Whisper
+from src.config import Config
 
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -11,13 +11,9 @@ file_path = os.path.join(current_directory, "assets/example-stt.mp3")
 
 
 def main():
-    # Load environment variables
-    load_dotenv()
-
-    # Get configuration from environment
-    WHISPER_DEVICE = os.getenv("WHISPER_DEVICE")
-    WHISPER_MODEL_SIZE = os.getenv("WHISPER_MODEL_SIZE")
-    WHISPER_COMPUTE_TYPE = os.getenv("WHISPER_COMPUTE_TYPE")
+    WHISPER_DEVICE = Config.whisper_device()
+    WHISPER_MODEL_SIZE = Config.whisper_model_size()
+    WHISPER_COMPUTE_TYPE = Config.whisper_compute_type()
 
     print("\n-----------------------------")
     print("Testing Whisper configuration:")

@@ -1,17 +1,12 @@
-from dotenv import load_dotenv
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
 from stable_baselines3 import PPO
 from stable_baselines3.common.evaluation import evaluate_policy
 import random
-import os
 from stable_baselines3.common.callbacks import EvalCallback
 
-load_dotenv()
-
-# Get configuration from environment
-MODEL_PATH = os.getenv("LEVEL_MANAGER_PATH")
+from config import Config
 
 
 class LevelAdjustmentEnv(gym.Env):
@@ -500,4 +495,4 @@ def train_and_save_model(total_timesteps=500000, save_path="level_adjustment_mod
 
 if __name__ == "__main__":
     # Train and save the model
-    train_and_save_model(save_path=MODEL_PATH)
+    train_and_save_model(save_path=Config.level_manager_path())

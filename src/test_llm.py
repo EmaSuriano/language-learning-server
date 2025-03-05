@@ -1,10 +1,10 @@
 """Test Ollama configuration and basic functionality"""
 
-import os
-from dotenv import load_dotenv
 from langchain_ollama import OllamaLLM
 from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 import time
+
+from src.config import Config
 
 
 class MeasurementCallback(StreamingStdOutCallbackHandler):
@@ -38,12 +38,8 @@ class MeasurementCallback(StreamingStdOutCallbackHandler):
 
 
 def main():
-    # Load environment variables
-    load_dotenv()
-
-    # Get configuration from environment
-    OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
-    OLLAMA_URL = os.getenv("OLLAMA_URL")
+    OLLAMA_MODEL = Config.ollama_model()
+    OLLAMA_URL = Config.ollama_url()
 
     print("\n-----------------------------")
     print("Testing Ollama configuration:")

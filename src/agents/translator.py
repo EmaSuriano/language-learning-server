@@ -1,21 +1,17 @@
-import os
 from textwrap import dedent
 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama import OllamaLLM
 
 from database import schemas
+from config import Config
 
 
 CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
 
 
-# Get configuration from environment
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
-OLLAMA_URL = os.getenv("OLLAMA_URL")
-
-assert OLLAMA_MODEL is not None, "OLLAMA_MODEL is not set"
-assert OLLAMA_URL is not None, "OLLAMA_URL is not set"
+OLLAMA_MODEL = Config.ollama_model()
+OLLAMA_URL = Config.ollama_url()
 
 llm = OllamaLLM(model=OLLAMA_MODEL, base_url=OLLAMA_URL, temperature=0)
 

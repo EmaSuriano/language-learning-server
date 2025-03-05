@@ -6,16 +6,15 @@ from pathlib import Path
 from fastapi import APIRouter, File, Query, UploadFile
 
 from models.whisper import Whisper
-import os
+
+from config import Config
 
 router = APIRouter(prefix="/stt", tags=["speech-to-text"])
 
-
-# Initialize
 whisper = Whisper(
-    model_size=os.getenv("WHISPER_MODEL_SIZE", "base"),
-    device=os.getenv("WHISPER_DEVICE", "auto"),
-    compute_type=os.getenv("WHISPER_COMPUTE_TYPE", "default"),
+    model_size=Config.whisper_model_size(),
+    device=Config.whisper_device(),
+    compute_type=Config.whisper_compute_type(),
 )
 
 

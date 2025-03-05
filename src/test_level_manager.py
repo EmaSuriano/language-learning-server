@@ -4,11 +4,7 @@ from typing import List
 import numpy as np
 from models.level_manager import LevelManager, PerformanceMetrics
 
-import os
-
-MODEL_PATH = os.getenv("LEVEL_MANAGER_PATH")
-
-assert MODEL_PATH is not None, "Please set the LEVEL_MANAGER_PATH environment variable"
+from config import Config
 
 
 def create_sparkline(values: List[float], width: int = 20) -> str:
@@ -109,7 +105,7 @@ def visualize_metrics(metrics_history: List[PerformanceMetrics], result: dict) -
 
 if __name__ == "__main__":
     # Initialize predictor
-    predictor = LevelManager(model_path=MODEL_PATH)
+    predictor = LevelManager(model_path=Config.level_manager_path())
 
     # Create some example scenarios
     scenarios = [

@@ -1,7 +1,6 @@
 """This module contains the text-to-speech (TTS) API endpoints"""
 
 import io
-import os
 
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse, StreamingResponse
@@ -9,15 +8,14 @@ from huggingface_hub import HfApi
 from pydantic import BaseModel
 
 from models.kokoro import Kokoro
+from config import Config
 
 router = APIRouter(prefix="/tts", tags=["text-to-speech"])
 
 api = HfApi()
 
 
-KOKORO_LANGUAGE = os.getenv("KOKORO_LANGUAGE", "en")
-
-kokoro = Kokoro(default_lang=KOKORO_LANGUAGE)
+kokoro = Kokoro(default_lang=Config.kokoro_language())
 
 
 class CreateSpeechRequestBody(BaseModel):
