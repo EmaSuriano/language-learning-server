@@ -13,6 +13,10 @@ from routers.languages import router as languages_router
 from routers.situations import router as situations_router
 from routers.evaluator import router as evaluator_router
 from routers.learning_session import router as learning_session_router
+from routers.translator import router as translator_router
+from config import Config
+
+Config.print_all()
 
 app = FastAPI()
 
@@ -40,6 +44,7 @@ app.include_router(languages_router)
 app.include_router(situations_router)
 app.include_router(evaluator_router)
 app.include_router(learning_session_router)
+app.include_router(translator_router)
 
 # Allow uvicorn to be executed using `uv run`
 if __name__ == "__main__":

@@ -2,6 +2,7 @@ from textwrap import dedent
 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama import OllamaLLM
+from pydantic import BaseModel
 
 from database import schemas
 from config import Config
@@ -16,13 +17,23 @@ OLLAMA_URL = Config.ollama_url()
 llm = OllamaLLM(model=OLLAMA_MODEL, base_url=OLLAMA_URL, temperature=0)
 
 
+class TranslationResponse(BaseModel):
+    translated_text: str
+    source_language: str
+    target_language: str
+
+    class Config:
+        from_attributes = True
+
+
 async def translate_text(
     content: str,
+    source_language: schemas.Language,
     target_language: schemas.Language,
     level: int,
-) -> str:
+) -> TranslationResponse:
     system_prompt = dedent(
-        f"""Role: You are a translator, and your task is to translate the following text from English to {target_language.name}.
+        f"""Role: You are a translator, and your task is to translate the following text from {source_language.name} to {target_language.name}.
 
         User Level: {CEFR_LEVEL[level - 1]}
 
@@ -53,4 +64,8 @@ async def translate_text(
         },
     )
 
-    return result
+    return TranslationResponse(
+        translated_text=result,
+        source_language=source_language.name,
+        target_language=target_language.name,
+    )

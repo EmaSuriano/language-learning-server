@@ -105,6 +105,17 @@ class Config:
         """Get the level manager path."""
         return cls.get("LEVEL_MANAGER_PATH", default="src/level_manager/model")
 
+    @classmethod
+    def print_all(cls):
+        print(f"Ollama Model: {cls.ollama_model()}")
+        print(f"Ollama URL: {cls.ollama_url()}")
+        print(f"Whisper Model Size: {cls.whisper_model_size()}")
+        print(f"Whisper Device: {cls.whisper_device()}")
+        print(f"Whisper Compute Type: {cls.whisper_compute_type()}")
+        print(f"Kokoro Language: {cls.kokoro_language()}")
+        print(f"Kokoro Voice: {cls.kokoro_voice()}")
+        print(f"Level Manager Path: {cls.level_manager_path()}")
+
 
 # Usage example:
 if __name__ == "__main__":

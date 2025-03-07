@@ -75,10 +75,16 @@ async def _get_example_phrases(
     )
 
     for example in examples:
-        translated_phrase = await translate_text(
-            example.phrase, user.current_language, user.language_level
+        source_language = schemas.Language(
+            id=1, code="en", name="English", has_tts=True
         )
-        example.phrase = translated_phrase
+        translation = await translate_text(
+            content=example.phrase,
+            source_language=source_language,
+            target_language=user.current_language,
+            level=user.language_level,
+        )
+        example.phrase = translation.translated_text
 
     return examples
 
