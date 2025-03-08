@@ -14,7 +14,7 @@ router = APIRouter(prefix="/learning-history", tags=["learning-history"])
 
 @router.post("/", response_model=schemas.LearningHistory)
 async def add_learning_session(
-    session: schemas.LearningHistoryBase, db: Session = Depends(get_db)
+    session: schemas.LearningHistoryCreate, db: Session = Depends(get_db)
 ):
     return DB.create_learning_session(db=db, session=session)
 

@@ -23,6 +23,7 @@ def _user_to_schema(user: models.User) -> schemas.User:
     return schemas.User(
         id=user.id,
         email=user.email,
+        name=user.name,
         current_language=schemas.Language(
             id=user.current_language.id,
             code=user.current_language.code,
@@ -167,9 +168,7 @@ def _session_to_detail_schema(
             scenario_description=session.situation.scenario_description,
             user_goals=session.situation.user_goals,
             difficulty=session.situation.difficulty,
-        )
-        if session.situation
-        else None,
+        ),
         language_id=session.language_id,
         language=schemas.Language(
             id=session.language.id,
@@ -261,7 +260,7 @@ def get_user_learning_sessions(
 
 
 def create_learning_session(
-    db: Session, session: schemas.LearningHistoryBase
+    db: Session, session: schemas.LearningHistoryCreate
 ) -> schemas.LearningHistory:
     """Create a new learning session"""
     # Verify the user exists
@@ -272,7 +271,7 @@ def create_learning_session(
     # Verify the language exists
     language = (
         db.query(models.Language)
-        .filter(models.Language.id == session.language_id)
+        .filter(models.Language.id == user.current_language.id)
         .first()
     )
     if not language:
@@ -303,6 +302,8 @@ def create_learning_session(
     level_change = calculate_level_change(db, metrics, user)
 
     session_data["level_change"] = level_change
+    session_data["level"] = user.language_level
+    session_data["language_id"] = language.id
 
     db_session = models.LearningHistory(**session_data)
 

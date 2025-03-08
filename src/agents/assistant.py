@@ -1,4 +1,5 @@
 from collections.abc import AsyncIterator
+from enum import Enum
 import re
 from textwrap import dedent
 from typing import Any, Dict, List, Literal
@@ -11,11 +12,24 @@ from pydantic import BaseModel
 from database import schemas
 from config import Config
 
-CEFR_LEVEL = ["A1", "A2", "B1", "B2", "C1", "C2"]
+
+# Define CEFR levels as an Enum for type safety and clarity
+class CEFRLevel(str, Enum):
+    A1 = "A1 (Beginner)"
+    A2 = "A2 (Elementary)"
+    B1 = "B1 (Intermediate)"
+    B2 = "B2 (Upper Intermediate)"
+    C1 = "C1 (Advanced)"
+    C2 = "C2 (Proficiency)"
+
 
 # Get configuration from environment
 OLLAMA_MODEL = Config.ollama_model()
 OLLAMA_URL = Config.ollama_url()
+
+
+MAX_RESPONSE_LENGTH = 120
+CEFR_LEVELS = [level.value for level in CEFRLevel]
 
 
 class ConversationContext(BaseModel):
@@ -28,9 +42,33 @@ class ConversationContext(BaseModel):
 def _generate_system_prompt(
     context: ConversationContext, role: Literal["human", "ai"]
 ) -> str:
-    cefr_level = CEFR_LEVEL[context.user.language_level - 1]
+    cefr_level = CEFR_LEVELS[context.user.language_level - 1]
+
+    communication_guidelines = [
+        f"1. Language: Respond only in {context.user.current_language.name}",
+        f"2. Proficiency: Use language appropriate for CEFR level {cefr_level}",
+        "3. Style: Write natural, conversational responses",
+        f"4. Length: Keep responses concise (max {MAX_RESPONSE_LENGTH} characters)",
+    ]
+
+    interaction_rules = [
+        "- Provide only ONE answer or question per response",
+        "- Maintain a natural conversation flow",
+        "- Avoid bullet points or lists in responses",
+    ]
 
     if role == "ai":
+        communication_guidelines.append(
+            f"5. Answer in first person assuming your role of {context.situation.system_role}"
+        )
+
+        ai_specific_rules = [
+            "- Ask only ONE question per response",
+            "- Wait for the user's answer before proceeding",
+            "- Guide the conversation according to the scenario",
+            "- If the user tries to change the topic, gently guide them back to the scenario",
+        ]
+
         return dedent(
             f"""Role: {context.situation.system_role}
 
@@ -38,24 +76,20 @@ def _generate_system_prompt(
             {"\n".join(f"• {instruction}" for instruction in context.situation.system_instructions)}
 
             Communication Guidelines:
-            1. Language: Respond only in {context.user.current_language.name}
-            2. Proficiency: Use language appropriate for CEFR level {cefr_level}
-            3. Style: Write natural, conversational responses
-            4. Length: Keep responses concise (max 120 characters)
-            5. Answer in first person assuming yor role of {context.situation.system_role}
+            {"\n".join(communication_guidelines)}
 
             Interaction Rules:
-            - Ask only ONE question per response
-            - Wait for the user's answer before proceeding
-            - Maintain a natural conversation flow
-            - Avoid bullet points or lists in responses
-            - Guide the conversation according to the scenario
-            - In case the user try to change the topic, gently guide them back to the scenario
+            {"\n".join(interaction_rules + ai_specific_rules)}
 
             Remember: Your goal is to help the user practice {context.user.current_language.name} while completing the given scenario naturally and effectively.
-        """
+            """
         )
     else:
+        human_specific_rules = [
+            "- Focus on the goals that you need to achieve",
+            "- Guide the conversation according to the scenario",
+        ]
+
         return dedent(
             f"""Role: You are a student learning {context.user.current_language.name}
 
@@ -65,17 +99,10 @@ def _generate_system_prompt(
             {"\n".join(f"• {goal}" for goal in context.situation.user_goals)}
 
             Interaction Rules:
-            - Provide only ONE answer or question per response
-            - Focus on the goals that you need to achieve
-            - Maintain a natural conversation flow
-            - Avoid bullet points or lists in responses
-            - Guide the conversation according to the scenario
+            {"\n".join(interaction_rules + human_specific_rules)}
 
             Communication Guidelines:
-            1. Language: Respond only in {context.user.current_language.name}
-            2. Proficiency: Use language appropriate for CEFR level {cefr_level}
-            3. Style: Write natural, conversational responses
-            4. Length: Keep responses concise (max 120 characters)
+            {"\n".join(communication_guidelines)}
             """
         )
 
@@ -213,15 +240,17 @@ async def _get_goal_progress(
         dedent("""{system_prompt}
 
         Conversation:
-        {conversation}
+        "{conversation}"
 
-        User goal:
-        {goal}
+        Specific goal:
+        "{goal}"
 
         IMPORTANT:
-        - Provide only 0 or 1 as the ouput.
-        - 0 means the user has not achieved the goal.
-        - 1 means the user has achieved the goal.
+        - Provide only 0 or 1 as the output (1 digit only).
+        - 0 means the user has NOT achieved the goal.
+        - 1 means the user has definitely achieved the goal.
+        - Be strict in your evaluation. If there's any doubt, return 0.
+        - The goal must be explicitly achieved in the conversation, not just implied or mentioned.
         """),
     )
 
@@ -234,6 +263,16 @@ async def _get_goal_progress(
     conversation_text = "\n".join(
         [f"{msg.role.upper()}: {msg.content}" for msg in chat_messages]
     )
+
+    # Format the final prompt
+    formatted_prompt = prompt.format(
+        system_prompt=system_prompt,
+        conversation=conversation_text,
+        goal=goal,
+    )
+
+    # Print the full prompt
+    print("Full prompt before AI invocation:\n", formatted_prompt)
 
     # Run the chain
     result = await chain.ainvoke(

@@ -74,44 +74,20 @@ async def _get_example_phrases(
         k=5,
     )
 
+    source_language_rag = schemas.Language(
+        id=1, code="en", name="English", has_tts=True
+    )
+
     for example in examples:
-        source_language = schemas.Language(
-            id=1, code="en", name="English", has_tts=True
-        )
         translation = await translate_text(
             content=example.phrase,
-            source_language=source_language,
+            source_language=source_language_rag,
             target_language=user.current_language,
             level=user.language_level,
         )
         example.phrase = translation.translated_text
 
     return examples
-
-
-def _generate_system_prompt(
-    context: ConversationContext,
-    rag_evaluator: RAGLanguageEvaluator,
-) -> str:
-    cefr_level = CEFR_LEVEL[context.user.language_level - 1]
-
-    return dedent(
-        f"""Role: You are a language evaluator, and you are evaluating a conversation between a user and a system.
-
-        Communication Guidelines:
-            1. Language: Respond only in {context.user.current_language.name}
-            2. Report: Provide a detailed report on the user's language usage
-            3. Provide feedback when necessary
-            4. Be professional and respectful
-
-        User Level: {cefr_level}
-        
-        Context: {context.situation.scenario_description}
-
-        Goals of the user:
-        {"\n".join(f"• {goal}" for goal in context.situation.user_goals)}
-     """
-    )
 
 
 async def get_chat_report(
@@ -140,7 +116,7 @@ async def get_chat_report(
     - Compare the user's language with the provided example phrases for their level
     - Pay special attention to whether they use language appropriate for their level
     - Look for appropriate use of formal/informal language based on the context
-    - Remember to keep the same language as the conversation
+    - Language: Respond only in {language}
     - Only return the section of the report that corresponds to the metric
 
     Conversation:
@@ -173,6 +149,7 @@ async def get_chat_report(
             "conversation": conversation_text,
             "examples": examples_text,
             "goals": goals_text,
+            "language": user.current_language.name,
         }
     ):
         yield chunk

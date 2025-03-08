@@ -66,6 +66,7 @@ def reset_db():
             current_language=current_language,
             language_level=1,
             voice_id="af_alloy",
+            name="John Doe",
         )
     )
 

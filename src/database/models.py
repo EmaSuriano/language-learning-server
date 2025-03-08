@@ -75,13 +75,12 @@ class User(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
     email: Mapped[str] = mapped_column(String, unique=True, index=True)
+    name: Mapped[str] = mapped_column(String)
     hashed_password: Mapped[str] = mapped_column(String)
 
     # One-to-one relationship with Language
-    current_language_id: Mapped[Optional[int]] = mapped_column(
-        ForeignKey("languages.id")
-    )
-    current_language: Mapped[Optional[Language]] = relationship("Language")
+    current_language_id: Mapped[int] = mapped_column(ForeignKey("languages.id"))
+    current_language: Mapped[Language] = relationship("Language")
     voice_id: Mapped[str | None] = mapped_column(String)
 
     # Store CEFR level directly in user

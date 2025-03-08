@@ -4,7 +4,7 @@ from datetime import datetime
 from enum import IntEnum, Enum
 from typing import List, Optional
 
-from pydantic import BaseModel, EmailStr, Field, field_validator
+from pydantic import BaseModel, EmailStr, Field
 
 
 class CEFRLevel(IntEnum):
@@ -49,6 +49,10 @@ class SituationSystem(SituationClient):
 
 class UserBase(BaseModel):
     email: EmailStr
+    language_level: CEFRLevel = Field(
+        CEFRLevel.A1, description="CEFR level of the user"
+    )
+    name: str = Field(min_length=1, description="User name")
 
 
 class UserCreate(UserBase):
@@ -56,13 +60,12 @@ class UserCreate(UserBase):
     language_code: str = Field(
         "en", description="Language code the user wants to learn"
     )
-    language_level: CEFRLevel = Field(
-        CEFRLevel.A1, description="CEFR level of the user"
-    )
+
     voice_id: str = Field("af_alloy", description="Voice for the TTS service")
 
 
 class UserUpdate(BaseModel):
+    name: Optional[str] = None
     email: Optional[EmailStr] = None
     language_code: Optional[str] = None
     language_level: Optional[CEFRLevel] = None
@@ -72,7 +75,6 @@ class UserUpdate(BaseModel):
 class User(UserBase):
     id: int
     current_language: Language
-    language_level: CEFRLevel
     voice_id: str | None
 
     class Config:
@@ -91,8 +93,6 @@ class LearningHistoryBase(BaseModel):
     situation_id: Optional[int] = Field(
         None, description="ID of the situation used in the session"
     )
-    language_id: int = Field(..., description="ID of the language being learned")
-    level: CEFRLevel = Field(..., description="CEFR level of the session")
     date: datetime = Field(
         default_factory=datetime.utcnow, description="Date of the learning session"
     )
@@ -114,6 +114,9 @@ class LearningHistoryCreate(LearningHistoryBase):
 
 class LearningHistory(LearningHistoryBase):
     id: int
+    language_id: int = Field(..., description="ID of the language being learned")
+    level: CEFRLevel = Field(..., description="CEFR level of the session")
+
     # Level change recommendation calculated by the LevelManager
     level_change: LevelChangeType = Field(
         LevelChangeType.MAINTAIN, description="Level change recommendation"
