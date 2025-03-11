@@ -38,6 +38,8 @@ jobs:
         run: |
           uv venv .venv
           source .venv/bin/activate
+          # Ensure pip is available
+          uv run -- python -m ensurepip
           # Install minimal dependencies directly with uv add
           uv add fastapi uvicorn fastapi-pretty-errors pydantic pydantic-extra-types python-dotenv
 
