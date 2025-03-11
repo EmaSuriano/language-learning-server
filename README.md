@@ -124,20 +124,6 @@ python src/test_tts.py
 python src/test_level_manager.py
 ```
 
-## Expose local server with
-
-Expose WSL route to the network
-
-```bash
-> netsh interface portproxy add v4tov4 listenport=8000 listenaddress=0.0.0.0 connectport=8000 connectaddress=172.27.122.158
-```
-
-## Ensure pip
-
-```bash
-> uv run -- python -m ensurepip
-```
-
 ## License
 
 [MIT License](LICENSE)
