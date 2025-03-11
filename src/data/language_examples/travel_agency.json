@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I want to go on vacation.",
+        "level": "A1",
+        "context": "Basic vacation request"
+    },
+    {
+        "phrase": "How much is it?",
+        "level": "A1",
+        "context": "Simple price inquiry"
+    },
+    {
+        "phrase": "When can I go?",
+        "level": "A1",
+        "context": "Basic timing question"
+    },
+    {
+        "phrase": "Where is good?",
+        "level": "A1",
+        "context": "Simple destination inquiry"
+    },
+    {
+        "phrase": "Is hotel included?",
+        "level": "A1",
+        "context": "Basic inclusion question"
+    },
+    {
+        "phrase": "Do I need a passport?",
+        "level": "A1",
+        "context": "Simple document inquiry"
+    },
+    {
+        "phrase": "Can I cancel?",
+        "level": "A1",
+        "context": "Basic cancellation question"
+    },
+    {
+        "phrase": "Is it hot there?",
+        "level": "A1",
+        "context": "Simple weather inquiry"
+    },
+    {
+        "phrase": "How long is the flight?",
+        "level": "A1",
+        "context": "Basic travel time question"
+    },
+    {
+        "phrase": "I want something cheap.",
+        "level": "A1",
+        "context": "Simple budget statement"
+    },
+    {
+        "phrase": "I'd like to plan a vacation for next month.",
+        "level": "A2",
+        "context": "Vacation planning request"
+    },
+    {
+        "phrase": "What destinations can I visit with a budget of $2,000?",
+        "level": "A2",
+        "context": "Specific budget inquiry"
+    },
+    {
+        "phrase": "I can travel between June 10th and June 24th.",
+        "level": "A2",
+        "context": "Date range specification"
+    },
+    {
+        "phrase": "Can you recommend some beach destinations?",
+        "level": "A2",
+        "context": "Destination type inquiry"
+    },
+    {
+        "phrase": "Does this package include flights and hotel?",
+        "level": "A2",
+        "context": "Package inclusion inquiry"
+    },
+    {
+        "phrase": "What documents do I need to travel to Mexico?",
+        "level": "A2",
+        "context": "Travel document inquiry"
+    },
+    {
+        "phrase": "What's your cancellation policy?",
+        "level": "A2",
+        "context": "Policy inquiry"
+    },
+    {
+        "phrase": "What's the weather like in Bali in September?",
+        "level": "A2",
+        "context": "Specific weather inquiry"
+    },
+    {
+        "phrase": "Are there direct flights to this destination?",
+        "level": "A2",
+        "context": "Flight option inquiry"
+    },
+    {
+        "phrase": "I prefer a vacation with lots of activities.",
+        "level": "A2",
+        "context": "Preference statement"
+    },
+    {
+        "phrase": "I'm looking to plan a vacation for myself and my partner in the coming months. We have a budget of around $3,000 total and can travel for about 10 days. Could you suggest some destinations that would be suitable for us?",
+        "level": "B1",
+        "context": "Detailed vacation planning request"
+    },
+    {
+        "phrase": "I'm interested in finding a destination that offers good value for money during the shoulder season. What places would you recommend that have nice weather but aren't too crowded or expensive in late September?",
+        "level": "B1",
+        "context": "Value and timing inquiry"
+    },
+    {
+        "phrase": "We're flexible with our travel dates in October, but would prefer to avoid weekends for the flights if possible. How much could we save by traveling mid-week, and which dates would you recommend?",
+        "level": "B1",
+        "context": "Flexible scheduling inquiry"
+    },
+    {
+        "phrase": "I'm torn between a cultural city break and a relaxing beach vacation. Could you compare some options that might offer a good balance of both, ideally somewhere with direct flights from our city?",
+        "level": "B1",
+        "context": "Destination type comparison request"
+    },
+    {
+        "phrase": "For the all-inclusive package you mentioned, could you explain exactly what's covered? I want to understand if things like airport transfers, excursions, and alcoholic drinks are included or if they cost extra.",
+        "level": "B1",
+        "context": "Comprehensive inclusion inquiry"
+    },
+    {
+        "phrase": "My passport expires in seven months. Will that be enough time for traveling to Thailand, or do I need to renew it first? Also, are there any visa requirements or other documents I should prepare?",
+        "level": "B1",
+        "context": "Detailed travel document inquiry"
+    },
+    {
+        "phrase": "Could you explain your booking and cancellation policies? I'm a bit concerned about the possibility of having to change our plans, so I'd like to understand what flexibility we have and if travel insurance would be recommended.",
+        "level": "B1",
+        "context": "Policy and insurance inquiry"
+    },
+    {
+        "phrase": "What's the typical climate in Costa Rica during the rainy season? I've heard it doesn't rain all day, but I want to make sure we'd still be able to enjoy outdoor activities if we travel in August.",
+        "level": "B1",
+        "context": "Seasonal weather inquiry"
+    },
+    {
+        "phrase": "For the flight options to Greece, could you tell me about the layover times and which airlines you'd recommend? I prefer to minimize connection times but also want a reliable carrier with decent legroom.",
+        "level": "B1",
+        "context": "Detailed flight preference inquiry"
+    },
+    {
+        "phrase": "We enjoy a mix of relaxation and cultural experiences when we travel. Could you recommend a destination that offers beautiful beaches but also has interesting historical sites and good local cuisine within easy reach?",
+        "level": "B1",
+        "context": "Balanced experience request"
+    },
+    {
+        "phrase": "I'm in the initial stages of planning a vacation for my partner and myself, with a flexible budget ceiling of approximately $3,500. We're looking at a timeframe of 10-14 days in either late April or early May. Given these parameters, I'd appreciate your insights on destinations that offer an optimal balance of cultural enrichment and natural beauty, particularly locations that might be experiencing ideal weather conditions and lower tourist density during this shoulder season.",
+        "level": "B2",
+        "context": "Sophisticated vacation planning consultation"
+    },
+    {
+        "phrase": "I'm endeavoring to identify destinations that offer exceptional value propositions during transitional travel periods. Specifically, I'm interested in regions where the intersection of favorable weather patterns, reduced visitor numbers, and potential pricing advantages create particularly attractive opportunities in the October timeframe. Could you suggest locations where these factors align optimally?",
+        "level": "B2",
+        "context": "Advanced value optimization inquiry"
+    },
+    {
+        "phrase": "Our schedule permits considerable flexibility within the second and third weeks of June. I'm interested in understanding how strategic selection of departure and return dates might influence both pricing and the overall travel experience, particularly regarding flight availability, airport congestion, and accommodation rates at our potential destinations.",
+        "level": "B2",
+        "context": "Strategic scheduling optimization inquiry"
+    },
+    {
+        "phrase": "I find myself drawn to destinations that successfully integrate distinct experiential elements—perhaps an urban center with architectural significance that's proximate to either coastal amenities or notable topographical features. I'd value your perspective on locations that organically blend these different aspects without requiring excessive internal transit once we've arrived.",
+        "level": "B2",
+        "context": "Integrated experience destination inquiry"
+    },
+    {
+        "phrase": "Regarding the comprehensive packages you've outlined, I'd appreciate a more granular breakdown of inclusions and exclusions. Specifically, I'm interested in understanding the caliber of accommodations, the nature of included dining options, the extent of beverage provisions, and whether activities or excursions feature standardized group formats or offer more individualized experiences.",
+        "level": "B2",
+        "context": "Detailed package component analysis request"
+    },
+    {
+        "phrase": "I understand that travel documentation requirements can be rather nuanced. Given that my passport will have approximately eight months' validity remaining, I'd like to confirm its adequacy for my intended destination, including any minimum validity stipulations. Additionally, I'd appreciate information regarding visa processes, potential health documentation requirements, and any other regulatory considerations for entry and exit.",
+        "level": "B2",
+        "context": "Comprehensive travel documentation inquiry"
+    },
+    {
+        "phrase": "I'd like to develop a thorough understanding of the contractual flexibility associated with this booking. Could you elaborate on the conditions governing potential date modifications, the specific cancellation fee structure at various intervals prior to departure, and how comprehensive travel insurance policies might mitigate these potential financial exposures?",
+        "level": "B2",
+        "context": "Advanced booking terms analysis request"
+    },
+    {
+        "phrase": "I'm particularly interested in the microclimatic patterns of the Adriatic coast during late September. Beyond general temperature and precipitation averages, I'd value insights regarding typical daily weather progression, sea temperatures, prevailing wind patterns, and how these factors might influence both comfort levels and the feasibility of various outdoor pursuits.",
+        "level": "B2",
+        "context": "Detailed climatological inquiry"
+    },
+    {
+        "phrase": "For our trans-Atlantic journey, I'm interested in evaluating the relative merits of various routing options and carriers. Could you compare the primary airlines serving this corridor in terms of on-time performance, aircraft configuration on this specific route, quality of service, and the efficiency of their respective hub operations for our potential connection?",
+        "level": "B2",
+        "context": "Comparative airline analysis request"
+    },
+    {
+        "phrase": "We tend to appreciate destinations that offer a harmonious equilibrium between cultural immersion opportunities and natural environmental engagement. Could you suggest locations where this balance is particularly well-executed, perhaps places where historical or artistic significance coexists with exceptional landscape features or biodiversity, all within a coherent geographic sphere?",
+        "level": "B2",
+        "context": "Balanced destination philosophy inquiry"
+    },
+    {
+        "phrase": "I find myself contemplating a sojourn with my partner during the transitional period between winter and spring, specifically within a temporal window of approximately twelve to fourteen days. Our financial parameters are somewhat elastic, though generally circumscribed within the vicinity of $3,500 to $4,000 inclusive of primary transportation and accommodation. I'm particularly drawn to destinations that occupy that fascinating liminal space between emerging from their traditional low season yet preceding the full flowering of peak tourist influx—regions where the convergence of climatic amelioration, cultural authenticity, and relative tranquility might create an especially propitious travel experience.",
+        "level": "C1",
+        "context": "Highly sophisticated travel planning consultation"
+    },
+    {
+        "phrase": "I'm interested in exploring destinations that present particularly advantageous value propositions during seasonal inflection points. Specifically, I'm drawn to regions where the interplay between meteorological patterns, tourism cyclicality, and market dynamics creates windows of opportunity that might elude more conventional planning approaches. Could you illuminate some locations where these multidimensional factors align in particularly favorable configurations during the early autumn period?",
+        "level": "C1",
+        "context": "Complex value alignment analysis request"
+    },
+    {
+        "phrase": "Our professional obligations afford us considerable scheduling latitude within a broadly defined mid-summer window. I'm curious about the potentially significant impact of even minor adjustments to departure and return timing, not merely from a financial perspective, but also considering the cascading effects on airport experiences, flight load factors, accommodation availability, and the overall destination atmosphere during subtle shifts within this seasonal framework.",
+        "level": "C1",
+        "context": "Nuanced timing optimization consultation"
+    },
+    {
+        "phrase": "I find myself drawn to destinations characterized by a certain geographical duality or complementarity—perhaps urban environments of cultural or historical significance situated within proximity to compelling natural landscapes, creating the possibility for multifaceted experiential narratives within a single journey. I'm particularly interested in locations where this juxtaposition feels organic rather than contrived, and where transitions between these different experiential spheres can be accomplished with relative logistical elegance.",
+        "level": "C1",
+        "context": "Sophisticated destination characteristic inquiry"
+    },
+    {
+        "phrase": "Regarding the comprehensive travel packages you've presented, I'd appreciate a more granular examination of their constituent elements. Beyond the obvious delineation of inclusions and exclusions, I'm interested in understanding the qualitative dimensions of these components—the specific character and caliber of accommodations, the gastronomic philosophy informing dining provisions, the balance between structured and autonomous experiences, and the degree to which these elements have been curated to create a coherent overall experience rather than merely bundled for convenience.",
+        "level": "C1",
+        "context": "Detailed package philosophy analysis"
+    },
+    {
+        "phrase": "The labyrinthine nature of international travel documentation presents a fascinating regulatory landscape to navigate. Given the specific parameters of my travel documents—my passport having approximately eight months of validity remaining—I'd like to confirm its adequacy vis-à-vis my intended destination's entry requirements, including any nuanced validity stipulations that might apply. Additionally, I'd value comprehensive insight regarding visa application protocols, potential reciprocity fee structures, health certification requirements, and any other documentary contingencies that might influence the administrative dimensions of this journey.",
+        "level": "C1",
+        "context": "Comprehensive documentation requirement analysis"
+    },
+    {
+        "phrase": "I'm interested in developing a sophisticated understanding of the contractual framework governing this potential booking, particularly regarding the spectrum of flexibility it might afford. Could you elaborate on the specific conditions and financial implications associated with potential itinerary modifications, the graduated structure of cancellation penalties at various intervals preceding departure, and the potential risk mitigation strategies offered through comprehensive travel protection policies, including any noteworthy coverage limitations or exclusions?",
+        "level": "C1",
+        "context": "Advanced booking terms and insurance analysis"
+    },
+    {
+        "phrase": "I'm particularly intrigued by the microclimatic patterns that characterize the Mediterranean basin during the late spring shoulder season. Beyond the statistical aggregates of temperature and precipitation norms, I'm interested in understanding the more textured climatological reality—diurnal temperature variations, prevailing wind patterns and their local effects, typical cloud behavior and its impact on light quality, humidity levels and their perceptual implications, and how these factors collectively influence both comfort parameters and the feasibility of various outdoor pursuits.",
+        "level": "C1",
+        "context": "Sophisticated climatological analysis request"
+    },
+    {
+        "phrase": "For the intercontinental segment of our journey, I'm interested in conducting a multifaceted evaluation of carrier options that extends beyond mere scheduling convenience. Could you provide a comparative analysis of the principal airlines servicing this corridor, addressing factors such as the specific aircraft types deployed on these routes and their cabin configurations, the carriers' operational reliability metrics, their approach to customer service recovery during irregular operations, the efficiency of their respective hub infrastructures for our potential connection, and perhaps any distinctive service elements that might materially influence the travel experience?",
+        "level": "C1",
+        "context": "Comprehensive airline service analysis"
+    },
+    {
+        "phrase": "We tend to gravitate toward destinations that offer a certain harmonic balance between cultural immersion and natural engagement—locations where the anthropological and geological narratives seem to inform and complement one another. I'm particularly drawn to places where historical or artistic significance exists in meaningful dialogue with exceptional landscape features or ecological diversity, creating opportunities for a travel experience that feels intellectually coherent yet experientially varied. Could you suggest destinations where this particular equilibrium seems to have been achieved with unusual success?",
+        "level": "C1",
+        "context": "Philosophical destination balance inquiry"
+    },
+    {
+        "phrase": "I find myself contemplating the curious intersection of temporal liminality and geographical displacement that characterizes the modern travel experience, particularly as I consider a potential sojourn with my partner during that fascinating threshold between winter's reluctant retreat and spring's tentative emergence. The financial parameters of our prospective odyssey remain somewhat fluid, though broadly circumscribed within the realm of what might be considered upper-middle market allocations for a fortnight's absence from our quotidian existence. I'm especially intrigued by destinations that themselves exist in transitional states during this period—regions experiencing their own seasonal metamorphosis, where the convergence of climatic amelioration, pre-peak tranquility, and cultural authenticity might engender particularly meaningful encounters with both place and self.",
+        "level": "C2",
+        "context": "Philosophical travel temporality discourse"
+    },
+    {
+        "phrase": "The concept of 'value' in travel contexts presents a fascinating study in subjective valuation and temporal arbitrage. I find myself drawn to exploring the market inefficiencies and asymmetric information dynamics that create what one might call 'temporal value pockets'—those curious interstices in the tourism calendar where the prevailing pricing models have yet to fully reconcile with the actual experiential quality available at certain destinations. Might you illuminate some particularly intriguing examples of such discontinuities in the value-experience relationship that typically materialize during the autumnal transition?",
+        "level": "C2",
+        "context": "Travel market inefficiency philosophy"
+    },
+    {
+        "phrase": "The relationship between temporal selection and travel experience quality represents a multidimensional optimization problem of considerable complexity. Beyond the obvious financial implications, I find myself reflecting on the subtle cascade of consequences that can flow from seemingly minor adjustments to arrival and departure timing—the qualitative shifts in everything from airport kinetics to destination rhythm, from service delivery attitudes to the collective psychological state of fellow travelers. How might one approach this temporal fine-tuning to enhance the holistic journey experience rather than merely its economic dimensions?",
+        "level": "C2",
+        "context": "Travel timing philosophy discourse"
+    },
+    {
+        "phrase": "The juxtaposition of the urban and the natural within travel contexts presents an interesting lens through which to examine broader questions of human experience and perceptual contrast. I find myself contemplating destinations that embody a certain geographical dialectic—places where the evidently anthropogenic and the seemingly pristine exist not merely in proximity but in meaningful dialogue with one another, creating a synthesis that transcends the mere sum of these experiential parts. I wonder about locations where this conversation between the cultural and the natural feels particularly eloquent or revealing of something essential about both spheres.",
+        "level": "C2",
+        "context": "Destination dialectic philosophy"
+    },
+    {
+        "phrase": "The notion of the 'package' in travel contexts raises intriguing questions about curation, authenticity, and the mediation of experience. I find myself reflecting on the distinction between genuinely integrated experiential narratives and mere bundles of logistical convenience—between journeys crafted with coherent intentionality and those assembled primarily through operational expedience. I wonder about your perspective on how one might discern the philosophical underpinnings of various package offerings, particularly regarding their implicit assumptions about the nature of meaningful travel experience.",
+        "level": "C2",
+        "context": "Travel package philosophy discourse"
+    },
+    {
+        "phrase": "The documentary infrastructure of international mobility presents a fascinating study in the tension between sovereign authority and globalizing forces. The passport—simultaneously an instrument of personal freedom and state control—exemplifies this paradox. As I contemplate the regulatory frameworks governing my prospective journey, I find myself reflecting on how these bureaucratic artifacts and processes not only facilitate movement but fundamentally shape and constrain the modern travel experience in ways that often transcend their ostensible functions. I wonder about your thoughts on navigating these systems not merely for compliance but with an awareness of their deeper significance.",
+        "level": "C2",
+        "context": "Travel documentation philosophy"
+    },
+    {
+        "phrase": "The contractual dimension of travel arrangements presents an interesting case study in the formalization of uncertainty and the monetization of future contingency. I find the graduated structure of cancellation penalties particularly revealing of how the industry conceptualizes the relationship between commitment temporality and financial obligation. I wonder about your perspective on how these risk allocation mechanisms have evolved, and whether they reflect a reasonable equilibrium between operator security and traveler flexibility, particularly when considered alongside the parallel market in risk mitigation through travel protection products.",
+        "level": "C2",
+        "context": "Travel contract philosophy discourse"
+    },
+    {
+        "phrase": "The meteorological dimension of travel planning invites reflection on our complicated relationship with natural systems both as constraints and as attractions. I find myself contemplating the curious paradox wherein we simultaneously seek to minimize weather's inconvenient aspects while actively pursuing its aesthetic manifestations. The Mediterranean littoral during the vernal transition offers a particularly interesting case study in this duality. I wonder about your thoughts on how climatic knowledge might inform not merely logistical planning but a deeper engagement with the atmospheric phenomena that so profoundly shape the sensory experience of place.",
+        "level": "C2",
+        "context": "Travel meteorology philosophy"
+    },
+    {
+        "phrase": "The evolution of air travel from exceptional luxury to mass commodity represents a fascinating study in how technological democratization transforms experiential expectations. Yet within this broadly accessible system, such intriguing stratifications persist. I find myself reflecting on how carrier selection transcends mere transportation utility to become a significant dimension of the journey itself—how the metal tube in which one traverses vast distances becomes not merely conveyance but context for hours of one's finite existence. I wonder about your perspective on how one might approach this selection as something more meaningful than mere logistical necessity.",
+        "level": "C2",
+        "context": "Air travel philosophy discourse"
+    },
+    {
+        "phrase": "The notion of 'balance' in destination selection invites interesting questions about the nature of travel satisfaction and the psychological dynamics of novelty and contrast. I find myself contemplating whether the appeal of places offering diversity of experience—cultural richness alongside natural beauty, historical depth alongside sensory pleasure—might reflect something fundamental about human perception and our attraction to certain kinds of cognitive or experiential variety. I wonder about your thoughts on how this apparent preference for multidimensional destinations might relate to broader questions about attention, stimulation, and the optimal conditions for meaningful engagement with place.",
+        "level": "C2",
+        "context": "Destination psychology philosophy"
+    }
+]

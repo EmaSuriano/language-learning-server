@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "Where are the books?",
+        "level": "A1",
+        "context": "Basic location inquiry"
+    },
+    {
+        "phrase": "Can I borrow this book?",
+        "level": "A1",
+        "context": "Basic borrowing inquiry"
+    },
+    {
+        "phrase": "Where is the catalog?",
+        "level": "A1",
+        "context": "Basic system inquiry"
+    },
+    {
+        "phrase": "I need help, please.",
+        "level": "A1",
+        "context": "Basic assistance request"
+    },
+    {
+        "phrase": "Do you have this book?",
+        "level": "A1",
+        "context": "Basic availability inquiry"
+    },
+    {
+        "phrase": "Where is the bathroom?",
+        "level": "A1",
+        "context": "Basic facilities inquiry"
+    },
+    {
+        "phrase": "Can I use a computer?",
+        "level": "A1",
+        "context": "Basic resource access"
+    },
+    {
+        "phrase": "What time do you close?",
+        "level": "A1",
+        "context": "Basic hours inquiry"
+    },
+    {
+        "phrase": "How many books can I take?",
+        "level": "A1",
+        "context": "Basic borrowing rules"
+    },
+    {
+        "phrase": "I need a library card.",
+        "level": "A1",
+        "context": "Basic membership request"
+    },
+    {
+        "phrase": "Where can I find books about history?",
+        "level": "A2",
+        "context": "Specific section inquiry"
+    },
+    {
+        "phrase": "How long can I borrow books for?",
+        "level": "A2",
+        "context": "Borrowing period inquiry"
+    },
+    {
+        "phrase": "Do you have any books by this author?",
+        "level": "A2",
+        "context": "Author-specific inquiry"
+    },
+    {
+        "phrase": "Can you help me search the catalog?",
+        "level": "A2",
+        "context": "Catalog assistance request"
+    },
+    {
+        "phrase": "Is there a fee for late returns?",
+        "level": "A2",
+        "context": "Late fee inquiry"
+    },
+    {
+        "phrase": "Do you have any study rooms available?",
+        "level": "A2",
+        "context": "Study space inquiry"
+    },
+    {
+        "phrase": "Can I renew my books online?",
+        "level": "A2",
+        "context": "Renewal process inquiry"
+    },
+    {
+        "phrase": "Do you have audiobooks?",
+        "level": "A2",
+        "context": "Alternative format inquiry"
+    },
+    {
+        "phrase": "How do I print documents here?",
+        "level": "A2",
+        "context": "Printing service inquiry"
+    },
+    {
+        "phrase": "Are there any quiet areas to study?",
+        "level": "A2",
+        "context": "Study environment inquiry"
+    },
+    {
+        "phrase": "I'm doing research on climate change and would like to find some recent academic articles on the topic.",
+        "level": "B1",
+        "context": "Specific research assistance"
+    },
+    {
+        "phrase": "Could you show me how to use the electronic databases for my research?",
+        "level": "B1",
+        "context": "Digital resource guidance"
+    },
+    {
+        "phrase": "I'm looking for primary sources about the Civil War for a history project.",
+        "level": "B1",
+        "context": "Specific material type request"
+    },
+    {
+        "phrase": "Do you offer interlibrary loans if you don't have the book I need?",
+        "level": "B1",
+        "context": "Extended services inquiry"
+    },
+    {
+        "phrase": "Could you recommend some reliable sources for my research on renewable energy?",
+        "level": "B1",
+        "context": "Source recommendation request"
+    },
+    {
+        "phrase": "I need to cite this book in APA format. Can you help me with that?",
+        "level": "B1",
+        "context": "Citation assistance"
+    },
+    {
+        "phrase": "Do you have access to journal databases like JSTOR or ScienceDirect?",
+        "level": "B1",
+        "context": "Specific database inquiry"
+    },
+    {
+        "phrase": "What's the difference between peer-reviewed articles and regular publications?",
+        "level": "B1",
+        "context": "Research methodology inquiry"
+    },
+    {
+        "phrase": "Could you help me find resources that are suitable for undergraduate level research?",
+        "level": "B1",
+        "context": "Level-appropriate resource request"
+    },
+    {
+        "phrase": "Are there any workshops on research skills that the library offers?",
+        "level": "B1",
+        "context": "Educational service inquiry"
+    },
+    {
+        "phrase": "I'm conducting a literature review on the psychological effects of social media use among adolescents and would appreciate guidance on identifying the most relevant scholarly sources.",
+        "level": "B2",
+        "context": "Comprehensive research guidance"
+    },
+    {
+        "phrase": "Could you explain the advanced search functions in the catalog that would help me narrow down results by publication date, peer-review status, and methodology?",
+        "level": "B2",
+        "context": "Advanced search technique inquiry"
+    },
+    {
+        "phrase": "I'm trying to locate primary source documents from the early 20th century that might not be digitized yet. What would be the best approach to finding these materials?",
+        "level": "B2",
+        "context": "Specialized material location strategy"
+    },
+    {
+        "phrase": "Do you have any recommendations for managing a large collection of research citations across multiple projects?",
+        "level": "B2",
+        "context": "Research organization advice"
+    },
+    {
+        "phrase": "I'm interested in cross-disciplinary research between environmental science and economics. How would you suggest I structure my database searches?",
+        "level": "B2",
+        "context": "Interdisciplinary research strategy"
+    },
+    {
+        "phrase": "What are the relative advantages of using Boolean operators versus proximity searches for my topic on urban development policies?",
+        "level": "B2",
+        "context": "Advanced search methodology"
+    },
+    {
+        "phrase": "Could you explain the process for requesting embargoed dissertations that might be relevant to my research?",
+        "level": "B2",
+        "context": "Special access procedures"
+    },
+    {
+        "phrase": "I'm comparing the coverage of various databases for research in cognitive neuroscience. Which specialized indexes would you recommend beyond the general science databases?",
+        "level": "B2",
+        "context": "Specialized database comparison"
+    },
+    {
+        "phrase": "What strategies would you suggest for identifying emerging research trends in my field that might not yet be widely cited?",
+        "level": "B2",
+        "context": "Current awareness strategies"
+    },
+    {
+        "phrase": "I'm interested in the library's special collections related to local history. What kind of access and handling protocols should I be aware of?",
+        "level": "B2",
+        "context": "Special collection access protocols"
+    },
+    {
+        "phrase": "I'm conducting a systematic review examining the intersection of environmental justice movements and public health outcomes in marginalized communities, and I'm seeking guidance on developing a comprehensive search strategy that captures both established literature and emerging scholarship across multiple disciplines.",
+        "level": "C1",
+        "context": "Complex interdisciplinary methodology"
+    },
+    {
+        "phrase": "Could you advise me on the most effective approaches for identifying and accessing archival materials that might illuminate the lived experiences of immigrant communities during the industrial revolution, particularly those sources that might exist outside traditional academic repositories?",
+        "level": "C1",
+        "context": "Specialized archival research"
+    },
+    {
+        "phrase": "I'm interested in exploring how citation pattern analysis might reveal intellectual traditions and schools of thought within my field. Are there bibliometric tools or approaches you would recommend?",
+        "level": "C1",
+        "context": "Advanced bibliometric analysis"
+    },
+    {
+        "phrase": "What would be the most effective strategy for establishing a systematic alert system to track emerging research across multiple platforms, including preprint servers and open-access repositories, in my specialized area of quantum computing applications?",
+        "level": "C1",
+        "context": "Comprehensive current awareness system"
+    },
+    {
+        "phrase": "I'm developing a digital humanities project that requires text mining of historical documents. Could you advise on access to corpus linguistics tools and any related API access the library might provide to its digital collections?",
+        "level": "C1",
+        "context": "Digital humanities methodology"
+    },
+    {
+        "phrase": "Could you guide me through the considerations for developing a data management plan that complies with both my funding agency's requirements and the university's protocols for sensitive research data?",
+        "level": "C1",
+        "context": "Research data management guidance"
+    },
+    {
+        "phrase": "I'm interested in examining how scholarly discourse on climate justice has evolved across disciplines over the past decade. What approaches would you recommend for conducting this kind of longitudinal analysis?",
+        "level": "C1",
+        "context": "Discourse analysis methodology"
+    },
+    {
+        "phrase": "What strategies would you suggest for identifying and accessing grey literature published by non-governmental organizations that might contain valuable data not represented in mainstream academic journals?",
+        "level": "C1",
+        "context": "Grey literature research strategy"
+    },
+    {
+        "phrase": "I'm working on a grant application that requires comprehensive documentation of available research infrastructure. Could you help me catalog the relevant advanced research tools and specialized collections available through the library?",
+        "level": "C1",
+        "context": "Research infrastructure documentation"
+    },
+    {
+        "phrase": "Could you advise on strategies for integrating critical theoretical frameworks from diverse cultural traditions that might not be adequately represented in Western academic databases?",
+        "level": "C1",
+        "context": "Inclusive theoretical research"
+    },
+    {
+        "phrase": "I'm examining the epistemological underpinnings of interdisciplinary knowledge production at the intersection of cognitive science and phenomenological philosophy, and I'm curious about methodological approaches for navigating terminological incongruities that emerge when synthesizing literature across disparate disciplinary paradigms.",
+        "level": "C2",
+        "context": "Metatheoretical research methodology"
+    },
+    {
+        "phrase": "Could you elucidate the historiographical shifts in archival praxis that might influence my engagement with colonial-era primary sources, particularly regarding the ethical implications of working with materials collected under problematic power dynamics?",
+        "level": "C2",
+        "context": "Critical archival theory application"
+    },
+    {
+        "phrase": "I'm interested in exploring how embodied cognition paradigms might be integrated with digital humanities approaches to textual analysis, particularly in developing phenomenologically-informed computational models of literary experience.",
+        "level": "C2",
+        "context": "Advanced interdisciplinary methodology"
+    },
+    {
+        "phrase": "What bibliometric approaches might best illuminate the socio-intellectual networks that influence knowledge dissemination across traditionally siloed academic communities, particularly regarding emergent transdisciplinary concepts?",
+        "level": "C2",
+        "context": "Advanced knowledge sociology analysis"
+    },
+    {
+        "phrase": "I'm considering how various ontological frameworks within information science might inform more nuanced taxonomies for organizing indigenous knowledge systems that resist conventional Western categorization schemes.",
+        "level": "C2",
+        "context": "Critical information ontology"
+    },
+    {
+        "phrase": "Could you suggest approaches for interrogating the implicit epistemological assumptions embedded within database architecture and controlled vocabulary systems as they relate to my research on knowledge representation in marginalized communities?",
+        "level": "C2",
+        "context": "Critical information infrastructure analysis"
+    },
+    {
+        "phrase": "I'm exploring the hermeneutic dimensions of algorithmic mediation in digital collections and how these invisible interpretive frameworks might shape scholarly engagement with digitized primary sources.",
+        "level": "C2",
+        "context": "Digital hermeneutics inquiry"
+    },
+    {
+        "phrase": "What methodological considerations would you suggest for developing a research program that interrogates the materiality of textual artifacts while simultaneously engaging with their digital remediations across various representational modalities?",
+        "level": "C2",
+        "context": "Material-digital textual analysis"
+    },
+    {
+        "phrase": "I'm interested in examining how curatorial decisions in special collections reflect and potentially reify particular historiographical narratives, especially regarding contested historical events.",
+        "level": "C2",
+        "context": "Critical curatorial analysis"
+    },
+    {
+        "phrase": "Could you elucidate approaches for navigating the tension between quantitative bibliometric analysis and qualitative discourse analysis when mapping intellectual traditions in emergent fields lacking disciplinary consolidation?",
+        "level": "C2",
+        "context": "Mixed-methods research mapping"
+    }
+]

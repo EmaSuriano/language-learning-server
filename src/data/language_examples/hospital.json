@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "What happens today?",
+        "level": "A1",
+        "context": "Basic procedure inquiry"
+    },
+    {
+        "phrase": "When is my surgery?",
+        "level": "A1",
+        "context": "Basic timing inquiry"
+    },
+    {
+        "phrase": "Can I eat now?",
+        "level": "A1",
+        "context": "Simple preparation question"
+    },
+    {
+        "phrase": "Will it hurt?",
+        "level": "A1",
+        "context": "Basic pain inquiry"
+    },
+    {
+        "phrase": "How long will I stay?",
+        "level": "A1",
+        "context": "Simple recovery time question"
+    },
+    {
+        "phrase": "I need medicine.",
+        "level": "A1",
+        "context": "Basic medication request"
+    },
+    {
+        "phrase": "Where is the bathroom?",
+        "level": "A1",
+        "context": "Basic location inquiry"
+    },
+    {
+        "phrase": "When can I go home?",
+        "level": "A1",
+        "context": "Simple discharge inquiry"
+    },
+    {
+        "phrase": "Can someone call my family?",
+        "level": "A1",
+        "context": "Basic communication request"
+    },
+    {
+        "phrase": "I'm nervous.",
+        "level": "A1",
+        "context": "Simple emotion expression"
+    },
+    {
+        "phrase": "Could you explain what will happen during the procedure?",
+        "level": "A2",
+        "context": "Procedure details request"
+    },
+    {
+        "phrase": "What time is my procedure scheduled for?",
+        "level": "A2",
+        "context": "Specific timing inquiry"
+    },
+    {
+        "phrase": "How should I prepare for the surgery?",
+        "level": "A2",
+        "context": "Preparation instruction request"
+    },
+    {
+        "phrase": "Will I receive anesthesia for this procedure?",
+        "level": "A2",
+        "context": "Specific pain management inquiry"
+    },
+    {
+        "phrase": "How many days will I need to stay in the hospital?",
+        "level": "A2",
+        "context": "Recovery timeline inquiry"
+    },
+    {
+        "phrase": "What medications will I need to take afterward?",
+        "level": "A2",
+        "context": "Post-procedure medication inquiry"
+    },
+    {
+        "phrase": "Can I shower after the procedure?",
+        "level": "A2",
+        "context": "Specific aftercare question"
+    },
+    {
+        "phrase": "When should I schedule a follow-up appointment?",
+        "level": "A2",
+        "context": "Follow-up timing inquiry"
+    },
+    {
+        "phrase": "Is there a phone I can use to call my family?",
+        "level": "A2",
+        "context": "Communication facility inquiry"
+    },
+    {
+        "phrase": "I'm feeling anxious about the procedure. Is that normal?",
+        "level": "A2",
+        "context": "Emotional reassurance request"
+    },
+    {
+        "phrase": "I'd like to understand the step-by-step process of the procedure I'm scheduled for today. Could you walk me through what will happen from start to finish?",
+        "level": "B1",
+        "context": "Comprehensive procedure explanation request"
+    },
+    {
+        "phrase": "Could you go over the timeline for today? I want to know when the procedure will start, how long it will take, and when I might expect to be in recovery.",
+        "level": "B1",
+        "context": "Detailed timeline inquiry"
+    },
+    {
+        "phrase": "I understand I need to fast before the procedure. Are there any other preparation instructions I should be aware of, such as medications I should avoid?",
+        "level": "B1",
+        "context": "Comprehensive preparation inquiry"
+    },
+    {
+        "phrase": "What type of anesthesia will be used for my procedure, and what side effects might I experience from it?",
+        "level": "B1",
+        "context": "Detailed anesthesia inquiry"
+    },
+    {
+        "phrase": "Could you explain what the recovery process will be like? I'd like to know about pain levels, mobility restrictions, and how long until I can resume normal activities.",
+        "level": "B1",
+        "context": "Comprehensive recovery inquiry"
+    },
+    {
+        "phrase": "What medications will I be prescribed after the procedure, and what are they for? Are there any side effects I should watch for?",
+        "level": "B1",
+        "context": "Detailed medication information request"
+    },
+    {
+        "phrase": "Are there specific care instructions for my incision site, and what signs of infection should I be watching for?",
+        "level": "B1",
+        "context": "Specific wound care inquiry"
+    },
+    {
+        "phrase": "When will I need to come back for follow-up appointments, and what will those involve?",
+        "level": "B1",
+        "context": "Detailed follow-up inquiry"
+    },
+    {
+        "phrase": "Could you provide information about who I should contact if I experience complications after I've been discharged?",
+        "level": "B1",
+        "context": "Emergency contact information request"
+    },
+    {
+        "phrase": "I'm feeling quite nervous about this procedure. Could you tell me what techniques your previous patients have found helpful for managing anxiety?",
+        "level": "B1",
+        "context": "Anxiety management strategies request"
+    },
+    {
+        "phrase": "I'd appreciate a detailed explanation of the procedural methodology that will be employed today, including the specific techniques, equipment, and sequence of steps that I can expect throughout the intervention. This would help me mentally prepare for each stage of the process.",
+        "level": "B2",
+        "context": "Advanced procedure methodology inquiry"
+    },
+    {
+        "phrase": "Could you provide a comprehensive timeline for today's procedure, including the pre-operative preparation period, estimated duration of the intervention itself, immediate post-anesthesia recovery time, and the projected timeline for transition between each of these phases?",
+        "level": "B2",
+        "context": "Detailed procedural timeline analysis request"
+    },
+    {
+        "phrase": "I understand there are several preparatory protocols I need to follow prior to this procedure. Could you elaborate on the specific dietary restrictions, medication adjustments, and any other pre-procedural requirements, along with the clinical rationale behind each of these instructions?",
+        "level": "B2",
+        "context": "Comprehensive preparation rationale inquiry"
+    },
+    {
+        "phrase": "Regarding the anesthetic approach for this procedure, I'm interested in understanding the specific agents that will be administered, the physiological effects I might experience, and any potential post-anesthetic complications that I should be aware of.",
+        "level": "B2",
+        "context": "Sophisticated anesthesia inquiry"
+    },
+    {
+        "phrase": "Could you provide a detailed overview of the expected recovery trajectory, including typical pain patterns, functional limitations at various stages of healing, and evidence-based timelines for resuming specific activities based on the particular procedure I'm undergoing?",
+        "level": "B2",
+        "context": "Evidence-based recovery trajectory inquiry"
+    },
+    {
+        "phrase": "I'd like to understand the post-procedural medication regimen in detail, including the pharmacological mechanisms of each prescribed drug, potential interactions with my current medications, and specific indicators that would warrant dosage adjustments.",
+        "level": "B2",
+        "context": "Advanced pharmacological information request"
+    },
+    {
+        "phrase": "Regarding post-procedural wound care, could you explain the specific techniques for optimal incision management, the evidence-based indicators that distinguish normal healing from potential complications, and the appropriate interventions for various scenarios I might encounter?",
+        "level": "B2",
+        "context": "Evidence-based wound care protocol inquiry"
+    },
+    {
+        "phrase": "I'm interested in understanding the structure and purpose of the follow-up care protocol, including the clinical assessments that will be conducted, potential diagnostic tests that might be required, and how the monitoring schedule aligns with typical healing milestones.",
+        "level": "B2",
+        "context": "Structured follow-up protocol inquiry"
+    },
+    {
+        "phrase": "Could you delineate the specific criteria that would constitute a post-procedural emergency versus a non-urgent concern, and provide the appropriate communication channels and response protocols for each category of post-discharge issue?",
+        "level": "B2",
+        "context": "Graduated emergency response protocol inquiry"
+    },
+    {
+        "phrase": "I'm experiencing significant anticipatory anxiety about this procedure. Could you discuss evidence-based psychological preparation techniques, potential pharmacological interventions for anxiety management, and how these approaches might impact my overall procedural experience?",
+        "level": "B2",
+        "context": "Evidence-based anxiety management inquiry"
+    },
+    {
+        "phrase": "I'm particularly interested in understanding the precise methodology and technical approach that will be employed during today's intervention, including any variations or adaptations of standard protocol that might be implemented in my specific case, the rationale behind the selection of particular instruments or techniques, and how the procedural strategy might evolve in response to intraoperative findings.",
+        "level": "C1",
+        "context": "Highly specialized procedure methodology inquiry"
+    },
+    {
+        "phrase": "Could you provide a granular breakdown of the temporal framework for today's procedure, delineating the anticipated duration of each specific phase, the interdependencies between sequential steps, potential rate-limiting factors that might influence progression, and how the clinical team manages temporal contingencies should unexpected findings necessitate procedural modification?",
+        "level": "C1",
+        "context": "Complex procedural timeline analysis"
+    },
+    {
+        "phrase": "I'm seeking a comprehensive understanding of the evidence-based preparatory protocols relevant to my specific procedure, including the physiological rationale behind fasting guidelines, the pharmacokinetic considerations informing medication management, and how these preparatory measures have been optimized based on recent clinical research in this particular domain.",
+        "level": "C1",
+        "context": "Evidence-based preparation protocol inquiry"
+    },
+    {
+        "phrase": "Regarding the anesthetic strategy, I'd appreciate insights into how the selection of specific agents and techniques has been tailored to my individual case, taking into account my medical history, the particular requirements of the procedure, and current best practices in anesthesiology. I'm also interested in understanding how post-anesthetic complications are monitored and managed within your clinical framework.",
+        "level": "C1",
+        "context": "Individualized anesthesiology approach inquiry"
+    },
+    {
+        "phrase": "I'm interested in a detailed analysis of the expected recovery trajectory based on outcome data for this specific procedure, including the statistical distribution of recovery milestones, factors that might predict accelerated or delayed recovery, and how the post-procedural care plan adapts to the individual variation in healing responses that you typically observe.",
+        "level": "C1",
+        "context": "Statistical recovery pattern analysis request"
+    },
+    {
+        "phrase": "Could you elaborate on the pharmacological strategy that informs my post-procedural medication regimen, including the targeted physiological mechanisms, the specific therapeutic windows for each agent, potential monitoring parameters that might inform dosage adjustments, and how this approach has been optimized based on recent advances in pain management and functional recovery?",
+        "level": "C1",
+        "context": "Advanced pharmacological strategy inquiry"
+    },
+    {
+        "phrase": "Regarding tissue healing and wound management, I'm interested in understanding the current evidence-based approaches employed in your facility, including microbial barrier strategies, optimization of the local healing environment, surveillance protocols for detecting early complications, and how these interventions are adjusted based on individual risk factors and healing trajectories.",
+        "level": "C1",
+        "context": "Advanced wound healing optimization inquiry"
+    },
+    {
+        "phrase": "I'd appreciate insights into the structured surveillance and monitoring framework that guides the post-procedural follow-up protocol, including the specific clinical indicators that are tracked, how data from these assessments informs potential interventions, and the integration of patient-reported outcomes into the overall evaluation of procedural success.",
+        "level": "C1",
+        "context": "Comprehensive follow-up framework analysis"
+    },
+    {
+        "phrase": "Could you delineate the risk stratification approach used to identify and manage post-procedural complications, including the specific clinical parameters that trigger escalation of care, the institutional response algorithms for various adverse events, and how your facility's complication management protocols compare with current benchmark standards in this clinical domain?",
+        "level": "C1",
+        "context": "Risk stratification and management protocol inquiry"
+    },
+    {
+        "phrase": "I'm interested in the integration of psychological preparation and support within your procedural framework, including any formal assessment tools used to identify patients who might benefit from enhanced interventions, the specific evidence-based approaches employed for different anxiety profiles, and outcome data regarding the efficacy of these interventions in improving both procedural experience and clinical outcomes.",
+        "level": "C1",
+        "context": "Integrated psychological support framework inquiry"
+    },
+    {
+        "phrase": "I'm particularly intrigued by the interplay between procedural technique selection and patient-specific anatomical and physiological variables, especially in the context of evolving approaches to this particular intervention. I wonder if you might elaborate on how the interventional strategy for today's procedure represents a personalized synthesis of established methodological frameworks and emerging evidence, particularly regarding the optimization of both immediate procedural success metrics and longitudinal functional outcomes.",
+        "level": "C2",
+        "context": "Cutting-edge personalized procedure philosophy discussion"
+    },
+    {
+        "phrase": "The choreography of complex medical interventions presents fascinating challenges in process optimization and temporal management. I'd be interested in your perspective on how your institution navigates the tension between procedural standardization and adaptive responsiveness, particularly in terms of how temporal frameworks are established, communicated, and modified in response to the inevitable variability inherent in biological systems and clinical environments.",
+        "level": "C2",
+        "context": "Philosophical procedural time management discourse"
+    },
+    {
+        "phrase": "Recent advances in our understanding of the physiological impacts of preoperative preparation have challenged several longstanding assumptions in this domain. I'm curious about your institution's approach to integrating emerging evidence regarding optimal preparatory protocols, particularly how you navigate the sometimes conflicting recommendations arising from different methodological approaches in the literature, and how patient-specific variables are incorporated into this decision-making framework.",
+        "level": "C2",
+        "context": "Evidence integration philosophy in preparation protocols"
+    },
+    {
+        "phrase": "The evolution of anesthetic approaches represents a fascinating example of the interaction between technical innovation, physiological understanding, and clinical wisdom. I wonder if you might share your perspective on the philosophical underpinnings of current anesthetic strategy selection, particularly regarding the balance between standardized protocols and individualized approaches, and how emerging insights into neurophysiological variability are influencing this domain.",
+        "level": "C2",
+        "context": "Anesthesiology philosophy discourse"
+    },
+    {
+        "phrase": "The conceptualization of recovery as a multidimensional process rather than a linear trajectory represents an important paradigm shift in post-procedural care. I'm interested in your thoughts on how this reconceptualization has influenced clinical practice, particularly regarding how different domains of recovery—physiological, functional, and psychological—are prioritized, integrated, and measured within contemporary clinical frameworks.",
+        "level": "C2",
+        "context": "Recovery paradigm philosophy discussion"
+    },
+    {
+        "phrase": "Pharmaceutical intervention in the post-procedural context presents interesting tensions between symptom management, functional optimization, and risk mitigation. I wonder if you might reflect on the evolving philosophical approaches to this domain, particularly regarding the shift from standardized protocols toward more nuanced, patient-centered strategies that account for individual variation in drug response, risk tolerance, and recovery priorities.",
+        "level": "C2",
+        "context": "Post-procedural pharmaceutical philosophy discourse"
+    },
+    {
+        "phrase": "The interface between cellular biology and clinical practice is particularly evident in wound healing approaches, where microscopic processes directly influence macroscopic outcomes. I'm fascinated by how contemporary wound management philosophies navigate the balance between creating optimal biological conditions and respecting the inherent wisdom of endogenous healing processes. How would you characterize your institution's approach to this tension?",
+        "level": "C2",
+        "context": "Wound healing philosophy discourse"
+    },
+    {
+        "phrase": "The evolution of post-intervention surveillance strategies reflects broader shifts in how we conceptualize the relationship between healthcare systems and patients during the recovery continuum. I'm curious about your perspective on how follow-up frameworks are adapting to incorporate emerging priorities around patient autonomy, resource allocation, and the integration of subjective experience into traditionally objective assessment paradigms.",
+        "level": "C2",
+        "context": "Follow-up care philosophy discourse"
+    },
+    {
+        "phrase": "Risk conceptualization in post-procedural contexts represents a fascinating intersection of probabilistic thinking, clinical judgment, and communication ethics. I wonder about your thoughts on how institutions should navigate the tension between comprehensive risk disclosure and the potential for inducing counterproductive anxiety, particularly in situations where statistical probabilities may not align with individual patient values and risk tolerance.",
+        "level": "C2",
+        "context": "Risk communication ethics discourse"
+    },
+    {
+        "phrase": "The integration of psychological dimensions into fundamentally physical interventions represents an important recognition of the embodied nature of human experience. I'm interested in your perspective on how the traditional Cartesian separation between psychological and physiological domains is being reconceptualized in contemporary procedural medicine, and how this philosophical shift is influencing practical approaches to patient preparation, support, and outcome assessment.",
+        "level": "C2",
+        "context": "Mind-body integration philosophy in medical procedures"
+    }
+]

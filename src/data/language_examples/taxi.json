@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I need a taxi.",
+        "level": "A1",
+        "context": "Basic service request"
+    },
+    {
+        "phrase": "How much to downtown?",
+        "level": "A1",
+        "context": "Basic fare inquiry"
+    },
+    {
+        "phrase": "How long will it take?",
+        "level": "A1",
+        "context": "Basic time inquiry"
+    },
+    {
+        "phrase": "Is there traffic?",
+        "level": "A1",
+        "context": "Simple traffic inquiry"
+    },
+    {
+        "phrase": "Can I pay by card?",
+        "level": "A1",
+        "context": "Basic payment inquiry"
+    },
+    {
+        "phrase": "I'm in a hurry.",
+        "level": "A1",
+        "context": "Simple urgency statement"
+    },
+    {
+        "phrase": "Do you know this address?",
+        "level": "A1",
+        "context": "Basic location inquiry"
+    },
+    {
+        "phrase": "What's the fastest way?",
+        "level": "A1",
+        "context": "Simple route inquiry"
+    },
+    {
+        "phrase": "I need a receipt.",
+        "level": "A1",
+        "context": "Basic documentation request"
+    },
+    {
+        "phrase": "Can you wait here?",
+        "level": "A1",
+        "context": "Simple wait request"
+    },
+    {
+        "phrase": "I need to get to Central Bank on Main Street for a meeting. How long will it take?",
+        "level": "A2",
+        "context": "Specific destination request with time inquiry"
+    },
+    {
+        "phrase": "Could you give me an estimate of the fare to the business district?",
+        "level": "A2",
+        "context": "Fare estimate request"
+    },
+    {
+        "phrase": "Is there heavy traffic on the highway right now?",
+        "level": "A2",
+        "context": "Specific traffic inquiry"
+    },
+    {
+        "phrase": "Do you accept credit cards or only cash?",
+        "level": "A2",
+        "context": "Payment options inquiry"
+    },
+    {
+        "phrase": "I have an important meeting at 2:00. Will we arrive on time?",
+        "level": "A2",
+        "context": "Arrival time concern"
+    },
+    {
+        "phrase": "Do you know a shortcut to avoid traffic?",
+        "level": "A2",
+        "context": "Alternative route inquiry"
+    },
+    {
+        "phrase": "Is the meter running right now?",
+        "level": "A2",
+        "context": "Fare calculation inquiry"
+    },
+    {
+        "phrase": "Can you drop me at the main entrance?",
+        "level": "A2",
+        "context": "Specific drop-off request"
+    },
+    {
+        "phrase": "Will you give me a receipt with the company name?",
+        "level": "A2",
+        "context": "Detailed receipt request"
+    },
+    {
+        "phrase": "Is there an extra charge for luggage?",
+        "level": "A2",
+        "context": "Additional fee inquiry"
+    },
+    {
+        "phrase": "I need to get to the Morgan Building on 5th Avenue for an important client meeting. Could you tell me approximately how long the journey will take and what the fare might be?",
+        "level": "B1",
+        "context": "Comprehensive trip inquiry"
+    },
+    {
+        "phrase": "I'm not familiar with this part of town. Do you think there's a faster route we could take given the current traffic conditions?",
+        "level": "B1",
+        "context": "Route optimization request"
+    },
+    {
+        "phrase": "I notice there seems to be congestion ahead. Is this normal for this time of day, and should we consider an alternative route?",
+        "level": "B1",
+        "context": "Traffic assessment request"
+    },
+    {
+        "phrase": "Could you break down how the fare is calculated? I need to know for my expense report.",
+        "level": "B1",
+        "context": "Detailed fare inquiry"
+    },
+    {
+        "phrase": "I'm running a bit tight on time for my meeting. What's your assessment of our arrival time based on current conditions?",
+        "level": "B1",
+        "context": "Arrival prediction request"
+    },
+    {
+        "phrase": "Do you accept digital payment methods like mobile payment apps, or should I prepare cash or card?",
+        "level": "B1",
+        "context": "Modern payment options inquiry"
+    },
+    {
+        "phrase": "I've been told there's construction on Main Street. Will that affect our journey time significantly?",
+        "level": "B1",
+        "context": "Route obstacle inquiry"
+    },
+    {
+        "phrase": "Could you recommend which entrance of the building complex would be most convenient for accessing the north tower offices?",
+        "level": "B1",
+        "context": "Specific location advice request"
+    },
+    {
+        "phrase": "I'll need a detailed receipt with the journey information and company tax ID for my business expenses. Is that possible?",
+        "level": "B1",
+        "context": "Business documentation request"
+    },
+    {
+        "phrase": "If we encounter significant delays, what alternatives might you suggest to ensure I make my appointment on time?",
+        "level": "B1",
+        "context": "Contingency planning inquiry"
+    },
+    {
+        "phrase": "I need to reach the Blackstone Corporate Center on the west side of downtown for a critical presentation with potential investors. Given the time constraints and my unfamiliarity with the city layout, could you provide me with an estimate of both the journey duration and fare, accounting for current traffic patterns?",
+        "level": "B2",
+        "context": "Detailed comprehensive trip planning"
+    },
+    {
+        "phrase": "I understand there are several potential routes to my destination. Could you elaborate on the trade-offs between the most direct path through the city center versus taking the ring road, particularly considering the time of day and typical congestion patterns?",
+        "level": "B2",
+        "context": "Sophisticated route analysis request"
+    },
+    {
+        "phrase": "I've been monitoring the traffic updates on my phone, and it appears there's significant congestion on the main thoroughfare. Based on your local knowledge, would you recommend an alternative approach that might not be reflected in standard navigation apps?",
+        "level": "B2",
+        "context": "Advanced traffic avoidance strategy"
+    },
+    {
+        "phrase": "Regarding payment, my company has specific requirements for reimbursement. Could you clarify whether your receipt system can itemize the base fare, time and distance components, and any applicable surcharges separately?",
+        "level": "B2",
+        "context": "Detailed financial documentation inquiry"
+    },
+    {
+        "phrase": "I'm operating within a rather tight schedule today, with a meeting that begins promptly at 11:30. Based on your experience with this route and the current conditions, what would be your realistic assessment of our arrival time, including any buffer we should consider for building access?",
+        "level": "B2",
+        "context": "Precise timing assessment request"
+    },
+    {
+        "phrase": "I typically prefer to use contactless payment methods for business travel. Could you confirm whether your system supports NFC transactions, and if there are any merchant category codes that might affect my company's expense categorization?",
+        "level": "B2",
+        "context": "Specialized payment protocol inquiry"
+    },
+    {
+        "phrase": "I've heard that recent infrastructure work has altered the typical traffic flow in the business district. Has this affected your routing strategies for destinations in that area, particularly during peak hours?",
+        "level": "B2",
+        "context": "Updated routing intelligence inquiry"
+    },
+    {
+        "phrase": "Given that my destination is a large corporate complex, could you advise on the optimal drop-off location that would minimize my walking time to the north tower reception while avoiding the more congested entrance points?",
+        "level": "B2",
+        "context": "Strategic arrival planning"
+    },
+    {
+        "phrase": "For my expense reporting, I'll require a detailed receipt that includes your transportation license number, the company tax identifier, and an itemized breakdown of time and distance charges. Is your system configured to provide this level of detail?",
+        "level": "B2",
+        "context": "Comprehensive business documentation requirement"
+    },
+    {
+        "phrase": "In the event that we encounter unexpected delays, I'd appreciate knowing what contingency options might be available, such as alternate routing or perhaps your recommendation for the point at which we should consider abandoning the journey in favor of another transportation mode.",
+        "level": "B2",
+        "context": "Advanced contingency strategy discussion"
+    },
+    {
+        "phrase": "I find myself in need of expeditious transportation to the Harrington International Finance Center on the northwestern periphery of the central business district for a critical stakeholder presentation that has substantial implications for our quarterly projections. Given my unfamiliarity with the city's topographical and infrastructural nuances, I would greatly appreciate your professional assessment of our optimal routing strategy, anticipated journey duration, and approximate fare structure, taking into account the current temporal and traffic variables.",
+        "level": "C1",
+        "context": "Highly detailed professional transportation request"
+    },
+    {
+        "phrase": "My understanding of the metropolitan area's transit network is admittedly limited, but I've observed what appears to be a dichotomy between the grid-structured arterial routes and the seemingly more organic peripheral thoroughfares. I'm curious about your perspective on how these different urban planning approaches might influence our route selection given today's specific journey parameters and temporal constraints.",
+        "level": "C1",
+        "context": "Sophisticated urban planning and routing philosophy"
+    },
+    {
+        "phrase": "The real-time traffic data accessible through my mobile application suggests several anomalous congestion points along our most direct route. However, I recognize that algorithmic routing often fails to incorporate local knowledge and historical patterns. Would you mind sharing your experiential assessment of these digital predictions and whether they align with your professional judgment?",
+        "level": "C1",
+        "context": "Advanced traffic data analysis and comparison"
+    },
+    {
+        "phrase": "Regarding the financial aspects of our journey, my organization implements rather stringent expense management protocols that necessitate comprehensive documentation. Could you elaborate on the level of detail your receipt system is capable of generating, particularly concerning the disaggregation of base fares, time-dependent charges, distance calculations, and any applicable supplementary fees?",
+        "level": "C1",
+        "context": "Complex financial documentation requirements"
+    },
+    {
+        "phrase": "I'm operating within rather constraining temporal parameters today, with a presentation scheduled to commence precisely at 2:15 pm, preceded by essential technical setup procedures. Based on your extensive experience navigating this particular route during similar conditions, could you provide a probability-based arrival time assessment that accounts for potential variability factors?",
+        "level": "C1",
+        "context": "Statistical arrival time analysis request"
+    },
+    {
+        "phrase": "My corporate financial protocols typically favor electronic transaction methodologies that integrate seamlessly with our expense management systems. Could you delineate the specific digital payment architectures your service supports, particularly those that might facilitate automated categorization through appropriate merchant classification codes?",
+        "level": "C1",
+        "context": "Advanced electronic payment system compatibility inquiry"
+    },
+    {
+        "phrase": "I've been monitoring the ongoing infrastructural development initiatives throughout the metropolitan area and their consequent impact on traditional traffic patterns. Has your industry developed systematic approaches to recalibrating routing algorithms in response to these evolving urban dynamics?",
+        "level": "C1",
+        "context": "Urban development impact on transportation strategy"
+    },
+    {
+        "phrase": "Given the substantial footprint of my destination within the business district, with multiple access points varying considerably in their proximity to my specific meeting location, I would value your insight regarding the optimal disembarkation point that minimizes unnecessary pedestrian navigation while avoiding the more congested vehicular approaches.",
+        "level": "C1",
+        "context": "Optimized arrival point analysis"
+    },
+    {
+        "phrase": "For purposes of financial reconciliation, I require documentation that satisfies our auditing parameters, including transportation provider credentials, tax identification, temporal and spatial metrics, and applicable rate structures. Could you confirm whether your receipt generation capabilities align with these specifications?",
+        "level": "C1",
+        "context": "Auditing-compliant documentation requirements"
+    },
+    {
+        "phrase": "I'm interested in establishing contingency protocols should our primary route prove problematic due to unforeseen circumstances. Could you outline potential alternative strategies, including decision points at which we might reasonably transition to alternative routing, or perhaps identify thresholds beyond which alternative transportation modalities might become more efficient?",
+        "level": "C1",
+        "context": "Systematic contingency planning discussion"
+    },
+    {
+        "phrase": "Having just disembarked from a transcontinental flight and finding myself in unfamiliar urban territory, I find it necessary to secure expeditious conveyance to the Blackstone-Meridian Financial Complex situated in what I understand to be the emergent commercial district on the city's eastern periphery. My presence is required at a rather consequential board deliberation that promises to determine the trajectory of several significant investment portfolios. Given these circumstances, I would be most appreciative if you could provide a nuanced assessment of our prospective journey, taking into account the various temporal, spatial, and financial dimensions that might influence our transit strategy.",
+        "level": "C2",
+        "context": "Extraordinarily detailed and formal transportation request"
+    },
+    {
+        "phrase": "The cartographic relationship between urban morphology and transportation efficiency presents a fascinating study in applied network theory, particularly in cities that have evolved through multiple planning paradigms. As someone who navigates these complex systems professionally, I wonder if you might share your empirical observations regarding how the theoretical optimal pathways suggested by contemporary algorithmic approaches compare with the lived reality of navigating this particular metropolitan landscape during this specific temporal window.",
+        "level": "C2",
+        "context": "Theoretical urban transportation network philosophy"
+    },
+    {
+        "phrase": "Contemporary traffic management systems represent an intriguing attempt to reconcile real-time data aggregation with predictive modeling, yet I've observed persistent discrepancies between digitally suggested routing and actual optimal pathways. I'm curious about your perspective, as someone with embodied knowledge of this transportation ecosystem, on whether these technological approaches have meaningfully converged with experiential wisdom, or if significant gaps remain between algorithmic prescription and practical navigation.",
+        "level": "C2",
+        "context": "Advanced traffic technology philosophy discussion"
+    },
+    {
+        "phrase": "The financial dimensions of urban transportation present interesting challenges in terms of transaction documentation and corporate governance compliance. The increasingly complex regulatory environment surrounding business expense substantiation necessitates increasingly granular financial records. I wonder if you might elaborate on how your particular service has adapted its documentation protocols to accommodate these evolving requirements, particularly regarding the taxonomic categorization of journey components and their respective fiscal attributes.",
+        "level": "C2",
+        "context": "Corporate finance documentation philosophy"
+    },
+    {
+        "phrase": "The temporal unpredictability inherent in urban transportation networks represents a fascinating challenge for probability assessment and risk management in professional contexts. Given my particular scheduling constraints today, I find myself contemplating the appropriate statistical models one might apply to journey time estimation. I'm curious whether your professional experience suggests a normal distribution of arrival times for this particular route, or if perhaps a more complex multimodal distribution better captures the variable nature of urban transit during this specific period.",
+        "level": "C2",
+        "context": "Statistical journey time probability theory"
+    },
+    {
+        "phrase": "The evolution of financial transaction methodologies in the transportation sector represents an interesting case study in the balance between innovation and practical implementation. I find the tension between emerging payment architectures and established financial infrastructures particularly noteworthy. Has your experience in this domain revealed any significant insights regarding the practical advantages or limitations of various electronic payment paradigms, particularly as they relate to integration with enterprise-level expense management systems?",
+        "level": "C2",
+        "context": "Payment systems evolution philosophy"
+    },
+    {
+        "phrase": "The dialectic between static urban infrastructure and dynamic traffic management presents a compelling tension in contemporary city planning philosophy. I wonder about your observations regarding how recent developmental initiatives throughout the metropolitan area have influenced the emergent patterns of vehicular movement, and whether these evolving dynamics have necessitated a fundamental reconsideration of traditional routing heuristics among transportation professionals.",
+        "level": "C2",
+        "context": "Urban planning impact theory discussion"
+    },
+    {
+        "phrase": "The microgeography of arrival optimization represents an often overlooked aspect of journey efficiency, particularly in expansive architectural complexes with multiple access vectors of varying practicality. I'm curious about the criteria you might employ when determining optimal disembarkation coordinates, particularly given the tension between minimizing vehicular congestion and optimizing subsequent pedestrian pathways within the destination's internal geography.",
+        "level": "C2",
+        "context": "Philosophical arrival point optimization discussion"
+    },
+    {
+        "phrase": "The evolution of financial documentation standards within the transportation sector offers an interesting lens through which to observe broader trends in regulatory compliance and corporate governance. I'm particularly interested in how these documentation frameworks balance the competing demands of transactional transparency, data privacy considerations, and administrative efficiency. Has your experience suggested any emerging best practices in reconciling these sometimes contradictory imperatives?",
+        "level": "C2",
+        "context": "Financial documentation ethics and philosophy"
+    },
+    {
+        "phrase": "The conceptualization of contingency planning in urban transportation contexts necessitates a fascinating multidimensional decision framework that simultaneously accounts for spatial, temporal, and probabilistic variables. I wonder if you might share your perspective on how one might effectively establish optimal decision thresholds for routing recalibration or modal transition, particularly when operating under significant temporal constraints with asymmetric consequences for delay versus early arrival.",
+        "level": "C2",
+        "context": "Theoretical contingency modeling discussion"
+    }
+]

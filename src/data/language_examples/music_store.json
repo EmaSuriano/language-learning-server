@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I want to learn guitar.",
+        "level": "A1",
+        "context": "Basic interest statement"
+    },
+    {
+        "phrase": "Which guitar is good?",
+        "level": "A1",
+        "context": "Simple recommendation request"
+    },
+    {
+        "phrase": "How much is this?",
+        "level": "A1",
+        "context": "Basic price inquiry"
+    },
+    {
+        "phrase": "Do you have lessons?",
+        "level": "A1",
+        "context": "Simple lesson inquiry"
+    },
+    {
+        "phrase": "Is this for beginners?",
+        "level": "A1",
+        "context": "Basic suitability question"
+    },
+    {
+        "phrase": "What else do I need?",
+        "level": "A1",
+        "context": "Simple accessory inquiry"
+    },
+    {
+        "phrase": "Can I try it?",
+        "level": "A1",
+        "context": "Basic testing request"
+    },
+    {
+        "phrase": "Is it hard to learn?",
+        "level": "A1",
+        "context": "Simple difficulty inquiry"
+    },
+    {
+        "phrase": "Can I return it?",
+        "level": "A1",
+        "context": "Basic return policy question"
+    },
+    {
+        "phrase": "When do lessons start?",
+        "level": "A1",
+        "context": "Simple scheduling question"
+    },
+    {
+        "phrase": "I'm interested in learning to play the guitar. Could you recommend a good beginner model?",
+        "level": "A2",
+        "context": "Beginner guitar recommendation request"
+    },
+    {
+        "phrase": "What's the difference between acoustic and electric guitars for beginners?",
+        "level": "A2",
+        "context": "Guitar type comparison inquiry"
+    },
+    {
+        "phrase": "How much should I expect to spend on a starter guitar and accessories?",
+        "level": "A2",
+        "context": "Budget planning question"
+    },
+    {
+        "phrase": "Do you offer guitar lessons for complete beginners?",
+        "level": "A2",
+        "context": "Lesson availability inquiry"
+    },
+    {
+        "phrase": "Is this guitar suitable for someone who has never played before?",
+        "level": "A2",
+        "context": "Specific suitability question"
+    },
+    {
+        "phrase": "What accessories will I need to buy with my first guitar?",
+        "level": "A2",
+        "context": "Accessory package inquiry"
+    },
+    {
+        "phrase": "Could I try playing this guitar to see how it feels?",
+        "level": "A2",
+        "context": "Testing request"
+    },
+    {
+        "phrase": "How long does it usually take to learn the basics of guitar?",
+        "level": "A2",
+        "context": "Learning timeline inquiry"
+    },
+    {
+        "phrase": "What's your return policy if I find the guitar too difficult to play?",
+        "level": "A2",
+        "context": "Return policy inquiry"
+    },
+    {
+        "phrase": "How often are the beginner lessons and how much do they cost?",
+        "level": "A2",
+        "context": "Lesson details inquiry"
+    },
+    {
+        "phrase": "I've never played an instrument before but I'm really interested in learning guitar. Could you recommend some options that would be suitable for a complete beginner who wants to play mostly folk and acoustic music?",
+        "level": "B1",
+        "context": "Detailed beginner recommendation request"
+    },
+    {
+        "phrase": "I'm trying to decide between an acoustic and electric guitar as my first instrument. Could you explain the advantages and disadvantages of each for someone just starting out, particularly in terms of learning curve and versatility?",
+        "level": "B1",
+        "context": "Comprehensive guitar type comparison"
+    },
+    {
+        "phrase": "I'd like to understand what kind of initial investment I should expect for a decent beginner setup, including the guitar itself and any necessary accessories. Is there a point where spending more doesn't really benefit a beginner?",
+        "level": "B1",
+        "context": "Detailed budget planning inquiry"
+    },
+    {
+        "phrase": "Could you tell me about the different lesson options you offer? I'm particularly interested in understanding the structure of the beginner program and what kind of progress I might expect in the first few months.",
+        "level": "B1",
+        "context": "Comprehensive lesson program inquiry"
+    },
+    {
+        "phrase": "I'm looking at this model and wondering if the action and neck width would be comfortable for a beginner with relatively small hands. What features should I be considering for maximum playability?",
+        "level": "B1",
+        "context": "Specific ergonomic suitability inquiry"
+    },
+    {
+        "phrase": "Beyond the guitar itself, what accessories would you consider essential for a beginner, and which ones might I want to add later as I progress? Are there any particular brands you recommend?",
+        "level": "B1",
+        "context": "Prioritized accessory recommendation request"
+    },
+    {
+        "phrase": "I'd like to try a few different guitars to compare how they feel and sound. When testing them, what should I be paying attention to as a beginner who doesn't yet know how to play?",
+        "level": "B1",
+        "context": "Guided testing request"
+    },
+    {
+        "phrase": "What kind of practice schedule would you recommend for a beginner who has a full-time job but is committed to making steady progress? Are there specific techniques or exercises that are most important early on?",
+        "level": "B1",
+        "context": "Realistic practice planning inquiry"
+    },
+    {
+        "phrase": "Could you explain your warranty and return policies? If I find that the action is too high or there are intonation issues that make learning difficult, what options would I have?",
+        "level": "B1",
+        "context": "Detailed policy inquiry"
+    },
+    {
+        "phrase": "I'm interested in understanding the progression of your lesson program. After completing the beginner courses, what intermediate options are available, and how do students typically transition between these levels?",
+        "level": "B1",
+        "context": "Long-term lesson planning inquiry"
+    },
+    {
+        "phrase": "As someone with no prior musical experience but a longstanding appreciation for fingerstyle acoustic guitar, I'm looking to begin my journey with an instrument that balances approachability for a beginner with sufficient quality to accommodate growth over the next few years. Could you guide me through options that would satisfy these somewhat competing requirements?",
+        "level": "B2",
+        "context": "Sophisticated beginner guitar selection inquiry"
+    },
+    {
+        "phrase": "I'm weighing the relative merits of beginning with an acoustic versus electric instrument and finding compelling arguments for both approaches. Could you provide a nuanced analysis of how each might affect the development of technique, particularly regarding finger strength, chord transitions, and the ability to discern subtle tonal qualities?",
+        "level": "B2",
+        "context": "Detailed learning pathway comparison"
+    },
+    {
+        "phrase": "I'd appreciate your perspective on the relationship between instrument quality and beginner progression. Specifically, at what price points do you observe diminishing returns for novice players, and which quality aspects genuinely facilitate the learning process versus those that might only be appreciable to more experienced musicians?",
+        "level": "B2",
+        "context": "Investment optimization inquiry"
+    },
+    {
+        "phrase": "Could you elaborate on the pedagogical approach employed in your lesson programs? I'm particularly interested in understanding whether you primarily utilize a method-book progression, incorporate music theory from the outset, or emphasize playing familiar songs as a vehicle for technical development.",
+        "level": "B2",
+        "context": "Pedagogical methodology inquiry"
+    },
+    {
+        "phrase": "Regarding instrument playability, I understand that factors such as action height, neck profile, and string tension can significantly impact a beginner's experience. Could you explain how these elements might be optimized for a new player, and what adjustments might be possible or advisable on entry-level instruments?",
+        "level": "B2",
+        "context": "Detailed playability optimization inquiry"
+    },
+    {
+        "phrase": "Beyond the obvious accessories like picks and tuners, I'm interested in understanding which supplementary items might substantively enhance the learning process. For instance, are there specific types of instructional materials, practice aids, or even amplification options that you find particularly beneficial for facilitating steady progress?",
+        "level": "B2",
+        "context": "Comprehensive learning ecosystem inquiry"
+    },
+    {
+        "phrase": "When evaluating these instruments, I'm finding it challenging to assess qualities that might only become apparent with developing technique. Could you suggest a structured approach to testing these guitars that might help me identify subtle differences in responsiveness, tonal balance, and overall playability despite my current limitations?",
+        "level": "B2",
+        "context": "Methodical instrument evaluation request"
+    },
+    {
+        "phrase": "I'm attempting to develop a realistic and sustainable practice regimen given my other commitments. Could you provide guidance on effective practice structures, including how to balance technical exercises, repertoire development, and theoretical understanding? I'm particularly interested in approaches that maximize efficiency while minimizing potential for developing problematic techniques.",
+        "level": "B2",
+        "context": "Optimized practice methodology inquiry"
+    },
+    {
+        "phrase": "Regarding your warranty and service policies, I'd appreciate a more detailed understanding of what maintenance issues are typically covered versus those considered normal adjustment. Additionally, do you offer any form of setup optimization specifically tailored to beginners' needs during the initial ownership period?",
+        "level": "B2",
+        "context": "Comprehensive ownership support inquiry"
+    },
+    {
+        "phrase": "I'm interested in mapping out a longer-term developmental pathway. Could you explain how your instructional programs accommodate the transition from fundamental skills to more specialized playing styles? Additionally, at what stage might one benefit from individual instruction versus group classes or self-directed learning?",
+        "level": "B2",
+        "context": "Progressive skill development planning"
+    },
+    {
+        "phrase": "As a complete novice contemplating this musical journey, I find myself drawn to the tonal characteristics and expressive potential of fingerstyle guitar, particularly within the American Primitive tradition exemplified by Fahey and Basho. I'm curious whether you might guide me toward instruments that, while accessible to a beginner, might possess voicing and response characteristics that would eventually accommodate the harmonic complexity and dynamic nuance this style demands as my technique develops.",
+        "level": "C1",
+        "context": "Highly specialized beginner instrument consultation"
+    },
+    {
+        "phrase": "The pedagogical literature seems divided on the optimal starting point for new guitarists, with compelling arguments for both the immediate tactile feedback of an electric instrument and the supposedly more demanding but potentially more rewarding resistance of steel-string acoustic. I wonder if you might offer a more nuanced perspective on how these different initial experiences might shape technique development, particularly regarding right-hand articulation and left-hand strength in the crucial early stages of neuromotor pattern formation.",
+        "level": "C1",
+        "context": "Advanced learning pathway analysis request"
+    },
+    {
+        "phrase": "I'm attempting to develop a framework for evaluating the true value proposition of instruments at various price points, particularly regarding the often-cited but rarely quantified relationship between build quality and playability. Could you elaborate on which specific construction elements or materials genuinely influence the learning experience versus those that primarily affect aesthetic or tonal characteristics that might be imperceptible to the untrained ear?",
+        "level": "C1",
+        "context": "Sophisticated value assessment framework inquiry"
+    },
+    {
+        "phrase": "Having researched various instructional methodologies, I'm intrigued by the apparent tension between traditional approaches emphasizing technical foundation and theory before repertoire, versus more contemporary methods that prioritize immediate musical expression. I'd value your perspective on how your curriculum navigates this balance, and whether different approaches might better serve different learning styles or ultimate musical objectives.",
+        "level": "C1",
+        "context": "Advanced pedagogical philosophy inquiry"
+    },
+    {
+        "phrase": "I understand that the relationship between physical instrument characteristics and player development is complex and often individualized. I'm particularly interested in how factors such as scale length, string spacing, neck profile, and body dimensions might interact with a beginner's physiological attributes to either facilitate or impede the development of proper technique. Could you offer insight into how one might optimize these parameters given my specific physical characteristics?",
+        "level": "C1",
+        "context": "Ergonomic optimization consultation"
+    },
+    {
+        "phrase": "Beyond conventional accessories, I'm interested in exploring how emerging technologies and supplementary resources might be strategically integrated into a comprehensive learning ecosystem. Specifically, I'd value your assessment of how tools such as audio-visual recording, spectral analysis applications, or adaptive learning platforms might complement traditional instruction and potentially accelerate certain aspects of technical or theoretical development.",
+        "level": "C1",
+        "context": "Integrated learning technology consultation"
+    },
+    {
+        "phrase": "When evaluating instruments, I find myself simultaneously constrained by my limited technical ability yet cognizant that certain qualities may only reveal themselves as my playing develops. I wonder if you might suggest a methodical evaluation protocol that would allow me to assess not only current playability but also potential longevity and growth capacity, perhaps identifying specific tests or qualities that serve as reliable proxies for instruments that will remain satisfying as technique advances.",
+        "level": "C1",
+        "context": "Sophisticated instrument evaluation methodology"
+    },
+    {
+        "phrase": "Having studied various approaches to deliberate practice in skill acquisition domains, I'm interested in developing a structured regimen that optimally balances cognitive and physical aspects of guitar learning. Could you offer insight into how principles such as spaced repetition, interleaved practice, and variable learning might be specifically applied to foundational guitar technique, and how one might systematically track progress across multiple skill dimensions?",
+        "level": "C1",
+        "context": "Evidence-based practice optimization inquiry"
+    },
+    {
+        "phrase": "Regarding the ongoing relationship between player and instrument, I'm interested in developing a more sophisticated understanding of maintenance and adjustment protocols. Specifically, could you elaborate on how factors such as humidity variation, playing style development, and normal wear patterns might necessitate periodic setup modifications, and what level of these adjustments might reasonably be learned by a dedicated amateur versus requiring professional intervention?",
+        "level": "C1",
+        "context": "Comprehensive instrument relationship management"
+    },
+    {
+        "phrase": "Looking beyond the initial stages of learning, I'm attempting to conceptualize a coherent developmental trajectory that aligns with my musical aspirations. Could you offer perspective on how the foundation established in your beginner curriculum might later branch into more specialized technical and theoretical domains, and at what developmental junctures one might benefit from supplementing structured instruction with exploration of specific stylistic traditions or technical approaches?",
+        "level": "C1",
+        "context": "Personalized developmental trajectory planning"
+    },
+    {
+        "phrase": "I find myself contemplating the intersection of instrument design philosophy and pedagogical methodology as I embark on this musical journey. The evolution of the modern guitar represents a fascinating study in the balance between tradition and innovation, between tonal architecture and ergonomic consideration. I wonder if you might share your perspective on how these sometimes competing design imperatives manifest in instruments intended for the developing player, and whether contemporary luthiery has meaningfully addressed the specific needs of the novice in ways that traditional construction approaches perhaps overlooked.",
+        "level": "C2",
+        "context": "Philosophical instrument design discourse"
+    },
+    {
+        "phrase": "The dichotomy between acoustic and electric instruments as entry points to guitar mastery presents an interesting lens through which to examine broader questions about skill acquisition pathways and their influence on ultimate musical expression. I find myself reflecting on whether the initial resistance offered by different instrumental formats might fundamentally shape not only technical development but perhaps even aesthetic sensibility and compositional tendency. Would you care to offer your thoughts on how these early formative experiences might echo through a player's musical evolution?",
+        "level": "C2",
+        "context": "Learning pathway philosophy discourse"
+    },
+    {
+        "phrase": "The relationship between instrument quality and player development raises fascinating questions about the nature of value in musical tools, particularly for those at the outset of their journey. I'm struck by the curious tension between the objective limitations of entry-level instruments and the subjective experience of the beginner, whose perceptual framework is simultaneously forming alongside their technical facility. I wonder about your reflections on this co-developmental process and how it might inform a more nuanced understanding of quality as it relates to the novice musician.",
+        "level": "C2",
+        "context": "Instrument quality philosophy discourse"
+    },
+    {
+        "phrase": "Contemporary approaches to musical education seem to exist in a fascinating state of flux between traditional conservatory models emphasizing technical foundation and theoretical understanding, and more modern paradigms prioritizing immediate creative expression and emotional connection. I find myself contemplating whether this apparent dichotomy might actually represent complementary rather than competing approaches to developing the holistic musicianship that transcends mere technical competence. I'd be interested in your perspective on how these philosophical currents have influenced your instructional approach.",
+        "level": "C2",
+        "context": "Music pedagogy philosophy discourse"
+    },
+    {
+        "phrase": "The relationship between physical form and musical expression presents a particularly intriguing domain for contemplation, especially regarding how the tactile interface of the instrument might shape not only technical capability but perhaps even conceptual understanding of musical principles. I wonder about the extent to which the physical architecture of the guitar—its spatial layout of tonal relationships and the particular demands it places on bilateral coordination—might influence cognitive schemas for musical comprehension in ways distinct from other instrumental families.",
+        "level": "C2",
+        "context": "Embodied music cognition philosophy"
+    },
+    {
+        "phrase": "The ecosystem of tools and technologies surrounding the contemporary guitarist represents an interesting case study in the mediation of artistic development through material culture. I find myself reflecting on how these extensions of the core instrument—from the humble pick to sophisticated digital interfaces—might function not merely as accessories but perhaps as substantive co-participants in the formation of technique and musical identity. I'd be curious to hear your thoughts on this co-evolutionary relationship between player, instrument, and the broader material context of practice.",
+        "level": "C2",
+        "context": "Extended instrument philosophy discourse"
+    },
+    {
+        "phrase": "The phenomenology of instrument selection presents fascinating questions about the nature of perception and evaluation, particularly for the novice whose sensory and interpretive frameworks are still developing. I find myself contemplating how one might meaningfully assess qualities in an instrument that may only become apparent through the very technical facility that the instrument is intended to help develop—a curious epistemological loop. I wonder if you have reflections on how this paradox might be navigated in the formative relationship between player and instrument.",
+        "level": "C2",
+        "context": "Instrument evaluation phenomenology"
+    },
+    {
+        "phrase": "The science of deliberate practice as applied to musical development raises intriguing questions about the nature of expertise acquisition in domains requiring the integration of cognitive, perceptual, and motor skills. I'm particularly interested in how contemporary understanding of neuroplasticity and skill consolidation might inform more efficient approaches to technical development, perhaps challenging traditional assumptions about necessary sequential progressions or time investments. Have you observed evolutions in practice methodology that reflect these emerging understandings?",
+        "level": "C2",
+        "context": "Practice methodology philosophy discourse"
+    },
+    {
+        "phrase": "The concept of maintenance in musical instruments seems to transcend mere functional preservation to encompass a deeper relationship between player, tool, and the temporal dimension of musical development. I find it compelling to consider how the gradually evolving characteristics of an instrument—its response to environmental conditions, playing style, and the passage of time—might be conceptualized not as degradation requiring correction but perhaps as a form of co-evolution with the developing musician. I wonder if you have philosophical reflections on this dynamic interplay.",
+        "level": "C2",
+        "context": "Instrument maintenance philosophy discourse"
+    },
+    {
+        "phrase": "The developmental trajectory of musical mastery presents fascinating questions about the nature of expertise itself and the relationship between technical facility, theoretical understanding, and artistic expression. I find myself contemplating whether conventional pedagogical sequences—often presented as linear progressions through discrete stages—adequately reflect the more complex, recursive nature of actual skill development, particularly in an art form where technical means and expressive ends are so intimately intertwined. I'd be interested in your perspective on these broader questions of musical development.",
+        "level": "C2",
+        "context": "Musical development philosophy discourse"
+    }
+]

@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I want to deposit this check.",
+        "level": "A1",
+        "context": "Basic check deposit"
+    },
+    {
+        "phrase": "How long will it take?",
+        "level": "A1",
+        "context": "Asking about processing time"
+    },
+    {
+        "phrase": "I need the money soon.",
+        "level": "A1",
+        "context": "Expressing urgency"
+    },
+    {
+        "phrase": "Is there a fee?",
+        "level": "A1",
+        "context": "Asking about costs"
+    },
+    {
+        "phrase": "When can I use the money?",
+        "level": "A1",
+        "context": "Asking about availability"
+    },
+    {
+        "phrase": "Can I see my balance?",
+        "level": "A1",
+        "context": "Account inquiry"
+    },
+    {
+        "phrase": "Do I need ID?",
+        "level": "A1",
+        "context": "Identity verification"
+    },
+    {
+        "phrase": "Can I have a receipt?",
+        "level": "A1",
+        "context": "Requesting documentation"
+    },
+    {
+        "phrase": "Where do I sign?",
+        "level": "A1",
+        "context": "Check processing"
+    },
+    {
+        "phrase": "Is my account number correct?",
+        "level": "A1",
+        "context": "Verifying details"
+    },
+    {
+        "phrase": "I need to deposit this check and access the funds quickly.",
+        "level": "A2",
+        "context": "Specific deposit request"
+    },
+    {
+        "phrase": "How many business days will it take to clear?",
+        "level": "A2",
+        "context": "Asking about processing time"
+    },
+    {
+        "phrase": "I have a bill payment coming up soon.",
+        "level": "A2",
+        "context": "Explaining urgency"
+    },
+    {
+        "phrase": "Are there any faster options available?",
+        "level": "A2",
+        "context": "Asking about alternatives"
+    },
+    {
+        "phrase": "What's the fee for faster processing?",
+        "level": "A2",
+        "context": "Asking about costs"
+    },
+    {
+        "phrase": "Can I get partial access to the funds today?",
+        "level": "A2",
+        "context": "Asking about partial availability"
+    },
+    {
+        "phrase": "Do you need to see my ID for this transaction?",
+        "level": "A2",
+        "context": "Identity verification"
+    },
+    {
+        "phrase": "Could I have a receipt showing the deposit date?",
+        "level": "A2",
+        "context": "Requesting documentation"
+    },
+    {
+        "phrase": "Does it matter which account I deposit to?",
+        "level": "A2",
+        "context": "Account selection"
+    },
+    {
+        "phrase": "What time will the funds be released?",
+        "level": "A2",
+        "context": "Specific timing inquiry"
+    },
+    {
+        "phrase": "I need to deposit this check and I'm wondering what options I have for accessing the funds quickly.",
+        "level": "B1",
+        "context": "Detailed deposit inquiry"
+    },
+    {
+        "phrase": "Could you explain your standard processing times for check deposits?",
+        "level": "B1",
+        "context": "Processing information request"
+    },
+    {
+        "phrase": "I have an important payment due in three days. Will the funds be available by then?",
+        "level": "B1",
+        "context": "Specific timing concern"
+    },
+    {
+        "phrase": "What expedited processing options do you offer for check deposits?",
+        "level": "B1",
+        "context": "Asking about alternatives"
+    },
+    {
+        "phrase": "Could you break down the fees associated with faster access to my funds?",
+        "level": "B1",
+        "context": "Detailed fee inquiry"
+    },
+    {
+        "phrase": "Does the origin of the check affect how quickly it will clear?",
+        "level": "B1",
+        "context": "Check processing details"
+    },
+    {
+        "phrase": "Is there a maximum amount I can have immediate access to?",
+        "level": "B1",
+        "context": "Limit inquiry"
+    },
+    {
+        "phrase": "How does your mobile deposit compare to in-person deposits in terms of processing time?",
+        "level": "B1",
+        "context": "Service comparison"
+    },
+    {
+        "phrase": "Will I receive a notification when the funds are available?",
+        "level": "B1",
+        "context": "Communication inquiry"
+    },
+    {
+        "phrase": "Can you place a hold on only part of the check amount?",
+        "level": "B1",
+        "context": "Hold policy inquiry"
+    },
+    {
+        "phrase": "I'd like to deposit this check into my account, and I'm concerned about the availability of the funds for an upcoming payment. Could you walk me through my options?",
+        "level": "B2",
+        "context": "Comprehensive deposit inquiry"
+    },
+    {
+        "phrase": "What factors determine the hold period for check deposits at your bank?",
+        "level": "B2",
+        "context": "Policy details inquiry"
+    },
+    {
+        "phrase": "I understand there are federal regulations regarding fund availability. How do those apply in my situation?",
+        "level": "B2",
+        "context": "Regulatory inquiry"
+    },
+    {
+        "phrase": "Could you explain the difference between provisional credit and final settlement for check deposits?",
+        "level": "B2",
+        "context": "Technical banking inquiry"
+    },
+    {
+        "phrase": "I'm weighing the cost of expedited processing against the urgency of my situation. What would you recommend?",
+        "level": "B2",
+        "context": "Seeking recommendations"
+    },
+    {
+        "phrase": "Are there any account types or status levels that offer preferential processing times for check deposits?",
+        "level": "B2",
+        "context": "Account features inquiry"
+    },
+    {
+        "phrase": "How does your bank's clearing process work with the originating institution?",
+        "level": "B2",
+        "context": "Interbank processing inquiry"
+    },
+    {
+        "phrase": "In my experience, availability times can vary considerably. What's been your observation regarding typical clearance for checks of this size?",
+        "level": "B2",
+        "context": "Experience-based inquiry"
+    },
+    {
+        "phrase": "Do electronic payments initiated from my account have the same processing delays as outgoing checks?",
+        "level": "B2",
+        "context": "Payment method comparison"
+    },
+    {
+        "phrase": "If I opt for the expedited processing, will there be any notation or special handling I should be aware of?",
+        "level": "B2",
+        "context": "Processing details inquiry"
+    },
+    {
+        "phrase": "I'd like to deposit this check and discuss options for expedited fund availability, as I have a time-sensitive payment scheduled. Could you outline the various processing timelines and associated fees?",
+        "level": "C1",
+        "context": "Detailed service discussion"
+    },
+    {
+        "phrase": "I'm curious about the mechanics of your check clearing process. Does your bank use image exchange networks or the Federal Reserve as an intermediary?",
+        "level": "C1",
+        "context": "Technical clearing inquiry"
+    },
+    {
+        "phrase": "Given that this check is drawn on an account at your own institution, would an internal transfer be more efficient than processing it as a standard deposit?",
+        "level": "C1",
+        "context": "Alternative processing suggestion"
+    },
+    {
+        "phrase": "I've noticed that your funds availability policy makes distinctions between local and non-local checks. Could you clarify how geographical factors influence processing times?",
+        "level": "C1",
+        "context": "Policy interpretation"
+    },
+    {
+        "phrase": "In evaluating the cost-benefit of expedited processing, I'd appreciate your insights on whether the fee structure is tiered based on the deposit amount or flat across all transactions.",
+        "level": "C1",
+        "context": "Fee structure inquiry"
+    },
+    {
+        "phrase": "Has your institution made any recent modifications to its funds availability policy in response to advancements in clearing house technologies?",
+        "level": "C1",
+        "context": "Policy evolution inquiry"
+    },
+    {
+        "phrase": "Would you mind explaining how your risk assessment algorithms might affect the hold duration for this particular deposit?",
+        "level": "C1",
+        "context": "Risk assessment discussion"
+    },
+    {
+        "phrase": "I understand that Regulation CC governs hold periods, but do you offer any discretionary releases ahead of mandated availability schedules?",
+        "level": "C1",
+        "context": "Regulatory flexibility inquiry"
+    },
+    {
+        "phrase": "Could you elaborate on how your bank's relationship with the drawee institution might influence the clearing timeline for this check?",
+        "level": "C1",
+        "context": "Interbank relationship inquiry"
+    },
+    {
+        "phrase": "I'm trying to optimize my cash flow management. Would establishing a line of credit be more efficient than repeatedly paying expedited processing fees?",
+        "level": "C1",
+        "context": "Financial planning inquiry"
+    },
+    {
+        "phrase": "I'd like to deposit this check and discuss the nuances of your funds availability policy as it pertains to my particular situation, where I need to ensure timely access for a scheduled payment. Could you elaborate on how your institution balances regulatory compliance with customer accommodation in cases of demonstrated urgency?",
+        "level": "C2",
+        "context": "Complex policy discussion"
+    },
+    {
+        "phrase": "I'm interested in understanding how the interplay between the Check 21 Act and your institution's risk management framework influences hold decisions for deposits of substantial value.",
+        "level": "C2",
+        "context": "Regulatory framework analysis"
+    },
+    {
+        "phrase": "Given the evolving landscape of electronic payment systems, would you say that traditional check holds represent an increasingly anachronistic approach to risk mitigation in modern banking?",
+        "level": "C2",
+        "context": "Banking evolution philosophy"
+    },
+    {
+        "phrase": "I find it curious that despite the technological capabilities for near-instantaneous verification, financial institutions maintain what appears to be artificially extended hold periods. Would you characterize this as primarily a risk management strategy or a cash flow optimization technique?",
+        "level": "C2",
+        "context": "Industry practice critique"
+    },
+    {
+        "phrase": "Could you delineate the specific algorithmic parameters that your system employs when determining exceptional hold periods beyond the standard policy framework?",
+        "level": "C2",
+        "context": "Technical algorithm inquiry"
+    },
+    {
+        "phrase": "I'm contemplating the economic implications of expedited processing fees in relation to the time value of money. In your professional assessment, at what threshold does the opportunity cost of delayed access exceed the premium for acceleration?",
+        "level": "C2",
+        "context": "Economic analysis inquiry"
+    },
+    {
+        "phrase": "To what extent has your institution adapted its funds availability posture in response to the disintermediation pressures from fintech competitors offering more aggressive release schedules?",
+        "level": "C2",
+        "context": "Competitive landscape analysis"
+    },
+    {
+        "phrase": "I'm fascinated by the persistent friction in check processing workflows despite the purported advancements in straight-through processing capabilities. Where would you locate the primary bottlenecks in the current system?",
+        "level": "C2",
+        "context": "Process optimization discussion"
+    },
+    {
+        "phrase": "Has your risk management department observed any statistically significant correlation between accelerated funds release and increased instances of fraud or returned items?",
+        "level": "C2",
+        "context": "Risk correlation analysis"
+    },
+    {
+        "phrase": "In considering the broader implications of liquidity management across the banking system, how do you reconcile customer expectations for immediacy with the prudential considerations that inform your institution's availability schedules?",
+        "level": "C2",
+        "context": "Banking philosophy discussion"
+    }
+]

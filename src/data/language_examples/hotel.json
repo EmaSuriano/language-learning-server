@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I have a reservation.",
+        "level": "A1",
+        "context": "Basic check-in statement"
+    },
+    {
+        "phrase": "Is breakfast included?",
+        "level": "A1",
+        "context": "Basic meal inquiry"
+    },
+    {
+        "phrase": "What time is breakfast?",
+        "level": "A1",
+        "context": "Basic schedule inquiry"
+    },
+    {
+        "phrase": "Is the restaurant open?",
+        "level": "A1",
+        "context": "Basic service inquiry"
+    },
+    {
+        "phrase": "Where is my room?",
+        "level": "A1",
+        "context": "Basic location inquiry"
+    },
+    {
+        "phrase": "Do you have a map?",
+        "level": "A1",
+        "context": "Basic information request"
+    },
+    {
+        "phrase": "Is there wifi?",
+        "level": "A1",
+        "context": "Basic amenity inquiry"
+    },
+    {
+        "phrase": "I need help with my bags.",
+        "level": "A1",
+        "context": "Basic assistance request"
+    },
+    {
+        "phrase": "How do I call reception?",
+        "level": "A1",
+        "context": "Basic hotel function inquiry"
+    },
+    {
+        "phrase": "Is there room service?",
+        "level": "A1",
+        "context": "Basic service inquiry"
+    },
+    {
+        "phrase": "I'd like to check in. My reservation is under Smith.",
+        "level": "A2",
+        "context": "Standard check-in request"
+    },
+    {
+        "phrase": "What time does breakfast start and end?",
+        "level": "A2",
+        "context": "Specific schedule inquiry"
+    },
+    {
+        "phrase": "Are there any restaurants still open nearby?",
+        "level": "A2",
+        "context": "Local services inquiry"
+    },
+    {
+        "phrase": "How do I connect to the wifi?",
+        "level": "A2",
+        "context": "Technology usage inquiry"
+    },
+    {
+        "phrase": "Is there a gym or pool in the hotel?",
+        "level": "A2",
+        "context": "Facility inquiry"
+    },
+    {
+        "phrase": "What time does the hotel restaurant close?",
+        "level": "A2",
+        "context": "Service hours inquiry"
+    },
+    {
+        "phrase": "How can I get to the city center from here?",
+        "level": "A2",
+        "context": "Transportation inquiry"
+    },
+    {
+        "phrase": "Do you offer room service at this hour?",
+        "level": "A2",
+        "context": "Late-night service inquiry"
+    },
+    {
+        "phrase": "Does my room have a mini-bar?",
+        "level": "A2",
+        "context": "Room amenity inquiry"
+    },
+    {
+        "phrase": "Can I get an extra pillow for my room?",
+        "level": "A2",
+        "context": "Room comfort request"
+    },
+    {
+        "phrase": "I've just arrived after a long flight and I'd like to check in. My reservation was made under the name Johnson for five nights.",
+        "level": "B1",
+        "context": "Detailed check-in request"
+    },
+    {
+        "phrase": "Could you tell me which hotel amenities are still available at this hour? I'm particularly interested in getting something to eat.",
+        "level": "B1",
+        "context": "Late-night services inquiry"
+    },
+    {
+        "phrase": "Is continental breakfast included with my room, and if so, what times is it served?",
+        "level": "B1",
+        "context": "Meal option inquiry"
+    },
+    {
+        "phrase": "Could you recommend some nearby restaurants that might still be open, and how I would get there from the hotel?",
+        "level": "B1",
+        "context": "Local dining recommendation request"
+    },
+    {
+        "phrase": "What's the best way to get to the airport from here, and how much time should I allow for the journey?",
+        "level": "B1",
+        "context": "Transportation planning inquiry"
+    },
+    {
+        "phrase": "I notice the room has a coffee machine. Could you explain how to use it, and whether additional coffee pods are available?",
+        "level": "B1",
+        "context": "Room amenity usage inquiry"
+    },
+    {
+        "phrase": "Is there a convenience store or pharmacy within walking distance where I could pick up a few essentials?",
+        "level": "B1",
+        "context": "Local services inquiry"
+    },
+    {
+        "phrase": "How does the room's air conditioning system work? I prefer to set my own temperature.",
+        "level": "B1",
+        "context": "Room feature usage inquiry"
+    },
+    {
+        "phrase": "Do you offer any shuttle services to local attractions, and if so, how do I book them?",
+        "level": "B1",
+        "context": "Hotel service inquiry"
+    },
+    {
+        "phrase": "What security features does the hotel have? I'm traveling with some valuable equipment.",
+        "level": "B1",
+        "context": "Security concern inquiry"
+    },
+    {
+        "phrase": "I've just arrived from an international flight that was significantly delayed, and I'm relieved to finally be checking in. My reservation should be under Robertson, and I believe I requested a high floor room away from the elevator if possible.",
+        "level": "B2",
+        "context": "Detailed arrival explanation and check-in"
+    },
+    {
+        "phrase": "Given the late hour, I'm curious about what dining options might still be available, either within the hotel or within reasonable proximity. Would you mind elaborating on what you'd recommend for someone in need of a proper meal?",
+        "level": "B2",
+        "context": "Comprehensive late-night dining inquiry"
+    },
+    {
+        "phrase": "Could you explain the full range of breakfast options available to guests? I'm particularly interested in whether there are healthy alternatives or if special dietary requirements can be accommodated.",
+        "level": "B2",
+        "context": "Detailed meal options inquiry"
+    },
+    {
+        "phrase": "I'm unfamiliar with this area and would appreciate some insight into the neighborhood, particularly regarding safety for evening walks and proximity to cultural attractions I might visit during my stay.",
+        "level": "B2",
+        "context": "Detailed local area information request"
+    },
+    {
+        "phrase": "I understand there's a public transportation system nearby. Could you explain how it works, what ticket options are available, and whether there are any apps I should download to navigate it effectively?",
+        "level": "B2",
+        "context": "Comprehensive transportation inquiry"
+    },
+    {
+        "phrase": "I noticed from the hotel website that the rooms feature smart technology. Could you walk me through how to operate the various systems, particularly the entertainment options and climate control?",
+        "level": "B2",
+        "context": "Detailed room technology inquiry"
+    },
+    {
+        "phrase": "I'm planning to fit in some work during my stay. Could you tell me about the business facilities available, including any quiet spaces for calls and whether the wifi is sufficient for video conferencing?",
+        "level": "B2",
+        "context": "Business amenities inquiry"
+    },
+    {
+        "phrase": "Are there any local cultural nuances or customs I should be aware of, particularly regarding tipping or restaurant etiquette in this region?",
+        "level": "B2",
+        "context": "Cultural information request"
+    },
+    {
+        "phrase": "I'm interested in maintaining my fitness routine while staying here. Beyond the basic gym facilities, are there recommended running routes nearby or perhaps fitness classes available to guests?",
+        "level": "B2",
+        "context": "Detailed fitness options inquiry"
+    },
+    {
+        "phrase": "Given my late arrival, I'm concerned about settling in comfortably tonight. Are there specific services or amenities designed to help guests recover from jet lag or long journeys?",
+        "level": "B2",
+        "context": "Specialized comfort services inquiry"
+    },
+    {
+        "phrase": "After what has been an extraordinarily lengthy journey involving multiple delays and a rather challenging connection in Frankfurt, I find myself finally arriving at your establishment substantially later than anticipated. I believe my reservation was confirmed under the name Harrington, and I'm hoping that despite the hour, the check-in process might proceed expeditiously.",
+        "level": "C1",
+        "context": "Sophisticated check-in with travel context"
+    },
+    {
+        "phrase": "I'm particularly interested in understanding what culinary options might remain available at this rather unsociable hour, whether within the confines of the hotel or within reasonable proximity. I'd be grateful for your insights regarding establishments that might offer something beyond mere sustenance—perhaps somewhere that might help salvage what remains of the evening.",
+        "level": "C1",
+        "context": "Nuanced late-night dining inquiry"
+    },
+    {
+        "phrase": "Regarding the breakfast service, I'm curious about the extent to which it reflects local culinary traditions versus catering to international palates. I'm especially interested in any signature dishes or regional specialties that might provide an authentic introduction to the local cuisine.",
+        "level": "C1",
+        "context": "Culturally-focused meal inquiry"
+    },
+    {
+        "phrase": "I'd appreciate your perspective on the neighborhood's character and evolution, particularly any areas that might offer a genuine sense of local culture rather than the more obvious tourist attractions. I'm drawn to authentic experiences that provide insight into the city's contemporary identity.",
+        "level": "C1",
+        "context": "Sophisticated local area inquiry"
+    },
+    {
+        "phrase": "Could you elaborate on the transportation infrastructure connecting the hotel to key areas of interest? I'm particularly interested in understanding the relative merits of public versus private options, especially considering efficiency, cost, and the potential for unexpected cultural encounters.",
+        "level": "C1",
+        "context": "Comprehensive transportation analysis request"
+    },
+    {
+        "phrase": "I notice that the room appears to feature various technological amenities. I'm curious about the philosophy behind their implementation and how they're intended to enhance the guest experience beyond mere novelty. Is there a particular system or feature that guests find especially valuable?",
+        "level": "C1",
+        "context": "Philosophical room technology inquiry"
+    },
+    {
+        "phrase": "As someone who values both productivity and well-being while traveling, I'm interested in how the hotel's amenities might support this balance. Are there spaces designed specifically for focused work that also consider ergonomics and natural light?",
+        "level": "C1",
+        "context": "Holistic work-life amenities inquiry"
+    },
+    {
+        "phrase": "I'm intrigued by how the hotel's design and service philosophy reflects or incorporates elements of the local cultural heritage. Are there specific architectural features or service touches that connect guests to the destination's unique identity?",
+        "level": "C1",
+        "context": "Cultural-architectural inquiry"
+    },
+    {
+        "phrase": "Given my interest in sustainable travel, I'd be interested to learn about any environmental initiatives or practices the hotel has implemented, particularly any that might not be immediately apparent but reflect a deeper commitment to ecological responsibility.",
+        "level": "C1",
+        "context": "Sustainability practices inquiry"
+    },
+    {
+        "phrase": "I'm curious about the demographic profile of your typical guests and how that shapes the service approach. Does the hotel cater primarily to business travelers, leisure guests, or perhaps a specific national or cultural group, and how does that influence the amenities offered?",
+        "level": "C1",
+        "context": "Hotel positioning inquiry"
+    },
+    {
+        "phrase": "Having traversed multiple time zones and navigated the increasingly labyrinthine complexities of international travel, I find myself arriving at your establishment at an hour that speaks to the capriciousness of modern aviation rather than any intentional design. My reservation, secured through a rather arcane combination of loyalty points and seasonal promotions, should be cataloged under the name Rothschild. I'm curious as to whether the room assignment might reflect my documented preference for architectural views over the ostensible luxury of square footage.",
+        "level": "C2",
+        "context": "Highly sophisticated arrival narrative and check-in"
+    },
+    {
+        "phrase": "The peculiar disorientation of late-night arrival in an unfamiliar urban landscape often amplifies one's awareness of physiological necessities. I wonder if you might illuminate what gastronomic possibilities remain accessible at this juncture, whether within your establishment's purview or within the surrounding ecosystem of culinary enterprises that have evolved to accommodate the increasingly borderless nature of global commerce and leisure.",
+        "level": "C2",
+        "context": "Philosophical late-night dining discourse"
+    },
+    {
+        "phrase": "I've developed a particular interest in how breakfast services in international accommodations navigate the tension between standardization and localization—that delicate balance between catering to the cosmopolitan traveler's expectation of familiar comfort while simultaneously offering authentic engagement with regional culinary vernacular. How would you characterize your establishment's position within this ongoing dialectic?",
+        "level": "C2",
+        "context": "Theoretical culinary-cultural inquiry"
+    },
+    {
+        "phrase": "The relationship between hospitality establishments and their immediate urban or natural context presents a fascinating study in permeability and mutual influence. I'm curious about your perspective on how this hotel functions as both a gateway to and a sanctuary from the surrounding neighborhood, and how that duality informs guest experiences beyond the transactional exchange of services.",
+        "level": "C2",
+        "context": "Urban-hotel relationship discourse"
+    },
+    {
+        "phrase": "The evolution of mobility systems within urban environments reflects broader socioeconomic narratives and power structures that often remain invisible to the transient visitor. I'd be interested in your insights regarding how the transportation networks converging around this location reveal the city's historical development patterns and contemporary priorities.",
+        "level": "C2",
+        "context": "Transportation systems theory discussion"
+    },
+    {
+        "phrase": "Contemporary hotel room design increasingly reflects a convergence of seemingly contradictory imperatives: the simulation of domestic familiarity alongside the theatrical presentation of luxury; the promise of technological sophistication without the cognitive burden of complexity; the illusion of spaciousness within ever-diminishing square footage. How do you find guests navigating these paradoxes within your particular implementation?",
+        "level": "C2",
+        "context": "Hotel design philosophy discourse"
+    },
+    {
+        "phrase": "I'm intrigued by the shifting paradigms of productivity in travel contexts, particularly how the traditional delineation between business and leisure spaces has yielded to more fluid conceptualizations of purpose and function. Has your establishment found itself recontextualizing its physical and service infrastructure in response to these evolving patterns of guest engagement?",
+        "level": "C2",
+        "context": "Contemporary work-leisure paradigm inquiry"
+    },
+    {
+        "phrase": "The anthropology of hospitality spaces reveals fascinating insights into cultural values and social hierarchies, particularly in how service interactions are choreographed and amenities prioritized. I wonder to what extent your establishment consciously engages with or perhaps challenges the prevailing conventions of luxury signification within the contemporary hospitality landscape.",
+        "level": "C2",
+        "context": "Anthropological hospitality analysis"
+    },
+    {
+        "phrase": "The increasing visibility of environmental consciousness in the hospitality sector presents interesting questions about the authenticity of sustainability initiatives versus their deployment as marketing narratives. I'm curious about how your organization navigates the potential tension between genuine ecological commitment and the commercial imperatives of luxury positioning.",
+        "level": "C2",
+        "context": "Critical sustainability discourse"
+    },
+    {
+        "phrase": "The notion of 'local authenticity' in global hospitality contexts has become simultaneously more valued and more problematic, particularly as destinations grapple with overtourism and cultural commodification. I'd be interested in your reflection on how the hotel conceptualizes its role as a mediator of cultural experience for guests while respecting the lived reality of the community in which it's situated.",
+        "level": "C2",
+        "context": "Cultural mediation ethics discussion"
+    }
+]

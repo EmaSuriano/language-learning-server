@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "What is your budget?",
+        "level": "A1",
+        "context": "Basic budget inquiry"
+    },
+    {
+        "phrase": "How many bedrooms?",
+        "level": "A1",
+        "context": "Basic property requirements"
+    },
+    {
+        "phrase": "Nice house!",
+        "level": "A1",
+        "context": "Simple property reaction"
+    },
+    {
+        "phrase": "Is parking included?",
+        "level": "A1",
+        "context": "Basic amenity inquiry"
+    },
+    {
+        "phrase": "When can we view it?",
+        "level": "A1",
+        "context": "Basic viewing scheduling"
+    },
+    {
+        "phrase": "How old is the house?",
+        "level": "A1",
+        "context": "Basic property information"
+    },
+    {
+        "phrase": "Is it near a school?",
+        "level": "A1",
+        "context": "Basic location inquiry"
+    },
+    {
+        "phrase": "Can I make an offer?",
+        "level": "A1",
+        "context": "Basic purchase inquiry"
+    },
+    {
+        "phrase": "What are the taxes?",
+        "level": "A1",
+        "context": "Basic cost inquiry"
+    },
+    {
+        "phrase": "Sign here, please.",
+        "level": "A1",
+        "context": "Basic document signing"
+    },
+    {
+        "phrase": "What's your price range for a property?",
+        "level": "A2",
+        "context": "Specific budget inquiry"
+    },
+    {
+        "phrase": "Are you looking for a house or an apartment?",
+        "level": "A2",
+        "context": "Property type preference"
+    },
+    {
+        "phrase": "Have you been pre-approved for a mortgage?",
+        "level": "A2",
+        "context": "Financing status inquiry"
+    },
+    {
+        "phrase": "Would you prefer a newer or older property?",
+        "level": "A2",
+        "context": "Property age preference"
+    },
+    {
+        "phrase": "How many bathrooms do you need?",
+        "level": "A2",
+        "context": "Specific requirements"
+    },
+    {
+        "phrase": "Is outdoor space important to you?",
+        "level": "A2",
+        "context": "Feature preference inquiry"
+    },
+    {
+        "phrase": "The property taxes are $3,500 per year.",
+        "level": "A2",
+        "context": "Specific cost information"
+    },
+    {
+        "phrase": "This neighborhood has good schools.",
+        "level": "A2",
+        "context": "Area information"
+    },
+    {
+        "phrase": "We need to make an appointment to see the house.",
+        "level": "A2",
+        "context": "Viewing arrangement"
+    },
+    {
+        "phrase": "The closing costs will be about 3% of the purchase price.",
+        "level": "A2",
+        "context": "Transaction cost information"
+    },
+    {
+        "phrase": "I'd recommend getting a pre-approval letter from a lender before we start looking at properties.",
+        "level": "B1",
+        "context": "Financing preparation advice"
+    },
+    {
+        "phrase": "Let's discuss your must-haves versus your nice-to-haves to focus our property search.",
+        "level": "B1",
+        "context": "Requirements prioritization"
+    },
+    {
+        "phrase": "The seller is motivated because they've already purchased another home.",
+        "level": "B1",
+        "context": "Seller circumstance information"
+    },
+    {
+        "phrase": "This property has been on the market for 45 days, so there might be room for negotiation.",
+        "level": "B1",
+        "context": "Market position insight"
+    },
+    {
+        "phrase": "You should consider the commute time from this location to your workplace.",
+        "level": "B1",
+        "context": "Lifestyle consideration"
+    },
+    {
+        "phrase": "The homeowners association fee covers landscaping and snow removal.",
+        "level": "B1",
+        "context": "HOA information"
+    },
+    {
+        "phrase": "You might want to include a home inspection contingency in your offer.",
+        "level": "B1",
+        "context": "Offer strategy advice"
+    },
+    {
+        "phrase": "The basement shows signs of previous water damage, but it's been waterproofed since then.",
+        "level": "B1",
+        "context": "Property condition information"
+    },
+    {
+        "phrase": "This neighborhood has appreciated by about 5% annually over the last five years.",
+        "level": "B1",
+        "context": "Investment potential information"
+    },
+    {
+        "phrase": "I suggest we look at comparable sales in the area to determine a competitive offer price.",
+        "level": "B1",
+        "context": "Pricing strategy"
+    },
+    {
+        "phrase": "I recommend we analyze recent comparable sales to establish an offer strategy that's competitive without exceeding fair market value.",
+        "level": "B2",
+        "context": "Detailed pricing strategy"
+    },
+    {
+        "phrase": "The property has a transferable home warranty that covers major appliances and systems for the first year after purchase.",
+        "level": "B2",
+        "context": "Property protection features"
+    },
+    {
+        "phrase": "We should discuss how different mortgage structures might impact your monthly payment and long-term financial planning.",
+        "level": "B2",
+        "context": "Financing options discussion"
+    },
+    {
+        "phrase": "Given the competitive nature of this market, we might want to consider an escalation clause that would automatically increase your offer to a set amount above competing bids.",
+        "level": "B2",
+        "context": "Competitive market strategy"
+    },
+    {
+        "phrase": "The zoning regulations in this area would allow you to build an additional dwelling unit, which could provide rental income or space for family members.",
+        "level": "B2",
+        "context": "Property development potential"
+    },
+    {
+        "phrase": "I've noticed some issues with the electrical panel that might need upgrading to meet current code requirements.",
+        "level": "B2",
+        "context": "Property condition assessment"
+    },
+    {
+        "phrase": "Let's review the seller's disclosure statement carefully to identify any potential concerns that warrant further investigation.",
+        "level": "B2",
+        "context": "Due diligence process"
+    },
+    {
+        "phrase": "The property is in a designated flood zone, which will impact your insurance requirements and potentially your mortgage terms.",
+        "level": "B2",
+        "context": "Property risk factors"
+    },
+    {
+        "phrase": "I'd suggest requesting information about the age and maintenance history of major systems like the roof, HVAC, and water heater.",
+        "level": "B2",
+        "context": "Property condition investigation"
+    },
+    {
+        "phrase": "This neighborhood is undergoing significant revitalization, with several commercial developments planned that could impact property values positively over the next five years.",
+        "level": "B2",
+        "context": "Market trend information"
+    },
+    {
+        "phrase": "After analyzing market absorption rates and seasonal buying patterns, I believe we're entering a window where strategic offers on appropriately priced properties could yield favorable results.",
+        "level": "C1",
+        "context": "Advanced market timing strategy"
+    },
+    {
+        "phrase": "I'd recommend structuring your offer with a persuasive earnest money deposit that demonstrates commitment while protecting your interests through carefully crafted contingencies.",
+        "level": "C1",
+        "context": "Sophisticated offer structure"
+    },
+    {
+        "phrase": "The property's historic designation offers certain tax advantages but also imposes restrictions on exterior modifications that warrant consideration.",
+        "level": "C1",
+        "context": "Special property designation impacts"
+    },
+    {
+        "phrase": "Let's develop a comprehensive due diligence timeline that coordinates inspections, appraisal, title work, and financing milestones to ensure a smooth transaction.",
+        "level": "C1",
+        "context": "Transaction management planning"
+    },
+    {
+        "phrase": "Have you considered how the property's orientation and existing envelope characteristics might impact energy consumption and comfort throughout seasonal changes?",
+        "level": "C1",
+        "context": "Property performance assessment"
+    },
+    {
+        "phrase": "I've prepared a comparative market analysis that considers both quantitative factors like price per square foot and qualitative elements such as finish quality and architectural integrity.",
+        "level": "C1",
+        "context": "Sophisticated property valuation"
+    },
+    {
+        "phrase": "The property's proximity to projected infrastructure improvements suggests potential for value appreciation that may outpace general market trends in the medium term.",
+        "level": "C1",
+        "context": "Investment potential analysis"
+    },
+    {
+        "phrase": "We should discuss the implications of the property's tax assessment history and how a potential reassessment after purchase might affect your carrying costs.",
+        "level": "C1",
+        "context": "Long-term cost planning"
+    },
+    {
+        "phrase": "The seller's timeline constraints present an opportunity to negotiate favorable terms if we can accommodate their preferred closing schedule.",
+        "level": "C1",
+        "context": "Negotiation strategy development"
+    },
+    {
+        "phrase": "I recommend establishing a relationship with a portfolio lender who can offer more flexible underwriting criteria given your specific financial situation.",
+        "level": "C1",
+        "context": "Specialized financing recommendation"
+    },
+    {
+        "phrase": "I've conducted a comprehensive analysis of neighborhood appreciation trajectories that reveals micro-market divergences not apparent in broader market indices, suggesting this location offers particularly favorable value retention characteristics.",
+        "level": "C2",
+        "context": "Advanced market analysis"
+    },
+    {
+        "phrase": "The property's architectural provenance, combined with its period-specific craftsmanship and material authenticity, positions it uniquely within the marketplace beyond mere quantitative valuation metrics.",
+        "level": "C2",
+        "context": "Qualitative property assessment"
+    },
+    {
+        "phrase": "Have you considered how evolving demographic patterns and shifting workplace paradigms might influence housing preferences in this submarket, particularly as they relate to spatial requirements and commuting tolerance?",
+        "level": "C2",
+        "context": "Future market trend analysis"
+    },
+    {
+        "phrase": "The building envelope presents a confluence of thermal bridging challenges and moisture management vulnerabilities that warrant a building science approach to remediation planning rather than merely cosmetic interventions.",
+        "level": "C2",
+        "context": "Advanced property condition analysis"
+    },
+    {
+        "phrase": "Beyond conventional mortgage structures, I'd suggest exploring portfolio financing options that might accommodate the property's unique characteristics while optimizing your capital allocation strategy.",
+        "level": "C2",
+        "context": "Sophisticated financing strategy"
+    },
+    {
+        "phrase": "The interplay between zoning regulations, historic preservation ordinances, and environmental covenants creates a complex regulatory framework that both constrains and potentially enhances the property's development potential.",
+        "level": "C2",
+        "context": "Regulatory impact assessment"
+    },
+    {
+        "phrase": "I recommend approaching the negotiation from a position that acknowledges the seller's emotional investment in the property while strategically leveraging objective market conditions to achieve favorable terms.",
+        "level": "C2",
+        "context": "Psychological negotiation strategy"
+    },
+    {
+        "phrase": "The property's existing mechanical systems reflect an era-specific approach to environmental conditioning that presents both sustainability challenges and authenticity considerations worth balancing in your improvement planning.",
+        "level": "C2",
+        "context": "Historic systems assessment"
+    },
+    {
+        "phrase": "Let's examine how the property's current spatial configuration might be reinterpreted to accommodate contemporary living patterns while respecting the architectural narrative inherent in its original design.",
+        "level": "C2",
+        "context": "Architectural potential discussion"
+    },
+    {
+        "phrase": "Have you contemplated how cyclical market behavior, when viewed through the lens of generational housing preferences, might influence this property's position within the broader investment landscape over your anticipated holding period?",
+        "level": "C2",
+        "context": "Long-term investment philosophy"
+    }
+]

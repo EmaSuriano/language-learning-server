@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I need to check in.",
+        "level": "A1",
+        "context": "Basic check-in request"
+    },
+    {
+        "phrase": "Here is my passport.",
+        "level": "A1",
+        "context": "Document presentation"
+    },
+    {
+        "phrase": "How many bags?",
+        "level": "A1",
+        "context": "Basic baggage inquiry"
+    },
+    {
+        "phrase": "Is my flight on time?",
+        "level": "A1",
+        "context": "Simple flight status inquiry"
+    },
+    {
+        "phrase": "Where is my gate?",
+        "level": "A1",
+        "context": "Basic location inquiry"
+    },
+    {
+        "phrase": "I have a connection.",
+        "level": "A1",
+        "context": "Simple itinerary statement"
+    },
+    {
+        "phrase": "Is there a fee?",
+        "level": "A1",
+        "context": "Basic cost inquiry"
+    },
+    {
+        "phrase": "How much time do I need?",
+        "level": "A1",
+        "context": "Simple timing question"
+    },
+    {
+        "phrase": "Is security busy?",
+        "level": "A1",
+        "context": "Basic wait time inquiry"
+    },
+    {
+        "phrase": "Window or aisle seat?",
+        "level": "A1",
+        "context": "Basic seating preference"
+    },
+    {
+        "phrase": "I'd like to check in for my flight to Paris.",
+        "level": "A2",
+        "context": "Specific check-in request"
+    },
+    {
+        "phrase": "How many kilos of luggage am I allowed?",
+        "level": "A2",
+        "context": "Baggage allowance inquiry"
+    },
+    {
+        "phrase": "Do I have enough time for my connection in Frankfurt?",
+        "level": "A2",
+        "context": "Connection feasibility inquiry"
+    },
+    {
+        "phrase": "How long is the security line right now?",
+        "level": "A2",
+        "context": "Current wait time inquiry"
+    },
+    {
+        "phrase": "Do I need to pay extra for this bag?",
+        "level": "A2",
+        "context": "Baggage fee inquiry"
+    },
+    {
+        "phrase": "Has my departure gate changed?",
+        "level": "A2",
+        "context": "Gate update inquiry"
+    },
+    {
+        "phrase": "Can I take this carry-on bag with me?",
+        "level": "A2",
+        "context": "Cabin baggage inquiry"
+    },
+    {
+        "phrase": "Is my flight delayed?",
+        "level": "A2",
+        "context": "Flight status inquiry"
+    },
+    {
+        "phrase": "Which terminal do I need for my connecting flight?",
+        "level": "A2",
+        "context": "Terminal location inquiry"
+    },
+    {
+        "phrase": "Can I get an aisle seat, please?",
+        "level": "A2",
+        "context": "Seating preference request"
+    },
+    {
+        "phrase": "Good morning, I'd like to check in for my flight to Singapore with a connection in Dubai. My booking reference is ABC123.",
+        "level": "B1",
+        "context": "Detailed check-in request"
+    },
+    {
+        "phrase": "Could you tell me what the baggage allowance is for my flight, and whether my checked bag is within the weight limit?",
+        "level": "B1",
+        "context": "Comprehensive baggage inquiry"
+    },
+    {
+        "phrase": "I have a 90-minute connection in Frankfurt. Do you think that's enough time to make my next flight?",
+        "level": "B1",
+        "context": "Connection feasibility assessment"
+    },
+    {
+        "phrase": "What's the current wait time at security, and would you recommend I head there immediately after check-in?",
+        "level": "B1",
+        "context": "Security planning inquiry"
+    },
+    {
+        "phrase": "Are there any additional fees for my second bag, and how do I pay for those charges?",
+        "level": "B1",
+        "context": "Detailed fee inquiry"
+    },
+    {
+        "phrase": "I understand my flight is delayed by 30 minutes. Will this affect my connection in Amsterdam?",
+        "level": "B1",
+        "context": "Delay impact inquiry"
+    },
+    {
+        "phrase": "My carry-on contains some liquids for medical purposes. Will I need any special documentation at security?",
+        "level": "B1",
+        "context": "Security procedure inquiry"
+    },
+    {
+        "phrase": "Could you check if my frequent flyer number has been added to my booking, and if I'll earn miles for this flight?",
+        "level": "B1",
+        "context": "Loyalty program inquiry"
+    },
+    {
+        "phrase": "Is it possible to change my seat assignment to one closer to the front of the plane to help with my tight connection?",
+        "level": "B1",
+        "context": "Strategic seating request"
+    },
+    {
+        "phrase": "Where should I collect my baggage after arriving at my final destination, and will I need to recheck it during my connection?",
+        "level": "B1",
+        "context": "Baggage routing inquiry"
+    },
+    {
+        "phrase": "Good morning, I'd like to check in for my flight sequence beginning with AC853 to Frankfurt, followed by a connection to Singapore on Lufthansa. My booking was made through Air Canada with confirmation code LMNPQR, and I believe I've been assigned a Star Alliance frequent flyer status through my membership with United.",
+        "level": "B2",
+        "context": "Complex check-in with alliance details"
+    },
+    {
+        "phrase": "I understand that my fare class includes a checked baggage allowance of 23kg per piece, but I'm traveling with specialized photography equipment that slightly exceeds this limit. Would it be possible to discuss potential options or reasonable accommodations given the nature of the items?",
+        "level": "B2",
+        "context": "Specialized baggage accommodation request"
+    },
+    {
+        "phrase": "My itinerary includes a 75-minute connection at Frankfurt Airport, which requires changing from Terminal 1 to Terminal 2. Based on current operations and your experience, would you consider this sufficient time, particularly given the need to clear immigration within the Schengen zone?",
+        "level": "B2",
+        "context": "Detailed connection feasibility analysis"
+    },
+    {
+        "phrase": "Given the current security protocols and passenger volume, could you provide an estimate of the time required to complete the security screening process? I'm particularly concerned about potential additional screening for electronic devices in my carry-on luggage.",
+        "level": "B2",
+        "context": "Comprehensive security planning inquiry"
+    },
+    {
+        "phrase": "I notice that my ticket was issued with a baggage allowance that differs from what was advertised at booking. Could you clarify the applicable policy and whether any discrepancy might result in unexpected charges at the gate?",
+        "level": "B2",
+        "context": "Policy discrepancy inquiry"
+    },
+    {
+        "phrase": "The flight status app indicates a potential delay for my first leg. Could you verify this information and assess whether this might trigger an automatic rebooking given my relatively tight connection in Dubai?",
+        "level": "B2",
+        "context": "Proactive disruption management inquiry"
+    },
+    {
+        "phrase": "I'm traveling with prescription medications that require specific temperature controls. What accommodations are available for carrying these items in the cabin, and what documentation should I prepare for security and customs?",
+        "level": "B2",
+        "context": "Special items protocol inquiry"
+    },
+    {
+        "phrase": "My employer has a corporate agreement with your airline that should provide certain benefits, including priority boarding and lounge access. Could you verify whether these entitlements have been correctly associated with my booking?",
+        "level": "B2",
+        "context": "Corporate benefits verification"
+    },
+    {
+        "phrase": "I understand that seat assignments on this aircraft have recently been reconfigured. Given that I specifically selected 14C for its proximity to both the exit and lavatory, could you confirm that this selection still reflects the current layout?",
+        "level": "B2",
+        "context": "Detailed seat configuration inquiry"
+    },
+    {
+        "phrase": "Could you explain the baggage handling process for my connection, particularly whether my bags will receive priority transfer given the connection time, and any contingency measures in place should my first flight experience delays?",
+        "level": "B2",
+        "context": "Advanced baggage logistics inquiry"
+    },
+    {
+        "phrase": "Good morning, I'm here to commence check-in procedures for my somewhat complex itinerary beginning with Qantas flight QF9 to Singapore, followed by a connection on British Airways to London Heathrow, and ultimately concluding with a codeshare flight operated by American Airlines to Boston. The reservation was secured through the Oneworld Alliance booking platform using a combination of frequent flyer points and a partial fare payment, with confirmation code XVZT768.",
+        "level": "C1",
+        "context": "Highly detailed multi-airline check-in request"
+    },
+    {
+        "phrase": "I'm traveling with several items that collectively present a somewhat unusual baggage scenario: a standard checked bag within the 23kg allowance, a specialized carbon fiber bicycle case that qualifies as sports equipment under your policy but exceeds dimensional standards by approximately 4cm on one axis, and a carry-on containing essential photography equipment with lithium batteries that comply with IATA regulations but may warrant documentation. Could we discuss the most appropriate handling approach?",
+        "level": "C1",
+        "context": "Complex special items assessment"
+    },
+    {
+        "phrase": "My itinerary includes a 65-minute connection at Changi Airport, which I recognize falls slightly below the recommended minimum connecting time for international-to-international transfers when changing terminals. Given that my arriving and departing flights operate from different terminals and considering current immigration processing efficiency, would you advise pursuing an alternative routing, or are there expedited transit protocols that might mitigate this constraint?",
+        "level": "C1",
+        "context": "Sophisticated connection analysis request"
+    },
+    {
+        "phrase": "I've been monitoring the security wait times through various channels and notice some discrepancy between the official airport estimates and passenger-reported experiences on social media platforms. Given your direct observation of current operations, could you provide insight into actual throughput rates at different checkpoints, particularly for passengers with priority screening privileges?",
+        "level": "C1",
+        "context": "Nuanced security assessment request"
+    },
+    {
+        "phrase": "The fare rules associated with my booking contain somewhat ambiguous language regarding checked baggage entitlements for the transpacific segment versus the intra-European connection. Could you interpret these provisions in the context of interline agreements between the operating carriers, and clarify whether the most or least generous allowance prevails?",
+        "level": "C1",
+        "context": "Complex fare rule interpretation request"
+    },
+    {
+        "phrase": "I understand from the airline's operational status page that there are some air traffic control restrictions affecting the northeastern corridor today. Could you offer your assessment of whether these constraints are likely to impact my departure slot, and how this might cascade through my connection sequence given the current buffer times?",
+        "level": "C1",
+        "context": "Operational impact analysis request"
+    },
+    {
+        "phrase": "As a passenger with specific dietary and medical requirements that necessitate certain items in my carry-on, I'd appreciate your guidance on navigating security protocols efficiently. Particularly, I'm concerned about the documentation standards for liquid nutritional supplements that exceed the standard volume restrictions but qualify for medical exemptions under TSA and equivalent international guidelines.",
+        "level": "C1",
+        "context": "Specialized security exemption inquiry"
+    },
+    {
+        "phrase": "I believe my Executive Platinum status should confer certain priority handling benefits for this journey, including expedited baggage delivery and preferred standby positioning in the event of disruption. Could you verify that these entitlements are properly reflected in both the primary record locator and the downstream partner carrier systems?",
+        "level": "C1",
+        "context": "Elite status benefits verification"
+    },
+    {
+        "phrase": "Given the aircraft equipment change noted in my booking, I'm interested in understanding how the revised seating configuration might affect my carefully selected position in the forward cabin. Specifically, I'm concerned about proximity to galley noise in the reconfigured layout versus maintaining aisle access in a staggered arrangement.",
+        "level": "C1",
+        "context": "Aircraft reconfiguration impact inquiry"
+    },
+    {
+        "phrase": "Could you walk me through the precise interline baggage handling procedures between your carrier and my connecting airline, particularly regarding priority tagging protocols, transfer responsibility delineation between ground handlers, and contingency procedures in the event of irregular operations affecting the minimum connection threshold?",
+        "level": "C1",
+        "context": "Detailed interline baggage protocols inquiry"
+    },
+    {
+        "phrase": "Good morning, I find myself at your counter to initiate the check-in process for what has evolved into a rather intricate itinerary—originally conceived as a straightforward transpacific journey but subsequently modified to accommodate several unanticipated business obligations. The current manifestation begins with Cathay Pacific flight CX831 to Hong Kong, followed by a connection to Bangkok on your OneWorld partner, then proceeds after a 23-hour layover (deliberately structured to permit a business engagement) to Singapore on a separately ticketed reservation with Singapore Airlines, before ultimately concluding with a return segment on Emirates—this final portion having been arranged through an unconventional combination of frequent flyer currency transfer and supplementary fare payment, all documented under locator code RX7PTQ with the various alliance systems theoretically synchronized as of yesterday's reconfirmation.",
+        "level": "C2",
+        "context": "Extraordinarily complex multi-carrier itinerary presentation"
+    },
+    {
+        "phrase": "I approach the matter of baggage allowances with a certain philosophical resignation, given the labyrinthine complexity of interline agreements and the seemingly arbitrary nature of dimensional calculus across carrier boundaries. Nevertheless, I find myself in possession of several items whose categorization presents something of an ontological challenge: beyond the conventional luggage containing the expected personal effects, I have a case housing specialized scientific equipment that defies conventional classification—neither sporting equipment nor musical instrument nor medical device, yet sharing characteristics with each of these established categories. I wonder if you might navigate this taxonomic ambiguity to determine the most appropriate handling protocol and associated financial implications.",
+        "level": "C2",
+        "context": "Philosophical special items classification discourse"
+    },
+    {
+        "phrase": "The temporal constraints of modern air travel present a fascinating study in probabilistic assessment, particularly as they pertain to connection viability. My current itinerary incorporates a 55-minute transition at Charles de Gaulle, an interval that simultaneously exists in a state of theoretical adequacy and practical impossibility according to various authoritative sources. I'm interested in your empirical assessment of this paradox, particularly as it relates to the statistical distribution of actual versus scheduled arrival times for the inbound segment, and the corresponding likelihood of successful baggage transfer given current staffing patterns and physical terminal configurations.",
+        "level": "C2",
+        "context": "Theoretical connection probability analysis"
+    },
+    {
+        "phrase": "The dialectic between security efficacy and passenger convenience represents one of the more compelling tensions in contemporary air travel, manifesting most visibly in the ever-evolving choreography of checkpoint processing. I wonder if you might offer insights into the current state of this delicate balance at this particular airport—not merely in terms of anticipated temporal investment, but perhaps more significantly in terms of procedural idiosyncrasies that might influence my tactical approach to presenting certain problematic items that historically have invited interpretive inconsistency among screening personnel.",
+        "level": "C2",
+        "context": "Security philosophy and practical application discourse"
+    },
+    {
+        "phrase": "The economic model underpinning ancillary revenue streams in commercial aviation has undergone a fascinating evolution, with baggage fees representing perhaps the most visible manifestation of this paradigm shift. I find myself contemplating the interaction between published fee structures and the discretionary latitude afforded to frontline personnel such as yourself, particularly as it pertains to edge cases that challenge the binary categories presupposed by the formal policy architecture. Might we explore the hermeneutic flexibility available in applying these provisions to my somewhat unconventional circumstances?",
+        "level": "C2",
+        "context": "Airline economic model and policy interpretation discourse"
+    },
+    {
+        "phrase": "The cascading implications of primary delays on downstream connection integrity present an algorithmic challenge that I suspect has occupied considerable computational resources within your operations research department. Having observed certain patterns in how these disruptions propagate through the network with varying degrees of intervention from operations control, I'm curious about the decisional frameworks that govern the threshold for preemptive rebooking versus allowing the original itinerary to proceed with compressed connection windows, particularly on routes with limited recovery options in subsequent scheduling banks.",
+        "level": "C2",
+        "context": "Complex operational disruption theory discussion"
+    },
+    {
+        "phrase": "The regulatory framework governing the transportation of certain specialized materials presents an interesting case study in jurisdictional overlap and occasionally contradictory compliance requirements. I find myself in possession of several items that occupy the liminal space between prohibited and permitted categories—specifically, preservation solutions for biological specimens that simultaneously satisfy IATA Dangerous Goods Regulation exemption criteria while potentially triggering enhanced scrutiny under certain national security directives. I wonder if you might illuminate the procedural reconciliation of these competing frameworks as they apply to my particular circumstances.",
+        "level": "C2",
+        "context": "Regulatory compliance philosophy for specialized items"
+    },
+    {
+        "phrase": "The stratification of passenger experience according to various status designations represents a fascinating example of experiential economy principles applied to service delivery architectures. As someone whose frequent travel patterns have resulted in the accumulation of elite recognition across several competing alliance frameworks, I'm interested in understanding the interoperability of these credentials—particularly regarding the hierarchy of privilege application when multiple qualification streams theoretically apply to a single journey segment operated under complex codeshare arrangements.",
+        "level": "C2",
+        "context": "Loyalty program theoretical framework discussion"
+    },
+    {
+        "phrase": "The recent industry-wide transition toward density-optimized aircraft configurations has precipitated an intriguing recalibration of passenger expectations regarding personal space allocation—a phenomenon particularly evident in the evolutionary redesign of the very aircraft type operating my segment today. I'm curious about your perspective on how this spatial reconfiguration has influenced the relational dynamics between dimensional seat parameters and subjective comfort assessments, especially as they pertain to the specific placement I've selected relative to structural elements within the cabin architecture.",
+        "level": "C2",
+        "context": "Aircraft design philosophy and passenger experience discourse"
+    },
+    {
+        "phrase": "The choreography of interline baggage handling represents one of the more elegant logistical systems in contemporary transport infrastructure, predicated upon both sophisticated technological integration and remarkably resilient human processes operating within significant temporal constraints. I wonder if you might deconstruct the specific transfer protocols applicable to my journey, with particular emphasis on the contingency mechanisms designed to accommodate the statistically inevitable disruptions that challenge the system's homeostasis, especially given the limited recovery options available at certain waypoints in my itinerary.",
+        "level": "C2",
+        "context": "Baggage handling systems theory discussion"
+    }
+]

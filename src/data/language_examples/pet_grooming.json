@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "My dog is scared.",
+        "level": "A1",
+        "context": "Basic pet behavior information"
+    },
+    {
+        "phrase": "How long will it take?",
+        "level": "A1",
+        "context": "Basic duration inquiry"
+    },
+    {
+        "phrase": "Please be gentle.",
+        "level": "A1",
+        "context": "Basic care request"
+    },
+    {
+        "phrase": "No short cut, please.",
+        "level": "A1",
+        "context": "Basic styling request"
+    },
+    {
+        "phrase": "My cat hates water.",
+        "level": "A1",
+        "context": "Basic pet preference"
+    },
+    {
+        "phrase": "How much is it?",
+        "level": "A1",
+        "context": "Basic pricing inquiry"
+    },
+    {
+        "phrase": "When is it ready?",
+        "level": "A1",
+        "context": "Basic pickup time inquiry"
+    },
+    {
+        "phrase": "Can I stay and watch?",
+        "level": "A1",
+        "context": "Basic attendance request"
+    },
+    {
+        "phrase": "She bites sometimes.",
+        "level": "A1",
+        "context": "Basic behavior warning"
+    },
+    {
+        "phrase": "He needs a bath.",
+        "level": "A1",
+        "context": "Basic service request"
+    },
+    {
+        "phrase": "My dog gets anxious during grooming. Can you take extra time with him?",
+        "level": "A2",
+        "context": "Specific behavior concern"
+    },
+    {
+        "phrase": "I'd like her fur trimmed but not too short, please.",
+        "level": "A2",
+        "context": "Specific styling request"
+    },
+    {
+        "phrase": "Does the grooming include nail trimming?",
+        "level": "A2",
+        "context": "Service inclusion inquiry"
+    },
+    {
+        "phrase": "He has sensitive skin around his ears.",
+        "level": "A2",
+        "context": "Specific health information"
+    },
+    {
+        "phrase": "How often should I bring her for grooming?",
+        "level": "A2",
+        "context": "Maintenance schedule inquiry"
+    },
+    {
+        "phrase": "Can you use hypoallergenic shampoo?",
+        "level": "A2",
+        "context": "Specific product request"
+    },
+    {
+        "phrase": "What brush should I use at home?",
+        "level": "A2",
+        "context": "Home care tool inquiry"
+    },
+    {
+        "phrase": "Please don't use the noisy clippers.",
+        "level": "A2",
+        "context": "Specific tool preference"
+    },
+    {
+        "phrase": "She had a bad experience at another groomer.",
+        "level": "A2",
+        "context": "Previous experience information"
+    },
+    {
+        "phrase": "How do you handle difficult dogs?",
+        "level": "A2",
+        "context": "Handling method inquiry"
+    },
+    {
+        "phrase": "My golden retriever has quite thick fur and tends to mat easily around his ears and tail. Could you pay special attention to those areas?",
+        "level": "B1",
+        "context": "Detailed grooming requirement"
+    },
+    {
+        "phrase": "I've noticed some dry, flaky skin on his back recently. Would you recommend a particular type of shampoo for this condition?",
+        "level": "B1",
+        "context": "Skin condition consultation"
+    },
+    {
+        "phrase": "Could you walk me through the grooming process so I understand what to expect?",
+        "level": "B1",
+        "context": "Process explanation request"
+    },
+    {
+        "phrase": "He gets very nervous around other dogs, so could you schedule him at a quieter time?",
+        "level": "B1",
+        "context": "Scheduling accommodation request"
+    },
+    {
+        "phrase": "What kind of home maintenance would you recommend between professional grooming sessions?",
+        "level": "B1",
+        "context": "Home care advice request"
+    },
+    {
+        "phrase": "I'd like her to have the standard poodle cut, but with slightly longer ears than typical.",
+        "level": "B1",
+        "context": "Specific breed styling request"
+    },
+    {
+        "phrase": "She's recovering from surgery on her back leg, so please be extra careful in that area.",
+        "level": "B1",
+        "context": "Health condition information"
+    },
+    {
+        "phrase": "Do you offer any special treatments for shedding reduction?",
+        "level": "B1",
+        "context": "Specialized service inquiry"
+    },
+    {
+        "phrase": "What signs should I look for that might indicate my pet needs grooming more frequently?",
+        "level": "B1",
+        "context": "Maintenance indicators inquiry"
+    },
+    {
+        "phrase": "Could you demonstrate how I should clean around his eyes to prevent staining?",
+        "level": "B1",
+        "context": "Home care technique request"
+    },
+    {
+        "phrase": "My Bernese Mountain Dog has developed significant matting in her undercoat due to seasonal shedding. I'm wondering what deshedding techniques you would recommend that won't damage her guard hairs or irritate her skin?",
+        "level": "B2",
+        "context": "Advanced coat management inquiry"
+    },
+    {
+        "phrase": "I've noticed my Scottish Terrier becomes particularly stressed during nail trimming, possibly due to a previous negative experience. Could you explain your approach to handling anxious pets during more sensitive grooming procedures?",
+        "level": "B2",
+        "context": "Specialized behavior management"
+    },
+    {
+        "phrase": "My Persian cat has chronic issues with hairballs despite regular brushing. Would you recommend a particular grooming routine or specific tools that might be more effective for managing her dense undercoat?",
+        "level": "B2",
+        "context": "Breed-specific maintenance strategy"
+    },
+    {
+        "phrase": "I'm interested in maintaining a show-quality coat on my Bichon Frise between competitions. Could you advise on the ideal grooming schedule and specific techniques to preserve the texture and appearance of his coat?",
+        "level": "B2",
+        "context": "Show coat maintenance inquiry"
+    },
+    {
+        "phrase": "My elderly Shih Tzu has developed some mobility issues that make standing for long periods uncomfortable. How do you modify your grooming approach for senior pets with physical limitations?",
+        "level": "B2",
+        "context": "Senior pet accommodation"
+    },
+    {
+        "phrase": "I've recently switched my Labrador to a raw diet, and I've noticed changes in her coat oil production. Would this necessitate adjustments to her grooming routine or the products you use?",
+        "level": "B2",
+        "context": "Diet-related coat changes"
+    },
+    {
+        "phrase": "My Cocker Spaniel has recurring ear infections despite regular cleaning at home. Could you demonstrate the proper technique for deep ear cleaning and recommend a maintenance schedule?",
+        "level": "B2",
+        "context": "Specialized health maintenance"
+    },
+    {
+        "phrase": "I'm interested in learning about more natural alternatives to traditional grooming products. Do you offer any eco-friendly or organic options that would be suitable for a dog with sensitive skin?",
+        "level": "B2",
+        "context": "Natural product alternatives"
+    },
+    {
+        "phrase": "My Pomeranian experienced significant stress alopecia after our recent move. What grooming approaches would you recommend to encourage healthy regrowth while minimizing additional stress?",
+        "level": "B2",
+        "context": "Stress-related coat condition"
+    },
+    {
+        "phrase": "Could you explain the differences between hand-stripping and clipping for wire-coated breeds, and which would be more appropriate for my Border Terrier's coat type and our lifestyle?",
+        "level": "B2",
+        "context": "Specialized grooming technique comparison"
+    },
+    {
+        "phrase": "I've noticed my Samoyed has developed areas of coat impaction that seem resistant to conventional brushing techniques. I'm wondering if you could recommend a comprehensive deshedding protocol that addresses the structural layers of his double coat while preserving the protective properties of the guard hairs?",
+        "level": "C1",
+        "context": "Advanced coat structure management"
+    },
+    {
+        "phrase": "My Portuguese Water Dog competes in both conformation and water trials, requiring me to maintain two somewhat contradictory coat conditions. Could you advise on a grooming strategy that would allow for relatively quick transitions between the show ring and working conditions?",
+        "level": "C1",
+        "context": "Specialized performance coat management"
+    },
+    {
+        "phrase": "I'm rehabilitating a rescue Maltese who has severe grooming anxiety, likely from previous traumatic experiences. Could you outline a counter-conditioning approach we might implement collaboratively over several visits to gradually build positive associations with the grooming process?",
+        "level": "C1",
+        "context": "Behavioral rehabilitation strategy"
+    },
+    {
+        "phrase": "My veterinary dermatologist has diagnosed my Airedale with sebaceous adenitis and recommended specialized grooming protocols to manage the condition. I'd like to discuss how we might integrate these medical requirements with maintaining the characteristic appearance of the breed standard.",
+        "level": "C1",
+        "context": "Medical condition grooming protocol"
+    },
+    {
+        "phrase": "I'm interested in understanding how seasonal changes in humidity and temperature should inform adjustments to my Standard Poodle's grooming routine, particularly regarding how these environmental factors affect the elasticity and moisture content of her coat.",
+        "level": "C1",
+        "context": "Environmental coat management"
+    },
+    {
+        "phrase": "My Siberian Husky has developed an asymmetrical shedding pattern that our veterinarian believes may be linked to subtle thyroid dysfunction. Could you recommend a grooming approach that might help normalize coat cycling while we address the underlying medical issue?",
+        "level": "C1",
+        "context": "Hormone-related coat abnormality"
+    },
+    {
+        "phrase": "I've been researching various line brushing techniques for my Himalayan cat and found contradicting recommendations. Could you demonstrate your preferred method and explain how it addresses the structural characteristics of her coat type?",
+        "level": "C1",
+        "context": "Advanced brushing technique demonstration"
+    },
+    {
+        "phrase": "My Afghan Hound will be transitioning from a show career to retirement, and I'm seeking advice on modifying his grooming routine to balance coat health with a more manageable maintenance schedule appropriate for a pet lifestyle.",
+        "level": "C1",
+        "context": "Show to pet transition strategy"
+    },
+    {
+        "phrase": "I'm preparing my young Komondor for his first corded coat and would appreciate guidance on the initial separation process and ongoing maintenance to ensure proper cord development without compromising skin health.",
+        "level": "C1",
+        "context": "Specialized coat texture development"
+    },
+    {
+        "phrase": "My geriatric Yorkshire Terrier has developed increasingly fragile skin due to age-related collagen depletion. Could you recommend modifications to clipping techniques and tool selection that would minimize trauma while still maintaining adequate coat length control?",
+        "level": "C1",
+        "context": "Age-related skin fragility accommodation"
+    },
+    {
+        "phrase": "I'm interested in exploring the intersection between modern grooming techniques and the historical development of breed-specific standards, particularly as it relates to my Kerry Blue Terrier whose traditional presentation necessitates a nuanced understanding of how coat texture and structure inform optimal grooming methodology.",
+        "level": "C2",
+        "context": "Historical-technical grooming philosophy"
+    },
+    {
+        "phrase": "My veterinary behaviorist has suggested that my Australian Shepherd's persistent grooming sensitivity may be linked to proprioceptive processing abnormalities rather than simple anxiety, and I'm curious about how we might modify the sensory aspects of the grooming environment to accommodate these neurological differences.",
+        "level": "C2",
+        "context": "Neurological sensory accommodation"
+    },
+    {
+        "phrase": "I've been researching the relationship between sebum production, coat microbiome diversity, and various grooming frequencies in spitz-type breeds, and I'd value your professional observations regarding how these factors might be influencing my Akita's recurring folliculitis despite our current preventative regimen.",
+        "level": "C2",
+        "context": "Advanced skin-coat ecosystem management"
+    },
+    {
+        "phrase": "Having previously shown my Bedlington Terrier in both American and European circuits, I've encountered divergent philosophical approaches to the breed's presentation. I'm curious about your perspective on reconciling these regional variations while maintaining the essential characteristics that define the breed's unique topline and silhouette.",
+        "level": "C2",
+        "context": "International styling philosophy comparison"
+    },
+    {
+        "phrase": "In transitioning my elderly Lhasa Apso from a traditional floor-length coat to a more manageable style, I'm concerned about potential thermoregulatory challenges due to his age-related metabolic changes. Could you elaborate on how coat length interacts with senior dogs' diminished temperature adaptation capabilities?",
+        "level": "C2",
+        "context": "Thermoregulatory coat management"
+    },
+    {
+        "phrase": "I've observed that the literature on doodle-type coat management often lacks nuance regarding the considerable variation in coat inheritance patterns. Given my Labradoodle's particular wool-to-hair ratio and wave pattern, I'd appreciate your insights on developing a customized approach that acknowledges these genetic specificities.",
+        "level": "C2",
+        "context": "Genetic coat variation management"
+    },
+    {
+        "phrase": "My Saluki has recently returned to lure coursing after recovery from a soft tissue injury, and I've noticed changes in his coat's natural oil distribution that seem to correlate with increased physical exertion. I'm interested in your perspective on how athletic conditioning influences coat physiology and what adjustments might be appropriate to our grooming protocol.",
+        "level": "C2",
+        "context": "Athletic performance coat physiology"
+    },
+    {
+        "phrase": "Having studied textile science, I'm fascinated by the structural similarities between certain wool processing techniques and traditional hand-stripping methods for terriers. I'm curious whether you've explored modifications to conventional stripping techniques based on principles of fiber management from other disciplines.",
+        "level": "C2",
+        "context": "Interdisciplinary grooming technique development"
+    },
+    {
+        "phrase": "My Chinese Crested's skin condition requires a delicate balance between adequate sun protection and avoiding product buildup that might occlude his limited perspiration capacity. I'd value your thoughts on formulating a grooming schedule that addresses these competing physiological needs.",
+        "level": "C2",
+        "context": "Specialized hairless breed management"
+    },
+    {
+        "phrase": "I'm conducting a small observational study on how different brushing techniques affect coat regrowth patterns in spayed versus intact female Collies, and I would appreciate your professional insights on methodology and potentially confounding variables I should control for in my documentation.",
+        "level": "C2",
+        "context": "Coat growth research methodology"
+    }
+]

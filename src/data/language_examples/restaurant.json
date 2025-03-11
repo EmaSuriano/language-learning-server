@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I have allergies.",
+        "level": "A1",
+        "context": "Basic allergy notification"
+    },
+    {
+        "phrase": "No nuts, please.",
+        "level": "A1",
+        "context": "Simple dietary restriction"
+    },
+    {
+        "phrase": "What's in this dish?",
+        "level": "A1",
+        "context": "Basic ingredient inquiry"
+    },
+    {
+        "phrase": "Is this safe to eat?",
+        "level": "A1",
+        "context": "Safety concern"
+    },
+    {
+        "phrase": "It's my birthday today.",
+        "level": "A1",
+        "context": "Mentioning special occasion"
+    },
+    {
+        "phrase": "Can you change this?",
+        "level": "A1",
+        "context": "Basic modification request"
+    },
+    {
+        "phrase": "What do you recommend?",
+        "level": "A1",
+        "context": "Simple recommendation request"
+    },
+    {
+        "phrase": "Is this spicy?",
+        "level": "A1",
+        "context": "Basic food property question"
+    },
+    {
+        "phrase": "No dairy, please.",
+        "level": "A1",
+        "context": "Simple dietary restriction"
+    },
+    {
+        "phrase": "Water, please.",
+        "level": "A1",
+        "context": "Basic drink order"
+    },
+    {
+        "phrase": "I'm allergic to shellfish and nuts. Is this dish safe?",
+        "level": "A2",
+        "context": "Specific allergy inquiry"
+    },
+    {
+        "phrase": "We're celebrating our anniversary tonight.",
+        "level": "A2",
+        "context": "Explaining special occasion"
+    },
+    {
+        "phrase": "Could you recommend something without gluten?",
+        "level": "A2",
+        "context": "Dietary recommendation request"
+    },
+    {
+        "phrase": "Can you make this dish without garlic?",
+        "level": "A2",
+        "context": "Specific modification request"
+    },
+    {
+        "phrase": "Does the sauce contain dairy?",
+        "level": "A2",
+        "context": "Specific ingredient inquiry"
+    },
+    {
+        "phrase": "What's your most popular dish?",
+        "level": "A2",
+        "context": "General recommendation request"
+    },
+    {
+        "phrase": "Is the kitchen able to modify dishes?",
+        "level": "A2",
+        "context": "Modification possibility inquiry"
+    },
+    {
+        "phrase": "Is there a special menu for today?",
+        "level": "A2",
+        "context": "Menu option inquiry"
+    },
+    {
+        "phrase": "Could you check with the chef about my allergies?",
+        "level": "A2",
+        "context": "Chef consultation request"
+    },
+    {
+        "phrase": "How is this dish prepared?",
+        "level": "A2",
+        "context": "Preparation method inquiry"
+    },
+    {
+        "phrase": "I have several food allergies including dairy and tree nuts. Could you help me identify safe options on your menu?",
+        "level": "B1",
+        "context": "Detailed allergy assistance request"
+    },
+    {
+        "phrase": "We're celebrating a promotion tonight and would like to make it special. Do you have any suggestions?",
+        "level": "B1",
+        "context": "Special occasion recommendations"
+    },
+    {
+        "phrase": "Could you tell me which dishes can be modified to accommodate my egg allergy?",
+        "level": "B1",
+        "context": "Modification possibilities inquiry"
+    },
+    {
+        "phrase": "I noticed this dish contains shellfish. Is it possible to prepare it without that ingredient?",
+        "level": "B1",
+        "context": "Specific ingredient substitution"
+    },
+    {
+        "phrase": "What precautions does your kitchen take to prevent cross-contamination?",
+        "level": "B1",
+        "context": "Food safety protocols inquiry"
+    },
+    {
+        "phrase": "Could you recommend a wine that would pair well with this dish and complement our celebration?",
+        "level": "B1",
+        "context": "Beverage pairing request"
+    },
+    {
+        "phrase": "Are any of your desserts free from both gluten and dairy?",
+        "level": "B1",
+        "context": "Multiple restriction inquiry"
+    },
+    {
+        "phrase": "Do you have a list of ingredients for each dish available?",
+        "level": "B1",
+        "context": "Ingredient transparency request"
+    },
+    {
+        "phrase": "I've heard your chef has a signature dish. What makes it special?",
+        "level": "B1",
+        "context": "Specialty dish inquiry"
+    },
+    {
+        "phrase": "How long have you been featuring this seasonal menu?",
+        "level": "B1",
+        "context": "Menu history inquiry"
+    },
+    {
+        "phrase": "I have severe allergies to dairy, tree nuts, and shellfish that can trigger anaphylaxis. Could you please walk me through the menu options that would be completely safe, including any potential for cross-contact in the kitchen?",
+        "level": "B2",
+        "context": "Comprehensive allergy consultation"
+    },
+    {
+        "phrase": "We're celebrating our tenth anniversary this evening and I'd like to ensure the meal is both memorable and safe given my dietary restrictions. What would you recommend as your most impressive dishes that could be adapted?",
+        "level": "B2",
+        "context": "Special occasion planning"
+    },
+    {
+        "phrase": "I understand this is a signature dish, but I'm concerned about the soy component. Could you elaborate on how integral it is to the flavor profile and whether an alternative might preserve the chef's intention?",
+        "level": "B2",
+        "context": "Nuanced modification discussion"
+    },
+    {
+        "phrase": "I'm particularly interested in understanding your sourcing practices for seafood, as I have specific sensitivities to certain farming methods and additives.",
+        "level": "B2",
+        "context": "Ingredient sourcing inquiry"
+    },
+    {
+        "phrase": "Could you describe the preparation environment for your gluten-free options? I'm curious about dedicated equipment and workspace protocols.",
+        "level": "B2",
+        "context": "Detailed safety protocol inquiry"
+    },
+    {
+        "phrase": "I've noticed your menu features several fermented ingredients. Could you specify which dishes might contain histamines that could trigger sensitivity reactions?",
+        "level": "B2",
+        "context": "Specific food chemistry inquiry"
+    },
+    {
+        "phrase": "For our celebration, we're hoping to experience the chef's creative vision while working within these dietary parameters. Could you suggest a tasting progression that would showcase the restaurant's strengths?",
+        "level": "B2",
+        "context": "Curated experience request"
+    },
+    {
+        "phrase": "Given that this is a special occasion, I'm torn between the safety of familiar options and the desire to experience something new. How might you strike that balance with your recommendations?",
+        "level": "B2",
+        "context": "Personalized dining philosophy"
+    },
+    {
+        "phrase": "Would it be possible to speak directly with the chef about crafting a modified version of the seasonal tasting menu that addresses these allergies without compromising the intended flavor journey?",
+        "level": "B2",
+        "context": "Chef consultation request"
+    },
+    {
+        "phrase": "I understand your establishment prides itself on authentic regional preparations. I'm curious how flexible the kitchen might be in maintaining that authenticity while accommodating dietary restrictions.",
+        "level": "B2",
+        "context": "Culinary philosophy discussion"
+    },
+    {
+        "phrase": "As someone with multiple severe food allergies, I'm particularly attentive to the nuances of ingredient preparation and potential cross-contamination vectors. Could you elaborate on your kitchen's protocols for allergen segregation, particularly with respect to shared cooking surfaces and utensils?",
+        "level": "C1",
+        "context": "Advanced safety protocol inquiry"
+    },
+    {
+        "phrase": "We're celebrating a significant milestone this evening, and I'm hoping to experience the full expression of your culinary philosophy while navigating my dietary constraints. Could you suggest a progression of dishes that would capture the restaurant's narrative arc while ensuring my safety?",
+        "level": "C1",
+        "context": "Sophisticated dining experience request"
+    },
+    {
+        "phrase": "I notice your menu emphasizes local, seasonal ingredients. I'm curious about how your sourcing relationships with particular farms might influence the adaptability of certain dishes to accommodate allergies without compromising the chef's intended flavor composition.",
+        "level": "C1",
+        "context": "Ingredient sourcing philosophy"
+    },
+    {
+        "phrase": "Having dined at several establishments with similar culinary approaches, I've found that certain emulsifiers and stabilizing agents often contain hidden allergens. Could you speak to your kitchen's approach to these technical ingredients?",
+        "level": "C1",
+        "context": "Advanced ingredient inquiry"
+    },
+    {
+        "phrase": "The interplay of texture and flavor is particularly important to me, and I'm concerned that removing certain allergenic components might compromise that balance. Could you suggest dishes where the modification would least affect the structural integrity of the preparation?",
+        "level": "C1",
+        "context": "Culinary technique discussion"
+    },
+    {
+        "phrase": "For our celebration, I'm interested in exploring how your beverage program might complement the adapted menu items we select. Are there particular non-alcoholic pairings that might enhance the modified dishes while maintaining the intended sensory experience?",
+        "level": "C1",
+        "context": "Sophisticated pairing inquiry"
+    },
+    {
+        "phrase": "I'm particularly drawn to the fermentation-forward items on your menu, though these can sometimes be problematic with my restrictions. Could you elaborate on your house-made ferments and their ingredient compositions?",
+        "level": "C1",
+        "context": "Specialized preparation inquiry"
+    },
+    {
+        "phrase": "In my experience, the communication chain between server, expediter, and line cook often presents the greatest risk for allergen introduction. Could you walk me through your ticketing and verification system for special dietary orders?",
+        "level": "C1",
+        "context": "Operational safety inquiry"
+    },
+    {
+        "phrase": "I recognize that certain traditional preparations are fundamentally dependent on allergenic ingredients. Rather than attempting to modify those dishes beyond recognition, I'd prefer to focus on naturally compatible options that showcase similar technique or regional influence.",
+        "level": "C1",
+        "context": "Culinary authenticity discussion"
+    },
+    {
+        "phrase": "The evolution of your seasonal menu suggests a particular interest in highlighting specific producers or techniques. Could you elucidate which current offerings best exemplify that focus while remaining compatible with my restrictions?",
+        "level": "C1",
+        "context": "Menu philosophy exploration"
+    },
+    {
+        "phrase": "I find myself contemplating the tension between culinary authenticity and dietary accommodation, particularly in an establishment such as yours that clearly emphasizes traditional techniques and faithful representation of cultural heritage. I'm curious about your perspective on navigating this philosophical terrain while ensuring the safety of guests with medical restrictions.",
+        "level": "C2",
+        "context": "Culinary ethics discussion"
+    },
+    {
+        "phrase": "The contemporary dining landscape seems increasingly characterized by a dichotomy between hyper-transparency regarding ingredient sourcing and composition, and a certain deliberate mystique surrounding preparation techniques. As someone with life-threatening allergies celebrating a significant occasion, I find myself reflecting on how these approaches might be reconciled. What has been your establishment's experience in striking this balance?",
+        "level": "C2",
+        "context": "Industry philosophy dialogue"
+    },
+    {
+        "phrase": "I've observed a fascinating evolution in how fine dining establishments approach allergen protocols, shifting from a somewhat clinical, liability-focused stance to one that integrates these considerations more seamlessly into the broader hospitality narrative. I'm interested in understanding how your team conceptualizes this aspect of the dining experience, particularly for celebratory occasions.",
+        "level": "C2",
+        "context": "Hospitality philosophy exploration"
+    },
+    {
+        "phrase": "The molecular similarities between certain allergens present intriguing challenges for composition and substitution in contemporary cuisine. I'm particularly interested in how your kitchen approaches the structural and functional roles of these ingredients beyond their obvious flavor contributions.",
+        "level": "C2",
+        "context": "Advanced culinary chemistry discussion"
+    },
+    {
+        "phrase": "In considering the sensorial architecture of your tasting progression, I'm curious about the potential for reconfiguring certain elements to accommodate restrictions while preserving the intended narrative arc and emotional resonance of the complete experience.",
+        "level": "C2",
+        "context": "Sensory experience philosophy"
+    },
+    {
+        "phrase": "The intersection of celebration and medical necessity creates a particularly nuanced hospitality challenge that speaks to broader questions of inclusivity in gastronomy. I'd be interested to hear how your establishment has evolved its approach to these situations over time.",
+        "level": "C2",
+        "context": "Culinary inclusivity discourse"
+    },
+    {
+        "phrase": "I find the semiotic significance of certain traditional ingredients fascinating, particularly when their inclusion might be more symbolic than functional. In cases where such ingredients trigger allergic responses, I wonder about the philosophical implications of substitution versus omission in terms of culinary authenticity.",
+        "level": "C2",
+        "context": "Culinary semiotics discussion"
+    },
+    {
+        "phrase": "The temporal nature of seasonal menus introduces interesting considerations for diners with allergies, as the ingredient landscape shifts. I'm curious about how your creative development process might account for maintaining consistent safe options while embracing the ephemerality that defines your culinary approach.",
+        "level": "C2",
+        "context": "Menu development philosophy"
+    },
+    {
+        "phrase": "The phenomenological aspects of dining with allergies present a unique lens through which to consider the totality of the restaurant experience. Beyond the immediate concerns of physical safety, I'm interested in how you conceptualize the preservation of pleasure and discovery for guests navigating these constraints during celebratory moments.",
+        "level": "C2",
+        "context": "Experiential dining philosophy"
+    },
+    {
+        "phrase": "I've been reflecting on how the language of allergen communication has evolved in culinary contexts, particularly the shift from deficit-oriented terminology toward more affirmative articulations of possibility. How has your establishment approached this linguistic dimension of inclusive hospitality?",
+        "level": "C2",
+        "context": "Culinary linguistics discussion"
+    }
+]

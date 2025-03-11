@@ -292,27 +292,6 @@
         ]
     },
     {
-        "name": "Fitness center desk",
-        "scenario_description": "You're interested in joining a gym and want to know about different membership options and facilities.",
-        "difficulty": "easy",
-        "user_goals": [
-            "Learn about available facilities",
-            "Compare membership options",
-            "Understand class schedules",
-            "Know membership terms and cancellation"
-        ],
-        "system_role": "You are a fitness center receptionist handling new membership inquiries.",
-        "system_instructions": [
-            "Show available facilities",
-            "Explain membership plans",
-            "Present class schedule",
-            "Detail membership terms",
-            "Discuss payment options",
-            "Schedule facility orientation",
-            "Process membership application"
-        ]
-    },
-    {
         "name": "Computer repair",
         "scenario_description": "Your laptop is having problems and you need it fixed quickly for work. You're unsure about the cost and time needed.",
         "difficulty": "medium",
@@ -396,28 +375,6 @@
             "Guide to relevant sections",
             "Assist with material location",
             "Explain renewal process"
-        ]
-    },
-    {
-        "name": "Law firm",
-        "scenario_description": "You need legal advice about a contract and want to understand your rights and options.",
-        "difficulty": "hard",
-        "user_goals": [
-            "Understand contract implications",
-            "Know your legal rights",
-            "Learn about possible solutions",
-            "Get clear cost information"
-        ],
-        "system_role": "You are a legal assistant helping clients with legal documents.",
-        "system_instructions": [
-            "Review contract details",
-            "Explain legal implications",
-            "Present available options",
-            "Discuss potential outcomes",
-            "Detail cost and timeline",
-            "Explain next steps",
-            "Document client decisions",
-            "Schedule follow-up meetings"
         ]
     },
     {

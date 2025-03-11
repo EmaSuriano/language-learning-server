@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I need to update my insurance.",
+        "level": "A1",
+        "context": "Basic update request"
+    },
+    {
+        "phrase": "I got married.",
+        "level": "A1",
+        "context": "Simple life change statement"
+    },
+    {
+        "phrase": "How much is it?",
+        "level": "A1",
+        "context": "Basic price inquiry"
+    },
+    {
+        "phrase": "Is this covered?",
+        "level": "A1",
+        "context": "Simple coverage question"
+    },
+    {
+        "phrase": "I don't understand.",
+        "level": "A1",
+        "context": "Basic comprehension difficulty"
+    },
+    {
+        "phrase": "What's the best option?",
+        "level": "A1",
+        "context": "Simple recommendation request"
+    },
+    {
+        "phrase": "How do I make a claim?",
+        "level": "A1",
+        "context": "Basic process inquiry"
+    },
+    {
+        "phrase": "When does it start?",
+        "level": "A1",
+        "context": "Simple timing question"
+    },
+    {
+        "phrase": "Can I pay monthly?",
+        "level": "A1",
+        "context": "Basic payment inquiry"
+    },
+    {
+        "phrase": "I need more coverage.",
+        "level": "A1",
+        "context": "Simple upgrade request"
+    },
+    {
+        "phrase": "I need to update my insurance policy because I recently got married and bought a house.",
+        "level": "A2",
+        "context": "Life change explanation"
+    },
+    {
+        "phrase": "What changes should I make to my coverage after having a baby?",
+        "level": "A2",
+        "context": "Specific update inquiry"
+    },
+    {
+        "phrase": "How much will my premium increase if I add my spouse to the policy?",
+        "level": "A2",
+        "context": "Premium change inquiry"
+    },
+    {
+        "phrase": "Does my policy cover water damage from a leaking roof?",
+        "level": "A2",
+        "context": "Specific coverage inquiry"
+    },
+    {
+        "phrase": "Could you explain the deductible amounts for these different options?",
+        "level": "A2",
+        "context": "Policy feature inquiry"
+    },
+    {
+        "phrase": "Which coverage option would you recommend for my situation?",
+        "level": "A2",
+        "context": "Recommendation request"
+    },
+    {
+        "phrase": "What documents do I need to submit when making a claim?",
+        "level": "A2",
+        "context": "Claims process inquiry"
+    },
+    {
+        "phrase": "When will the new coverage take effect after I make these changes?",
+        "level": "A2",
+        "context": "Effective date inquiry"
+    },
+    {
+        "phrase": "Is there a discount if I pay the annual premium all at once?",
+        "level": "A2",
+        "context": "Payment option inquiry"
+    },
+    {
+        "phrase": "I think I need to increase my liability coverage. What are my options?",
+        "level": "A2",
+        "context": "Coverage upgrade inquiry"
+    },
+    {
+        "phrase": "I've experienced several significant life changes recently – I got married, purchased our first home, and my spouse and I are expecting a child in three months. I'd like to review my current insurance coverage to make sure we don't have any significant gaps or vulnerabilities.",
+        "level": "B1",
+        "context": "Comprehensive life change explanation"
+    },
+    {
+        "phrase": "With these recent life changes, I'm concerned that my current policy might not adequately protect my growing family. Could you analyze my existing coverage and identify any areas where we might need additional protection?",
+        "level": "B1",
+        "context": "Coverage gap analysis request"
+    },
+    {
+        "phrase": "I'd like to understand how my premium is calculated and what factors might cause it to increase or decrease. Specifically, how will adding my spouse and increasing our coverage limits affect our monthly payments?",
+        "level": "B1",
+        "context": "Premium calculation inquiry"
+    },
+    {
+        "phrase": "Could you explain the differences in coverage between these options? I want to understand what additional protection I'd be getting for the higher premium of the comprehensive plan versus the standard one.",
+        "level": "B1",
+        "context": "Coverage comparison request"
+    },
+    {
+        "phrase": "I notice that certain coverage options have different deductibles and limits. Could you help me understand how these work in practice and how to determine what levels are appropriate for my situation?",
+        "level": "B1",
+        "context": "Policy feature explanation request"
+    },
+    {
+        "phrase": "Based on our growing family and new home purchase, which policy adjustments would you recommend? I'd like to balance comprehensive coverage with keeping our premiums manageable.",
+        "level": "B1",
+        "context": "Personalized recommendation request"
+    },
+    {
+        "phrase": "Could you walk me through the claims process? I want to understand what documentation I would need to provide, typical processing times, and how deductibles are applied in real-world situations.",
+        "level": "B1",
+        "context": "Detailed claims process inquiry"
+    },
+    {
+        "phrase": "I understand there's usually a waiting period after making policy changes. Could you explain when the various coverage updates would take effect and if there are any temporary coverage options during transition periods?",
+        "level": "B1",
+        "context": "Coverage timing inquiry"
+    },
+    {
+        "phrase": "Could you explain the different payment options available and any discounts that might apply? I'm trying to decide whether to pay monthly, quarterly, or annually based on the financial implications.",
+        "level": "B1",
+        "context": "Payment optimization inquiry"
+    },
+    {
+        "phrase": "I'm particularly concerned about having adequate liability protection given our new home and growing family. Could you explain the different liability coverage levels available and help me determine what would be appropriate for our situation?",
+        "level": "B1",
+        "context": "Specific coverage optimization request"
+    },
+    {
+        "phrase": "I've recently undergone several significant life transitions, including marriage, the purchase of our first home, and the imminent arrival of our first child in approximately three months. Given these substantial changes in both personal responsibility and asset portfolio, I'd like to conduct a comprehensive review of my existing insurance coverage to identify any potential vulnerabilities or protection inadequacies that might have emerged as a result of these life events.",
+        "level": "B2",
+        "context": "Sophisticated life change consultation request"
+    },
+    {
+        "phrase": "I'm concerned about the possibility of coverage gaps or misalignments between my current insurance protection and my evolving risk profile. Could you conduct a thorough analysis of my existing policies in light of these significant life changes, with particular attention to areas where industry experience suggests new parents and homeowners often discover themselves inadequately protected?",
+        "level": "B2",
+        "context": "Advanced coverage gap analysis request"
+    },
+    {
+        "phrase": "I'd appreciate a more transparent understanding of the actuarial factors and risk assessments that influence my premium calculations. Specifically, how do underwriters quantify the additional risk exposure associated with adding dependents and property assets, and how might these various factors interact with one another in determining our final premium structure?",
+        "level": "B2",
+        "context": "Detailed premium calculation inquiry"
+    },
+    {
+        "phrase": "Could you provide a detailed comparative analysis of the various coverage options available to us, including the specific protection parameters, exclusion clauses, and coverage limitations associated with each tier? I'm particularly interested in understanding the tangible differences in real-world protection scenarios rather than simply comparing feature lists.",
+        "level": "B2",
+        "context": "Sophisticated coverage comparison request"
+    },
+    {
+        "phrase": "I notice significant variability in the deductible structures and coverage limits across these policy options. Could you elaborate on the risk-management philosophy behind these different approaches and provide some analytical framework for determining appropriate levels based on our specific financial situation and risk tolerance?",
+        "level": "B2",
+        "context": "Advanced policy feature analysis request"
+    },
+    {
+        "phrase": "Given our evolving family circumstances and recent property acquisition, I'd value your professional assessment regarding optimal policy adjustments. I'm seeking a strategically balanced approach that provides robust protection for our most significant vulnerabilities while maintaining cost efficiency through appropriate deductible selection and coverage prioritization.",
+        "level": "B2",
+        "context": "Strategic coverage recommendation request"
+    },
+    {
+        "phrase": "Could you provide a detailed walkthrough of your claims adjudication process, including the expected documentation requirements, internal review procedures, typical processing timelines, and any potential complexities that might arise in cases involving multiple coverage types or borderline claim scenarios?",
+        "level": "B2",
+        "context": "Comprehensive claims process inquiry"
+    },
+    {
+        "phrase": "I understand that coverage effectiveness often involves nuanced timing considerations. Could you clarify the specific implementation schedules for various policy modifications, any applicable waiting periods for different coverage categories, and whether there are provisions for retroactive protection or temporary coverage extensions during transition periods?",
+        "level": "B2",
+        "context": "Detailed coverage timing inquiry"
+    },
+    {
+        "phrase": "I'd like to conduct a more sophisticated analysis of our payment structure options. Could you elaborate on the precise discount percentages for different payment frequencies, the effective annual interest rate implied by choosing installment payments, and any other financial considerations that might inform an optimal payment strategy?",
+        "level": "B2",
+        "context": "Advanced payment optimization inquiry"
+    },
+    {
+        "phrase": "I'm particularly concerned about ensuring appropriate liability protection given our changing circumstances. Could you provide a more nuanced explanation of the liability coverage spectrum available to us, including how coverage limits are determined in relation to asset valuation, typical liability settlement patterns in your experience, and any umbrella policy options that might provide additional layers of protection?",
+        "level": "B2",
+        "context": "Sophisticated liability coverage inquiry"
+    },
+    {
+        "phrase": "I've recently navigated a confluence of significant life transitions—marriage, first-time home ownership, and the anticipated arrival of our first child within the coming trimester. These developments represent not only a meaningful evolution in personal circumstances but also a substantial reconfiguration of both my responsibility matrix and asset composition. I'm seeking a comprehensive evaluation of my current insurance portfolio to identify potential protection inadequacies that may have emerged as a consequence of these intersecting life events, particularly regarding the alignment between my existing coverage architecture and my newly expanded risk exposure profile.",
+        "level": "C1",
+        "context": "Highly sophisticated life change risk assessment request"
+    },
+    {
+        "phrase": "I'm concerned about potential discontinuities or protection asymmetries within my current insurance framework given my evolving risk profile. Could you conduct a granular analysis of my existing coverage parameters in the context of these significant life inflection points, with particular emphasis on identifying vulnerability patterns that industry actuarial data suggests are commonly overlooked during such transitional periods? I'm especially interested in examining areas where conventional coverage structures might not adequately address the multidimensional risk landscape now applicable to my situation.",
+        "level": "C1",
+        "context": "Advanced risk vulnerability pattern analysis request"
+    },
+    {
+        "phrase": "I'd appreciate a more transparent understanding of the actuarial methodology and risk assessment algorithms that inform my premium determination. Specifically, I'm interested in how underwriters quantify and model the incremental risk factors associated with additional dependents and expanded property holdings, the statistical weighting applied to various demographic and asset-related variables, and how these components interact within your pricing models to generate our specific premium structure and associated risk classification.",
+        "level": "C1",
+        "context": "Actuarial methodology and premium modeling inquiry"
+    },
+    {
+        "phrase": "Could you provide a comparative analysis of the available coverage architectures that extends beyond feature enumeration to examine the functional protection differences across various scenarios? I'm particularly interested in understanding how these options differ in their treatment of coverage boundaries, exclusion provisions, sublimit structures, and claims adjudication approaches. Ideally, this analysis would include specific examples of how identical loss scenarios might result in different outcomes under each coverage framework.",
+        "level": "C1",
+        "context": "Sophisticated functional coverage comparison request"
+    },
+    {
+        "phrase": "I notice substantial variability in the deductible frameworks and limit structures across these policy options. Could you elaborate on the risk management philosophy and actuarial principles informing these different approaches? I'm interested in developing a more sophisticated understanding of how to optimize these parameters based on our specific risk tolerance, liquid asset position, and the statistical probability distribution of various claim scenarios relevant to our circumstances.",
+        "level": "C1",
+        "context": "Advanced risk parameter optimization inquiry"
+    },
+    {
+        "phrase": "Given our evolving family configuration and recent property acquisition, I'd value your professional assessment regarding strategic policy adjustments. I'm seeking to develop a protection framework that optimally balances comprehensive coverage for statistically significant vulnerabilities with cost efficiency through appropriate risk retention mechanisms and coverage prioritization based on potential severity rather than mere probability of various loss scenarios.",
+        "level": "C1",
+        "context": "Strategic risk management framework consultation"
+    },
+    {
+        "phrase": "Could you delineate your organization's claims adjudication methodology, including the evidentiary standards applied during claim evaluation, the internal review hierarchy and escalation protocols, typical processing timelines with variance factors, and how coverage interpretations are applied in ambiguous claim scenarios or cases involving complex causality or multiple coverage domains? I'm particularly interested in understanding how the practical claims experience might differ from the theoretical coverage description.",
+        "level": "C1",
+        "context": "Comprehensive claims adjudication methodology inquiry"
+    },
+    {
+        "phrase": "I understand that coverage implementation involves nuanced timing considerations with potential protection implications. Could you clarify the specific effective schedules for various policy modifications, any applicable waiting or contestability periods for different coverage categories, and whether your underwriting guidelines provide for any retroactive protection mechanisms or temporary coverage extensions during transition periods to ensure continuity of protection?",
+        "level": "C1",
+        "context": "Detailed coverage implementation and continuity inquiry"
+    },
+    {
+        "phrase": "I'd like to optimize our premium payment structure through more sophisticated financial analysis. Could you elaborate on the precise discount percentages applied for different payment frequencies, the effective annual percentage rate implied by selecting installment payments, the potential opportunity cost considerations, and any other time-value-of-money factors that might inform an optimal payment strategy given current interest rate environments?",
+        "level": "C1",
+        "context": "Advanced financial optimization inquiry"
+    },
+    {
+        "phrase": "I'm particularly focused on establishing an appropriate liability protection framework given our evolving asset position and expanded household composition. Could you provide a more nuanced explanation of the liability coverage spectrum available to us, including how coverage parameters correspond to potential judgment exposure, typical liability settlement patterns across different jurisdictional environments, and any umbrella or excess liability structures that might provide more comprehensive protection against low-probability but high-severity events?",
+        "level": "C1",
+        "context": "Sophisticated liability framework design inquiry"
+    },
+    {
+        "phrase": "I find myself at a fascinating nexus of life transitions—the formalization of a partnership through marriage, the assumption of real property stewardship, and the impending responsibility of nurturing a new life—each representing not merely biographical developments but fundamental recalibrations of my relationship with risk and vulnerability. These intersecting life events have prompted a certain philosophical reflection on the nature of protection itself and how one might thoughtfully reconstruct an insurance architecture that not only addresses the practical dimensions of these new circumstances but also honors the deeper meaning of what it means to safeguard that which we most value.",
+        "level": "C2",
+        "context": "Philosophical life transition risk discourse"
+    },
+    {
+        "phrase": "The notion of 'coverage gaps' presents an interesting metaphor that suggests protection as something spatial or topographical—areas either sheltered or exposed. Yet I wonder if this conceptualization fully captures the multidimensional and often probabilistic nature of risk as it manifests in the complex interplay of life circumstances. I'm curious about your perspective on how one might move beyond conventional gap analysis to develop a more nuanced understanding of protection adequacy that accounts for the sometimes subtle interactions between different risk domains and life transitions.",
+        "level": "C2",
+        "context": "Protection philosophy discourse"
+    },
+    {
+        "phrase": "There's something simultaneously fascinating and somewhat opaque about the translation of human life circumstances into actuarial algorithms and risk coefficients. I find myself reflecting on the curious alchemy by which the deeply personal transitions I'm experiencing—marriage, homeownership, impending parenthood—are transmuted into mathematical expressions of risk exposure and premium calculation. I wonder if you might share some insight into this interpretive process and perhaps reflect on how the necessarily reductive nature of such models both captures and inevitably simplifies the complex reality of individual risk landscapes.",
+        "level": "C2",
+        "context": "Actuarial philosophy discourse"
+    },
+    {
+        "phrase": "The architecture of insurance offerings presents an interesting study in how protection itself is conceptualized and commodified. Beyond the mere enumeration of features and exclusions lies a more fundamental question about the different philosophical approaches to uncertainty embedded within various coverage structures. I wonder about your thoughts on how these different protection paradigms—from the more granular, specified coverage approaches to more comprehensive, principle-based frameworks—reflect different underlying assumptions about the nature of risk itself and our relationship to the unpredictable.",
+        "level": "C2",
+        "context": "Insurance design philosophy discourse"
+    },
+    {
+        "phrase": "The concept of the deductible represents a fascinating mechanism for allocating risk between individual and collective systems, creating a threshold that separates the personally bearable from the potentially catastrophic. I find myself contemplating the philosophical dimensions of this boundary-setting exercise—how one determines the appropriate point of transition between self-reliance and communal protection, between acceptable uncertainty and that which requires external mitigation. I wonder about your perspective on this balance and how it might be thoughtfully calibrated to align with both practical financial considerations and deeper values regarding responsibility and security.",
+        "level": "C2",
+        "context": "Risk allocation philosophy discourse"
+    },
+    {
+        "phrase": "As I contemplate the evolution of my protection needs across these significant life transitions, I find myself reflecting on the curious relationship between the standardized nature of insurance offerings and the deeply individual character of the value and meaning we assign to what we seek to protect. I wonder about your thoughts on how one might navigate this tension—crafting a protection strategy that addresses not merely the objective replacement value of assets or statistically probable scenarios, but honors the subjective significance and unique vulnerability profiles that emerge from our particular life circumstances and values.",
+        "level": "C2",
+        "context": "Personalized protection philosophy discourse"
+    },
+    {
+        "phrase": "The claims process represents an interesting moment of truth in the insurance relationship—the point at which abstract promises of protection materialize (or fail to) in response to concrete misfortune. I find myself curious about the hermeneutic dimensions of this process, the interpretive frameworks through which loss narratives are evaluated, and how the necessarily bureaucratic systems for administering such judgments manage to accommodate (or sometimes struggle with) the often messy, complex reality of actual loss experiences. Might you share some reflections on this tension between administrative necessity and experiential fidelity?",
+        "level": "C2",
+        "context": "Claims philosophy discourse"
+    },
+    {
+        "phrase": "There's something philosophically intriguing about the temporal dimensions of insurance coverage—how protection exists potentially before materializing (or not) in response to specific events, creating curious questions about when coverage truly 'exists' in a meaningful sense. As I consider the timing of policy modifications in relation to my evolving life circumstances, I find myself reflecting on this liminal quality of insurance protection and the sometimes ambiguous relationship between contractual effectiveness and actual security. I wonder about your thoughts on this temporal aspect of protection and how one might conceptualize coverage continuity across life transitions.",
+        "level": "C2",
+        "context": "Insurance temporality philosophy"
+    },
+    {
+        "phrase": "The structure of premium payments presents an interesting case study in how we assign value to protection across time. The typical discount for paying annually rather than monthly suggests a certain financial logic, yet I find myself reflecting on the deeper implications of how we temporally distribute the cost of security, and what this might reveal about our relationship with uncertainty and our assumptions regarding the stability of future circumstances. I wonder about your perspective on these dimensions of payment structuring beyond the mere financial calculations.",
+        "level": "C2",
+        "context": "Protection valuation philosophy"
+    },
+    {
+        "phrase": "The concept of liability coverage presents perhaps the most philosophically rich domain within insurance, addressing as it does our responsibility for how our actions—intentional or not—may affect others, and establishing financial parameters around what is ultimately a moral and ethical relationship. As I consider appropriate protection levels given my expanding life circumstances, I find myself contemplating the curious translation of ethical obligation into monetary terms, and how one might thoughtfully approach this necessary but somewhat reductive quantification of our responsibility toward others. I wonder about your reflections on this dimension of protection.",
+        "level": "C2",
+        "context": "Liability ethics philosophy discourse"
+    }
+]

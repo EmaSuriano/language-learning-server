@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I like this painting.",
+        "level": "A1",
+        "context": "Basic preference statement"
+    },
+    {
+        "phrase": "Who is the artist?",
+        "level": "A1",
+        "context": "Simple artist inquiry"
+    },
+    {
+        "phrase": "How much is it?",
+        "level": "A1",
+        "context": "Basic price inquiry"
+    },
+    {
+        "phrase": "Is it original?",
+        "level": "A1",
+        "context": "Simple authenticity question"
+    },
+    {
+        "phrase": "What is the style?",
+        "level": "A1",
+        "context": "Basic style inquiry"
+    },
+    {
+        "phrase": "Can I buy it?",
+        "level": "A1",
+        "context": "Simple purchase inquiry"
+    },
+    {
+        "phrase": "I'm new to art.",
+        "level": "A1",
+        "context": "Basic experience statement"
+    },
+    {
+        "phrase": "What's it made of?",
+        "level": "A1",
+        "context": "Simple material inquiry"
+    },
+    {
+        "phrase": "When was it made?",
+        "level": "A1",
+        "context": "Basic timeframe question"
+    },
+    {
+        "phrase": "Do you deliver?",
+        "level": "A1",
+        "context": "Simple shipping inquiry"
+    },
+    {
+        "phrase": "I'm interested in purchasing my first piece of art. Could you tell me about this painting?",
+        "level": "A2",
+        "context": "Beginner art buyer introduction"
+    },
+    {
+        "phrase": "Who is the artist and what is their background?",
+        "level": "A2",
+        "context": "Artist background inquiry"
+    },
+    {
+        "phrase": "What factors determine the price of this artwork?",
+        "level": "A2",
+        "context": "Price determination inquiry"
+    },
+    {
+        "phrase": "How do I know if the artwork is authentic?",
+        "level": "A2",
+        "context": "Authenticity verification question"
+    },
+    {
+        "phrase": "Could you explain the style and technique used in this piece?",
+        "level": "A2",
+        "context": "Style and technique inquiry"
+    },
+    {
+        "phrase": "What payment options do you offer for purchases?",
+        "level": "A2",
+        "context": "Payment option inquiry"
+    },
+    {
+        "phrase": "I'm just beginning to learn about art. Which artists would you recommend for new collectors?",
+        "level": "A2",
+        "context": "Beginner recommendation request"
+    },
+    {
+        "phrase": "What materials were used to create this sculpture?",
+        "level": "A2",
+        "context": "Material composition inquiry"
+    },
+    {
+        "phrase": "When was this artwork created and is it part of a series?",
+        "level": "A2",
+        "context": "Artwork context inquiry"
+    },
+    {
+        "phrase": "Do you provide shipping services and insurance for the artwork?",
+        "level": "A2",
+        "context": "Shipping and insurance inquiry"
+    },
+    {
+        "phrase": "I've been visiting several galleries recently as I'm interested in acquiring my first serious piece of art. I'm particularly drawn to this work and would like to learn more about the artist and their approach.",
+        "level": "B1",
+        "context": "Detailed first-time buyer inquiry"
+    },
+    {
+        "phrase": "Could you tell me more about this artist's background, training, and their significance in the contemporary art scene? I'm trying to understand why certain artists gain recognition while others don't.",
+        "level": "B1",
+        "context": "Comprehensive artist background inquiry"
+    },
+    {
+        "phrase": "I'm curious about how artworks are valued. What specific factors influence the price of this piece, and how might its value change over time?",
+        "level": "B1",
+        "context": "Detailed valuation inquiry"
+    },
+    {
+        "phrase": "What documentation or certification comes with this artwork to verify its authenticity and provenance? How important are these documents for a potential future resale?",
+        "level": "B1",
+        "context": "Authentication documentation inquiry"
+    },
+    {
+        "phrase": "I'd appreciate if you could explain the particular style and techniques employed in this artwork. What makes this approach distinctive, and how does it relate to broader artistic movements?",
+        "level": "B1",
+        "context": "Contextual style inquiry"
+    },
+    {
+        "phrase": "Could you walk me through the various purchase options? I'd like to understand if you offer payment plans, whether there are any additional fees, and what the return policy might be.",
+        "level": "B1",
+        "context": "Comprehensive purchase option inquiry"
+    },
+    {
+        "phrase": "As someone new to collecting, I'm trying to develop my understanding of different artistic styles. Could you recommend artists whose work might be both meaningful as a first purchase and potentially appreciate in value?",
+        "level": "B1",
+        "context": "Informed recommendation request"
+    },
+    {
+        "phrase": "I'm interested in the technical aspects of this piece. Could you elaborate on the materials used, the creative process, and how these choices contribute to the overall effect?",
+        "level": "B1",
+        "context": "Detailed technical inquiry"
+    },
+    {
+        "phrase": "What's the historical and cultural context in which this artwork was created? I'm interested in understanding how it relates to the artist's broader body of work and the time period.",
+        "level": "B1",
+        "context": "Historical context inquiry"
+    },
+    {
+        "phrase": "If I decide to purchase this piece, what options do you provide for delivery and installation? Also, are there specific care instructions to maintain its condition over time?",
+        "level": "B1",
+        "context": "Post-purchase logistics inquiry"
+    },
+    {
+        "phrase": "I've been exploring various galleries with increasing seriousness as I contemplate my first significant art acquisition. This particular piece has resonated with me on multiple levels, and I'd appreciate a more substantive discussion about the artist's background, conceptual framework, and position within the contemporary art landscape.",
+        "level": "B2",
+        "context": "Sophisticated buyer introduction"
+    },
+    {
+        "phrase": "I'm interested in developing a deeper understanding of this artist's trajectory and critical reception. Could you elaborate on their formal training, key influences, pivotal exhibitions, and how their work has been received by major critics and institutions over time?",
+        "level": "B2",
+        "context": "Detailed artist critical analysis request"
+    },
+    {
+        "phrase": "The valuation of contemporary art presents fascinating questions about market dynamics and cultural capital. Could you speak to the specific factors that have influenced this work's current valuation, and perhaps offer some insight into how collectors and institutions approach the assessment of emerging versus established artists?",
+        "level": "B2",
+        "context": "Advanced valuation analysis request"
+    },
+    {
+        "phrase": "I understand that authenticity and provenance are crucial considerations in art acquisition. Could you detail the specific documentation that accompanies this piece, the verification processes employed, and how digital technologies might be changing authentication practices in the art world?",
+        "level": "B2",
+        "context": "Comprehensive authentication inquiry"
+    },
+    {
+        "phrase": "This work appears to engage with certain stylistic traditions while simultaneously subverting others. Could you provide a more nuanced analysis of how the artist's technical approach and formal choices position this piece within broader art historical conversations and contemporary practice?",
+        "level": "B2",
+        "context": "Advanced stylistic analysis request"
+    },
+    {
+        "phrase": "I'd like to explore the various acquisition structures available for a work of this caliber. Could you elaborate on the standard purchase process, any potential financing options, applicable taxes or fees, and how galleries typically navigate requests for price flexibility or additional services?",
+        "level": "B2",
+        "context": "Sophisticated purchase structure inquiry"
+    },
+    {
+        "phrase": "As someone developing a collection strategy rather than simply making isolated purchases, I'm interested in your perspective on how emerging collectors might thoughtfully build a coherent collection. What artists or movements would you suggest as intellectually and potentially financially rewarding areas of focus?",
+        "level": "B2",
+        "context": "Collection strategy consultation"
+    },
+    {
+        "phrase": "I'm particularly intrigued by the material and procedural dimensions of this work. Could you provide a more technical explanation of the media employed, any innovative technical approaches, and how these material choices relate to the conceptual underpinnings of the piece?",
+        "level": "B2",
+        "context": "Advanced technical analysis request"
+    },
+    {
+        "phrase": "This piece seems to engage with specific historical and theoretical discourses. Could you elaborate on the contextual framework within which it was produced, key references or influences, and how it might be situated within the artist's broader conceptual project or thematic concerns?",
+        "level": "B2",
+        "context": "Theoretical context inquiry"
+    },
+    {
+        "phrase": "Should I proceed with this acquisition, I'm interested in ensuring optimal preservation and presentation. Could you advise on specialized transportation requirements, installation considerations, environmental factors affecting conservation, and any ongoing maintenance that might be necessary given the specific materials involved?",
+        "level": "B2",
+        "context": "Advanced conservation consultation"
+    },
+    {
+        "phrase": "I've been methodically exploring galleries across several cities with increasing intentionality as I contemplate my entry into art collecting proper. This particular work has arrested my attention in a way that merits deeper consideration. I'd appreciate a more substantive dialogue regarding the artist's conceptual framework, developmental trajectory, and situatedness within current discourses, as well as how this specific piece articulates with their broader artistic project.",
+        "level": "C1",
+        "context": "Highly sophisticated buyer introduction"
+    },
+    {
+        "phrase": "I'm interested in developing a more nuanced understanding of this artist's position within contemporary practice. Could you elaborate on their intellectual and artistic lineage, key theoretical engagements, significant institutional validations, and how critical reception has evolved across different contexts and platforms? I'm particularly interested in how their work negotiates the tension between market legibility and conceptual rigor.",
+        "level": "C1",
+        "context": "Advanced critical positioning inquiry"
+    },
+    {
+        "phrase": "The valuation mechanisms within contemporary art markets present fascinating case studies in the economics of cultural significance. Could you speak to the specific factors that have influenced this work's current market position, the relationship between primary and secondary market values for this artist, and how institutional attention correlates with commercial valuation in their particular case?",
+        "level": "C1",
+        "context": "Sophisticated market analysis request"
+    },
+    {
+        "phrase": "In an era of increasingly sophisticated forgeries and complex questions of authorship, I'd appreciate a more detailed explanation of the authentication protocols relevant to this work. Could you elaborate on the specific provenance documentation, any technological verification methods employed, the role of the artist's studio or estate in the authentication process, and how these practices might differ across different media or periods?",
+        "level": "C1",
+        "context": "Detailed authentication methodology inquiry"
+    },
+    {
+        "phrase": "This work appears to engage in a sophisticated dialogue with certain formal traditions while simultaneously introducing disruptive elements. Could you provide a more granular analysis of how the artist's technical and compositional strategies function to position this piece within specific art historical conversations, and how these formal choices articulate with the work's conceptual ambitions?",
+        "level": "C1",
+        "context": "Advanced formal and conceptual analysis request"
+    },
+    {
+        "phrase": "I'd like to explore the various transactional structures potentially applicable to an acquisition of this nature. Could you delineate the standard purchase protocols, any available financing instruments, applicable tax considerations including potential deferral strategies, and how the gallery approaches requests for acquisition terms that might deviate from standard practices for qualified collectors?",
+        "level": "C1",
+        "context": "Complex acquisition structure consultation"
+    },
+    {
+        "phrase": "As someone approaching collecting with both intellectual and investment considerations in mind, I'm interested in your perspective on strategic collection development in the current environment. Which artists, media, or conceptual territories would you identify as particularly significant in terms of critical discourse and potentially sustainable market interest over a medium to long-term horizon?",
+        "level": "C1",
+        "context": "Sophisticated collection strategy consultation"
+    },
+    {
+        "phrase": "I'm particularly interested in the material and procedural dimensions of this work and their relationship to its conceptual framework. Could you provide a more technical explication of the media employed, any innovative methodological approaches, and how these material and process-based decisions function as carriers of meaning beyond their purely formal attributes?",
+        "level": "C1",
+        "context": "Advanced material-conceptual analysis request"
+    },
+    {
+        "phrase": "This piece appears to engage with specific theoretical discourses and historical referents. Could you elaborate on the intellectual contexts informing its production, key conceptual interlocutors or influences, and how it positions itself within particular theoretical debates or thematic territories currently animating contemporary practice?",
+        "level": "C1",
+        "context": "Theoretical contextualization request"
+    },
+    {
+        "phrase": "In contemplating this acquisition, I'm concerned with ensuring optimal conditions for both its physical preservation and conceptual integrity. Could you advise on specialized considerations regarding its transportation, installation parameters, environmental requirements, conservation protocols given its specific material composition, and any artist-specified guidelines regarding its proper display or contextual framing?",
+        "level": "C1",
+        "context": "Comprehensive conservation and installation consultation"
+    },
+    {
+        "phrase": "I find myself increasingly drawn to the possibility of meaningful engagement with art through collecting—not merely as an act of acquisition but as a form of participation in the ongoing dialogue between artistic production, cultural reception, and historical documentation. This particular work has induced in me a kind of productive disquiet that I sense might reward sustained consideration. I wonder if you might share some insights into the artist's conceptual preoccupations and how this specific piece articulates with broader currents in contemporary aesthetic discourse.",
+        "level": "C2",
+        "context": "Philosophical collecting approach discourse"
+    },
+    {
+        "phrase": "The positioning of artists within our current cultural moment presents fascinating questions about the relationship between institutional validation, critical reception, and market recognition. I'm curious about your perspective on how this particular artist navigates these sometimes complementary, sometimes contradictory systems of valuation, and how their work might be situated within the broader ecosystem of contemporary practice with its complex negotiations between conceptual ambition and material manifestation.",
+        "level": "C2",
+        "context": "Art world ecosystem philosophy discourse"
+    },
+    {
+        "phrase": "The question of value in art presents one of the more intriguing intersections of cultural, economic, and philosophical considerations in contemporary society. I find myself reflecting on the curious alchemy by which certain objects are imbued with significance far beyond their material constituents. Might you share your thoughts on how this particular work's valuation has been constructed through the interplay of critical discourse, institutional attention, market dynamics, and the less quantifiable but perhaps more essential question of its contribution to our collective visual and intellectual culture?",
+        "level": "C2",
+        "context": "Art valuation philosophy discourse"
+    },
+    {
+        "phrase": "The notion of authenticity in art has undergone fascinating transformations from the age of mechanical reproduction through our current era of digital simulation and algorithmic creation. I wonder about your perspective on how these shifting conceptual frameworks affect our understanding of originality and authorship, particularly as they pertain to works like this that seem to engage self-consciously with questions of reproducibility, authorial presence, and the increasingly porous boundaries between unique objects and their various iterations or documentations.",
+        "level": "C2",
+        "context": "Authenticity philosophy discourse"
+    },
+    {
+        "phrase": "This work seems to embody a certain productive tension between formal tradition and conceptual innovation that I find particularly compelling. I'm curious about your thoughts on how its visual strategies and material choices function not merely as aesthetic decisions but as a kind of embodied thinking—how the work's formal attributes might be understood as a mode of inquiry rather than simply a means of expression or representation.",
+        "level": "C2",
+        "context": "Formal-conceptual philosophy discourse"
+    },
+    {
+        "phrase": "The relationship between art and commerce presents one of the more persistent paradoxes within our cultural landscape. I find myself reflecting on the various frameworks through which we might understand the transaction of acquiring art—as patronage, as investment, as participation in cultural production, as an act of preservation. I wonder if you might share your perspective on how galleries like yours conceptualize your role within this complex ecosystem, particularly in working with collectors who approach acquisition as something more meaningful than mere consumption.",
+        "level": "C2",
+        "context": "Art market philosophy discourse"
+    },
+    {
+        "phrase": "I've been contemplating the curious relationship between collecting and identity formation—how the works we choose to live with become in some sense extensions or expressions of our intellectual and emotional landscapes. I wonder about your perspective on how collectors might approach the development of a collection that maintains conceptual coherence while avoiding the constraints of overly programmatic acquisition strategies.",
+        "level": "C2",
+        "context": "Collection identity philosophy discourse"
+    },
+    {
+        "phrase": "There's something fascinating about the material presence of artwork in an increasingly virtual cultural environment—how certain objects seem to assert or even insist upon their physical reality in ways that resist complete translation into digital documentation. I'm curious about your thoughts on how this particular work negotiates the relationship between its material constitution and its conceptual dimensions, and how this tension might relate to broader questions about embodiment and mediation in contemporary experience.",
+        "level": "C2",
+        "context": "Materiality philosophy discourse"
+    },
+    {
+        "phrase": "This piece seems to engage with certain historical references and theoretical positions that raise interesting questions about the relationship between art and its various contexts—institutional, historical, discursive. I wonder if you might elaborate on how you understand its participation in particular conversations or traditions, and perhaps share your perspective on how meaning in contemporary art emerges through these complex networks of reference and resonance.",
+        "level": "C2",
+        "context": "Art context philosophy discourse"
+    },
+    {
+        "phrase": "The preservation of contemporary art presents fascinating challenges that extend beyond mere physical conservation to questions of conceptual integrity and contextual meaning. For works that often deliberately engage with notions of time, deterioration, or site-specificity, I wonder about your perspective on the philosophical dimensions of collecting and caring for pieces that might in some sense resist traditional notions of permanence or stable objecthood.",
+        "level": "C2",
+        "context": "Conservation philosophy discourse"
+    }
+]

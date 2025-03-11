@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "I don't understand this.",
+        "level": "A1",
+        "context": "Basic comprehension difficulty"
+    },
+    {
+        "phrase": "Can you help me?",
+        "level": "A1",
+        "context": "Simple assistance request"
+    },
+    {
+        "phrase": "How do I solve this?",
+        "level": "A1",
+        "context": "Basic problem-solving inquiry"
+    },
+    {
+        "phrase": "What is the formula?",
+        "level": "A1",
+        "context": "Basic formula inquiry"
+    },
+    {
+        "phrase": "Please explain again.",
+        "level": "A1",
+        "context": "Simple repetition request"
+    },
+    {
+        "phrase": "I'm confused.",
+        "level": "A1",
+        "context": "Basic expression of confusion"
+    },
+    {
+        "phrase": "Is this correct?",
+        "level": "A1",
+        "context": "Simple verification request"
+    },
+    {
+        "phrase": "What's the next step?",
+        "level": "A1",
+        "context": "Basic procedure inquiry"
+    },
+    {
+        "phrase": "I have a test tomorrow.",
+        "level": "A1",
+        "context": "Simple timeline statement"
+    },
+    {
+        "phrase": "Can I see an example?",
+        "level": "A1",
+        "context": "Basic example request"
+    },
+    {
+        "phrase": "I'm having trouble understanding how to solve these quadratic equations.",
+        "level": "A2",
+        "context": "Specific concept difficulty"
+    },
+    {
+        "phrase": "Could you explain this concept in a different way?",
+        "level": "A2",
+        "context": "Alternative explanation request"
+    },
+    {
+        "phrase": "What steps should I follow to solve this type of problem?",
+        "level": "A2",
+        "context": "Process inquiry"
+    },
+    {
+        "phrase": "Is there a formula I need to memorize for the test?",
+        "level": "A2",
+        "context": "Test preparation inquiry"
+    },
+    {
+        "phrase": "I think I understand now, but could you explain that last part again?",
+        "level": "A2",
+        "context": "Partial clarification request"
+    },
+    {
+        "phrase": "I get confused when there are negative numbers in the equation.",
+        "level": "A2",
+        "context": "Specific challenge identification"
+    },
+    {
+        "phrase": "Did I solve this problem correctly? I'm not sure about my answer.",
+        "level": "A2",
+        "context": "Solution verification request"
+    },
+    {
+        "phrase": "After I find the value of x, what do I do next?",
+        "level": "A2",
+        "context": "Sequential guidance request"
+    },
+    {
+        "phrase": "I have a math test on Friday and I really need to understand this.",
+        "level": "A2",
+        "context": "Urgent learning need"
+    },
+    {
+        "phrase": "Can you show me another example similar to the homework problems?",
+        "level": "A2",
+        "context": "Relevant example request"
+    },
+    {
+        "phrase": "I'm really struggling with the concept of logarithmic functions, especially when applying them to real-world problems. Could you help me understand the fundamental principles and how they relate to exponential relationships?",
+        "level": "B1",
+        "context": "Conceptual understanding request"
+    },
+    {
+        "phrase": "I think I'm missing something important about how these formulas are derived. Could you walk me through the logical steps that lead to this equation so I can better understand why it works?",
+        "level": "B1",
+        "context": "Logical derivation inquiry"
+    },
+    {
+        "phrase": "What's the most efficient approach for solving these types of problems? I can eventually get to the answer, but I feel like I'm taking too many steps.",
+        "level": "B1",
+        "context": "Problem-solving efficiency inquiry"
+    },
+    {
+        "phrase": "Based on previous tests, which aspects of this topic are most likely to appear on the exam, and how should I prioritize my studying?",
+        "level": "B1",
+        "context": "Strategic study planning"
+    },
+    {
+        "phrase": "I think I understand the basic concept now, but I'm having trouble applying it when the problems become more complex. Could you explain how the core principle extends to these more complicated scenarios?",
+        "level": "B1",
+        "context": "Advanced application inquiry"
+    },
+    {
+        "phrase": "I notice I keep making the same mistake with the negative signs when solving these equations. Is there a particular strategy or way of thinking about this that could help me avoid this error?",
+        "level": "B1",
+        "context": "Error pattern remediation"
+    },
+    {
+        "phrase": "I've attempted this problem and reached this answer, but the textbook shows something different. Could you review my work and help me identify where my understanding or approach might be flawed?",
+        "level": "B1",
+        "context": "Solution discrepancy analysis"
+    },
+    {
+        "phrase": "After determining the critical points, I'm confused about how to analyze the behavior of the function to find absolute extrema. Could you clarify this process?",
+        "level": "B1",
+        "context": "Procedural clarification request"
+    },
+    {
+        "phrase": "My test is next week, and I'd like to develop a systematic study plan. Which practice problems would be most beneficial for mastering this concept, and how should I approach them?",
+        "level": "B1",
+        "context": "Comprehensive study planning"
+    },
+    {
+        "phrase": "The textbook examples seem different from what we covered in class. Could you demonstrate how to approach a problem that combines multiple concepts we've learned?",
+        "level": "B1",
+        "context": "Integrated concept application"
+    },
+    {
+        "phrase": "I'm finding it challenging to conceptualize the underlying principles of partial differential equations, particularly the distinction between boundary conditions and initial conditions when solving heat equation problems. Could you elaborate on the mathematical and physical significance of these constraints?",
+        "level": "B2",
+        "context": "Advanced conceptual distinction inquiry"
+    },
+    {
+        "phrase": "The textbook's explanation of Taylor series convergence seems to gloss over some of the theoretical foundations. Could you provide a more rigorous explanation of how we determine the radius of convergence and the implications for approximating functions within and beyond this range?",
+        "level": "B2",
+        "context": "Theoretical foundation inquiry"
+    },
+    {
+        "phrase": "I understand the computational approach to solving these optimization problems, but I'm interested in exploring more elegant methods that leverage the specific structure of the constraint functions. Are there alternative techniques that might reveal deeper insights into the solution space?",
+        "level": "B2",
+        "context": "Advanced methodology inquiry"
+    },
+    {
+        "phrase": "Based on your experience, what conceptual frameworks or mental models have proven most effective for students trying to master this topic? I'm looking for strategies that go beyond rote memorization to develop genuine mathematical intuition.",
+        "level": "B2",
+        "context": "Conceptual framework planning"
+    },
+    {
+        "phrase": "I've noticed that while I can solve standard practice problems, I struggle when the context shifts or when multiple concepts need to be integrated. How can I develop the flexibility to recognize underlying patterns regardless of how the problem is presented?",
+        "level": "B2",
+        "context": "Cognitive flexibility development"
+    },
+    {
+        "phrase": "I consistently misinterpret certain aspects of word problems involving rates of change. I believe it stems from difficulty translating between verbal descriptions and mathematical notation. Could you help me identify specific linguistic cues that should trigger particular mathematical representations?",
+        "level": "B2",
+        "context": "Language-mathematics interface analysis"
+    },
+    {
+        "phrase": "I've approached this proof from multiple angles but keep encountering logical impasses. Could you analyze my current approach and suggest where my reasoning might be flawed or where an alternative mathematical technique might be more appropriate?",
+        "level": "B2",
+        "context": "Proof strategy analysis"
+    },
+    {
+        "phrase": "After establishing the general solution to this differential equation, I'm uncertain about how to properly apply the transversality condition to obtain the specific solution that's physically meaningful. Could you elaborate on this final step of the process?",
+        "level": "B2",
+        "context": "Specialized procedural clarification"
+    },
+    {
+        "phrase": "With the exam approaching, I'd like to focus on developing a deeper understanding of the unifying principles rather than treating each problem type as a separate case. Could you help me construct a conceptual framework that highlights the connections between seemingly disparate topics?",
+        "level": "B2",
+        "context": "Integrative study strategy"
+    },
+    {
+        "phrase": "The more challenging problems on previous exams seem to require creative application of the theorems we've studied. Could you demonstrate the thought process for approaching a novel problem situation, particularly how you identify which theoretical tools might be relevant?",
+        "level": "B2",
+        "context": "Creative problem-solving demonstration"
+    },
+    {
+        "phrase": "I'm finding it challenging to reconcile the measure-theoretic foundations of Lebesgue integration with the more intuitive Riemann approach we initially learned. Specifically, I'm struggling to develop an intuitive understanding of how null sets and almost everywhere properties translate to practical applications in analysis and probability theory.",
+        "level": "C1",
+        "context": "Advanced theoretical reconciliation"
+    },
+    {
+        "phrase": "The textbook's treatment of manifold theory seems to presuppose certain topological intuitions that I haven't fully developed. Could you elaborate on how the abstract definition of smooth structures relates to our geometric understanding of curved spaces, particularly regarding the transition functions and their role in defining globally consistent properties?",
+        "level": "C1",
+        "context": "Sophisticated mathematical structure inquiry"
+    },
+    {
+        "phrase": "While I can mechanically apply the numerical methods we've learned, I'm interested in developing a deeper understanding of the convergence properties and error propagation characteristics of different algorithms. In particular, how might one systematically select an optimal approach based on the specific features of the problem domain?",
+        "level": "C1",
+        "context": "Advanced numerical analysis methodology"
+    },
+    {
+        "phrase": "As I prepare for more advanced coursework, I'd like to develop a more coherent mental framework for understanding how the various branches of analysis interconnect. Could you help me identify the fundamental unifying principles and historical development of these ideas, particularly regarding how measure theory bridges the gap between analysis and probability?",
+        "level": "C1",
+        "context": "Mathematical historiography and integration"
+    },
+    {
+        "phrase": "I've noticed that many of the techniques we've learned appear to be special cases of more general principles in functional analysis. I'm particularly interested in understanding how the concept of duality manifests across different mathematical structures, from vector spaces to measure spaces to operator algebras.",
+        "level": "C1",
+        "context": "Advanced pattern recognition across domains"
+    },
+    {
+        "phrase": "When approaching word problems involving coupled systems, I sometimes struggle to identify the appropriate mathematical structure to model the constraints. Could you help me develop a more systematic approach to translating complex interdependencies into well-formed mathematical expressions?",
+        "level": "C1",
+        "context": "Complex mathematical modeling methodology"
+    },
+    {
+        "phrase": "My attempt at this existence proof relies on applying the contraction mapping principle, but I'm encountering difficulties establishing the appropriate complete metric space and showing that the operator is indeed a contraction. Could you evaluate my approach and suggest alternative techniques if this framework seems unsuitable?",
+        "level": "C1",
+        "context": "Advanced proof technique evaluation"
+    },
+    {
+        "phrase": "Having derived the governing equations for this system, I'm uncertain about the appropriate boundary conditions to impose to ensure well-posedness. Specifically, I'm struggling to determine whether characteristic-based or physical considerations should take precedence in this particular context.",
+        "level": "C1",
+        "context": "Specialized mathematical modeling consideration"
+    },
+    {
+        "phrase": "With comprehensive examinations approaching, I'm focusing on developing the ability to quickly recognize the essential mathematical structure of unfamiliar problems. Are there particular heuristics or classification schemes you've found useful for identifying which theoretical frameworks are most relevant to novel problem contexts?",
+        "level": "C1",
+        "context": "Advanced pattern recognition development"
+    },
+    {
+        "phrase": "The research literature on this topic seems to employ techniques that extend beyond our coursework. Could you provide some insight into how these methods evolved from the foundational concepts we've studied, and perhaps suggest resources for bridging this gap in my understanding?",
+        "level": "C1",
+        "context": "Research-level mathematics connection"
+    },
+    {
+        "phrase": "I find myself contemplating the epistemological foundations of mathematical abstraction, particularly as it relates to the apparent disjunction between the formal axiomatic systems we employ and the intuitive geometric or physical interpretations that often guide mathematical discovery. I wonder if you might share your perspective on how these seemingly disparate modes of mathematical thought might be reconciled, especially in the context of teaching advanced concepts to students who may be encountering them for the first time.",
+        "level": "C2",
+        "context": "Mathematical philosophy of education discourse"
+    },
+    {
+        "phrase": "The transition from classical analysis to the more abstract formulations of functional analysis presents fascinating questions about the nature of mathematical generalization and its relationship to problem-solving efficacy. I'm particularly interested in your thoughts on how the historical development of these abstractions reflected changing conceptions of what constitutes mathematical understanding, and how these philosophical shifts might inform contemporary approaches to learning these subjects.",
+        "level": "C2",
+        "context": "Mathematical epistemology discussion"
+    },
+    {
+        "phrase": "Recent developments in computational approaches to mathematics have raised intriguing questions about the relationship between algorithmic efficiency and conceptual clarity. I find myself reflecting on how different problem-solving methodologies might illuminate complementary aspects of mathematical structures, and whether certain approaches might systematically obscure important structural properties while highlighting others.",
+        "level": "C2",
+        "context": "Computational mathematics philosophy"
+    },
+    {
+        "phrase": "As I prepare for more advanced study, I've become increasingly aware of the tension between specialized technical proficiency and broader conceptual integration across mathematical domains. I wonder about your perspective on cultivating what we might call 'mathematical maturity'—that seemingly ineffable quality that distinguishes mechanical application from deeper understanding—and how this developmental process might be consciously facilitated.",
+        "level": "C2",
+        "context": "Mathematical cognitive development philosophy"
+    },
+    {
+        "phrase": "The apparent disconnect between the formal presentation of mathematics in textbooks and the creative, often intuition-driven process of mathematical discovery raises interesting questions about the nature of mathematical cognition. I'm curious about your thoughts on how one might develop the capacity to perceive underlying patterns and connections that aren't immediately apparent from the axiomatic formulation of a theory.",
+        "level": "C2",
+        "context": "Mathematical creativity philosophy"
+    },
+    {
+        "phrase": "I've been reflecting on the challenges of translating between natural language descriptions of complex systems and their formal mathematical representations. This interface between linguistic expression and symbolic formalism seems to represent a particularly significant cognitive hurdle. I wonder if you have insights into how expert mathematicians navigate this translation process in domains where established modeling paradigms may not be immediately applicable.",
+        "level": "C2",
+        "context": "Mathematical linguistics philosophy"
+    },
+    {
+        "phrase": "In developing proofs for complex theorems, I often find myself navigating between different possible approaches, some more algebraic and others more geometric or analytical in nature. This process of selecting appropriate theoretical frameworks seems to involve tacit knowledge that extends beyond the formal content of the mathematics itself. I'd be interested in your perspective on how this meta-mathematical judgment develops and whether it can be cultivated systematically.",
+        "level": "C2",
+        "context": "Mathematical judgment philosophy"
+    },
+    {
+        "phrase": "The sequential nature of mathematical education sometimes obscures the interconnected structure of the discipline as a whole. As I work through increasingly specialized topics, I find myself concerned about developing a fragmented understanding rather than perceiving the underlying unity of mathematical thought. I wonder about your approach to maintaining coherence across different domains of mathematical knowledge, particularly when their connections aren't made explicit in standard curricula.",
+        "level": "C2",
+        "context": "Mathematical knowledge integration philosophy"
+    },
+    {
+        "phrase": "As examinations approach, I find myself reflecting on the relationship between assessment structures and authentic mathematical understanding. The constraints of timed, written examinations seem to privilege certain cognitive styles and problem-solving approaches over others, potentially at odds with the diverse ways mathematical insight can manifest. I'd be interested in your thoughts on reconciling institutional evaluation needs with the cultivation of genuine mathematical thinking.",
+        "level": "C2",
+        "context": "Mathematical assessment philosophy"
+    },
+    {
+        "phrase": "The divergence between mathematics as practiced in research contexts and as presented in educational settings raises questions about authenticity in mathematical learning. I find myself wondering about the extent to which the necessarily simplified presentations of complex theories might inadvertently misconstrue the nature of mathematical knowledge and inquiry. How might we negotiate this tension between accessibility and authenticity in the learning process?",
+        "level": "C2",
+        "context": "Mathematical education authenticity philosophy"
+    }
+]

@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "What is your budget?",
+        "level": "A1",
+        "context": "Basic budget inquiry"
+    },
+    {
+        "phrase": "When is the wedding?",
+        "level": "A1",
+        "context": "Basic date inquiry"
+    },
+    {
+        "phrase": "How many guests?",
+        "level": "A1",
+        "context": "Basic guest count"
+    },
+    {
+        "phrase": "Indoor or outdoor?",
+        "level": "A1",
+        "context": "Basic venue type"
+    },
+    {
+        "phrase": "Do you have a venue?",
+        "level": "A1",
+        "context": "Basic venue inquiry"
+    },
+    {
+        "phrase": "I have a list of venues.",
+        "level": "A1",
+        "context": "Basic venue options"
+    },
+    {
+        "phrase": "What colors do you like?",
+        "level": "A1",
+        "context": "Basic theme inquiry"
+    },
+    {
+        "phrase": "We need a deposit.",
+        "level": "A1",
+        "context": "Basic payment information"
+    },
+    {
+        "phrase": "Sign here, please.",
+        "level": "A1",
+        "context": "Basic contract signing"
+    },
+    {
+        "phrase": "Please call the caterer.",
+        "level": "A1",
+        "context": "Basic vendor communication"
+    },
+    {
+        "phrase": "What's your wedding budget range?",
+        "level": "A2",
+        "context": "Specific budget inquiry"
+    },
+    {
+        "phrase": "Do you prefer a Saturday or Sunday wedding?",
+        "level": "A2",
+        "context": "Date preference"
+    },
+    {
+        "phrase": "How many people are on your guest list?",
+        "level": "A2",
+        "context": "Guest list inquiry"
+    },
+    {
+        "phrase": "Would you like a church ceremony?",
+        "level": "A2",
+        "context": "Ceremony type inquiry"
+    },
+    {
+        "phrase": "Have you chosen your wedding colors yet?",
+        "level": "A2",
+        "context": "Theme planning"
+    },
+    {
+        "phrase": "We need to book your venue soon.",
+        "level": "A2",
+        "context": "Timeline urgency"
+    },
+    {
+        "phrase": "The photographer requires a 50% deposit.",
+        "level": "A2",
+        "context": "Vendor payment terms"
+    },
+    {
+        "phrase": "Can you send me your guest addresses?",
+        "level": "A2",
+        "context": "Invitation planning"
+    },
+    {
+        "phrase": "Would you like a DJ or live band?",
+        "level": "A2",
+        "context": "Entertainment options"
+    },
+    {
+        "phrase": "Let's schedule a venue tour next week.",
+        "level": "A2",
+        "context": "Planning next steps"
+    },
+    {
+        "phrase": "I'd recommend allocating about 40% of your budget to the venue and catering.",
+        "level": "B1",
+        "context": "Budget allocation advice"
+    },
+    {
+        "phrase": "Have you considered a Friday evening wedding to reduce costs?",
+        "level": "B1",
+        "context": "Cost-saving suggestions"
+    },
+    {
+        "phrase": "We should discuss your catering preferences and dietary restrictions.",
+        "level": "B1",
+        "context": "Menu planning"
+    },
+    {
+        "phrase": "Would you prefer a buffet-style dinner or a plated service?",
+        "level": "B1",
+        "context": "Meal service options"
+    },
+    {
+        "phrase": "I've created a timeline of when we need to make vendor decisions.",
+        "level": "B1",
+        "context": "Planning timeline"
+    },
+    {
+        "phrase": "Let's talk about your vision for the ceremony and reception decor.",
+        "level": "B1",
+        "context": "Decoration planning"
+    },
+    {
+        "phrase": "Have you thought about what style of wedding dress you're looking for?",
+        "level": "B1",
+        "context": "Attire discussion"
+    },
+    {
+        "phrase": "We should include a contingency amount in the budget for unexpected expenses.",
+        "level": "B1",
+        "context": "Budget planning"
+    },
+    {
+        "phrase": "What type of flowers are you considering for the bouquets and centerpieces?",
+        "level": "B1",
+        "context": "Floral discussion"
+    },
+    {
+        "phrase": "Would you like me to arrange transportation for your guests from the hotel to the venue?",
+        "level": "B1",
+        "context": "Transportation planning"
+    },
+    {
+        "phrase": "I recommend creating a comprehensive budget breakdown that allocates funds across all categories while maintaining a 10-15% contingency reserve.",
+        "level": "B2",
+        "context": "Detailed budget planning"
+    },
+    {
+        "phrase": "Let's discuss how we can incorporate meaningful cultural traditions into your ceremony while keeping it personal and authentic.",
+        "level": "B2",
+        "context": "Cultural elements discussion"
+    },
+    {
+        "phrase": "Based on your guest count and preferred atmosphere, I've shortlisted several venues that align with your vision and budget constraints.",
+        "level": "B2",
+        "context": "Venue recommendations"
+    },
+    {
+        "phrase": "We should develop a rain contingency plan if you're set on an outdoor ceremony, including a tent option with appropriate heating or cooling.",
+        "level": "B2",
+        "context": "Weather contingency planning"
+    },
+    {
+        "phrase": "Have you considered how you want to manage family dynamics during the seating arrangements and processional order?",
+        "level": "B2",
+        "context": "Family dynamics management"
+    },
+    {
+        "phrase": "I'd recommend scheduling your vendor meetings in this sequence to ensure each decision informs the next without creating conflicts.",
+        "level": "B2",
+        "context": "Vendor coordination"
+    },
+    {
+        "phrase": "The photographer's collection includes digital rights, but we should discuss print packages and album options if those are important to you.",
+        "level": "B2",
+        "context": "Photography package details"
+    },
+    {
+        "phrase": "Let's review the catering proposal to ensure it accommodates all dietary restrictions while maintaining the elevated dining experience you want.",
+        "level": "B2",
+        "context": "Catering review"
+    },
+    {
+        "phrase": "Would you prefer a traditional payment schedule with each vendor or would you like to explore our all-inclusive package with consolidated billing?",
+        "level": "B2",
+        "context": "Payment planning"
+    },
+    {
+        "phrase": "I suggest creating a detailed day-of timeline that accounts for travel time, photography sessions, and moments of respite throughout the celebration.",
+        "level": "B2",
+        "context": "Day-of scheduling"
+    },
+    {
+        "phrase": "After evaluating your aesthetic preferences and budget parameters, I've curated a selection of venues that optimize the guest experience while honoring your financial boundaries.",
+        "level": "C1",
+        "context": "Tailored venue selection"
+    },
+    {
+        "phrase": "I'd recommend implementing a tiered approach to your invitation strategy, allowing for flexibility as guests respond and potentially creating space for secondary invitations.",
+        "level": "C1",
+        "context": "Guest list management strategy"
+    },
+    {
+        "phrase": "Let's develop a comprehensive vendor communication protocol to ensure consistency across all touchpoints and eliminate the possibility of misinformation.",
+        "level": "C1",
+        "context": "Vendor communication planning"
+    },
+    {
+        "phrase": "Have you considered how seasonality impacts not only floral availability but also the overall ambiance and photographic quality of your chosen venue?",
+        "level": "C1",
+        "context": "Seasonal planning considerations"
+    },
+    {
+        "phrase": "I suggest creating a weighted decision matrix for your venue selection that incorporates aesthetic appeal, practical logistics, and alignment with your overall vision.",
+        "level": "C1",
+        "context": "Decision-making framework"
+    },
+    {
+        "phrase": "The current catering proposal includes a premium bar package, though we could explore a curated cocktail hour followed by wine service to optimize your beverage investment.",
+        "level": "C1",
+        "context": "Bar service optimization"
+    },
+    {
+        "phrase": "We should discuss potential emotional triggers in your family dynamics to proactively develop strategies for a harmonious celebration.",
+        "level": "C1",
+        "context": "Family relationship management"
+    },
+    {
+        "phrase": "I recommend allocating your aesthetic budget proportionally between high-impact elements and supporting details to create a cohesive design narrative.",
+        "level": "C1",
+        "context": "Design budget allocation"
+    },
+    {
+        "phrase": "Let's explore how we might thoughtfully integrate sustainable practices without compromising the luxurious quality you're envisioning.",
+        "level": "C1",
+        "context": "Sustainable planning"
+    },
+    {
+        "phrase": "Would you prefer a traditional payment structure or would our milestone-based disbursement system better align with your cash flow priorities?",
+        "level": "C1",
+        "context": "Financial planning options"
+    },
+    {
+        "phrase": "I'd like to propose a multi-dimensional approach to your budget allocation that prioritizes experiential impact while honoring financial constraints, enabling us to transcend conventional wedding paradigms within your specific parameters.",
+        "level": "C2",
+        "context": "Advanced budget philosophy"
+    },
+    {
+        "phrase": "Have you considered how the interplay between architectural elements and natural light at your preferred venue might evolve throughout your celebration, particularly as it relates to the documentation of key moments?",
+        "level": "C2",
+        "context": "Venue lighting analysis"
+    },
+    {
+        "phrase": "In crafting your menu progression, we might explore a narrative approach that reflects your personal journey, creating sensory touchpoints that resonate with your relationship milestones.",
+        "level": "C2",
+        "context": "Conceptual menu development"
+    },
+    {
+        "phrase": "Beyond mere aesthetic coordination, I'd suggest developing a sensory strategy that harmonizes visual elements with olfactory experiences and acoustic dimensions to create a fully immersive environment.",
+        "level": "C2",
+        "context": "Multisensory design strategy"
+    },
+    {
+        "phrase": "The traditional paradigm of wedding planning often emphasizes product over process; however, I find that cultivating mindfulness throughout the planning journey can transform obligatory decision-making into opportunities for relational deepening.",
+        "level": "C2",
+        "context": "Planning philosophy discussion"
+    },
+    {
+        "phrase": "Rather than approaching vendor selection as discrete decisions, I recommend conceptualizing your creative team as a collaborative ensemble whose interpersonal dynamics will ultimately influence the atmospheric quality of your celebration.",
+        "level": "C2",
+        "context": "Vendor team dynamics"
+    },
+    {
+        "phrase": "In navigating the often complex terrain of family expectations, we might develop a strategic communication framework that honors ancestral traditions while creating space for your authentic expression as a couple.",
+        "level": "C2",
+        "context": "Family tradition negotiation"
+    },
+    {
+        "phrase": "The temporal architecture of your wedding day warrants careful consideration, balancing ceremonial weight with interpersonal connection and allowing for the orchestrated spontaneity that often yields the most treasured memories.",
+        "level": "C2",
+        "context": "Timeline philosophy"
+    },
+    {
+        "phrase": "Have you contemplated how the material semiotics of your chosen design elements might communicate your values and intentions to guests, beyond mere aesthetic appeal?",
+        "level": "C2",
+        "context": "Design semiotics discussion"
+    },
+    {
+        "phrase": "I find that the most meaningful celebrations transcend formulaic execution by embracing the productive tension between meticulous planning and surrendering to the emergent nature of communal experience.",
+        "level": "C2",
+        "context": "Celebration philosophy"
+    }
+]

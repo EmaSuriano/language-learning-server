@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "My laptop is broken.",
+        "level": "A1",
+        "context": "Basic problem statement"
+    },
+    {
+        "phrase": "How much does it cost?",
+        "level": "A1",
+        "context": "Basic pricing inquiry"
+    },
+    {
+        "phrase": "When will it be ready?",
+        "level": "A1",
+        "context": "Basic timeline inquiry"
+    },
+    {
+        "phrase": "The screen is black.",
+        "level": "A1",
+        "context": "Basic symptom description"
+    },
+    {
+        "phrase": "It's very slow.",
+        "level": "A1",
+        "context": "Basic performance issue"
+    },
+    {
+        "phrase": "Can you fix it today?",
+        "level": "A1",
+        "context": "Basic urgency inquiry"
+    },
+    {
+        "phrase": "I need my files.",
+        "level": "A1",
+        "context": "Basic data concern"
+    },
+    {
+        "phrase": "Do I need a new one?",
+        "level": "A1",
+        "context": "Basic replacement inquiry"
+    },
+    {
+        "phrase": "It makes strange noises.",
+        "level": "A1",
+        "context": "Basic symptom description"
+    },
+    {
+        "phrase": "The battery is bad.",
+        "level": "A1",
+        "context": "Basic component issue"
+    },
+    {
+        "phrase": "My laptop won't turn on, and I need it for work tomorrow.",
+        "level": "A2",
+        "context": "Specific problem with urgency"
+    },
+    {
+        "phrase": "How long will the repair take and how much will it cost?",
+        "level": "A2",
+        "context": "Specific timeline and cost inquiry"
+    },
+    {
+        "phrase": "Do you need my password to check the problem?",
+        "level": "A2",
+        "context": "Access permission inquiry"
+    },
+    {
+        "phrase": "Can you save my documents before you repair it?",
+        "level": "A2",
+        "context": "Data backup request"
+    },
+    {
+        "phrase": "The laptop overheats when I watch videos.",
+        "level": "A2",
+        "context": "Specific symptom description"
+    },
+    {
+        "phrase": "Is it possible to upgrade the memory?",
+        "level": "A2",
+        "context": "Upgrade possibility inquiry"
+    },
+    {
+        "phrase": "Do you offer any warranty on repairs?",
+        "level": "A2",
+        "context": "Service guarantee inquiry"
+    },
+    {
+        "phrase": "Will I lose my installed programs?",
+        "level": "A2",
+        "context": "Software concern"
+    },
+    {
+        "phrase": "Can I get a loaner device while mine is being fixed?",
+        "level": "A2",
+        "context": "Temporary replacement inquiry"
+    },
+    {
+        "phrase": "What caused this problem?",
+        "level": "A2",
+        "context": "Problem cause inquiry"
+    },
+    {
+        "phrase": "My laptop has been experiencing intermittent freezing issues, especially when I'm running multiple applications simultaneously. Could this be related to insufficient RAM?",
+        "level": "B1",
+        "context": "Detailed performance issue inquiry"
+    },
+    {
+        "phrase": "I'm concerned about my data security during the repair process. What measures do you take to protect my personal information?",
+        "level": "B1",
+        "context": "Data security concern"
+    },
+    {
+        "phrase": "The battery life has significantly decreased over the past few months. I used to get about six hours, but now it only lasts about an hour. Is this something you can fix?",
+        "level": "B1",
+        "context": "Specific component degradation"
+    },
+    {
+        "phrase": "Could you provide an estimate of both the repair costs and timeline before starting the work?",
+        "level": "B1",
+        "context": "Pre-service information request"
+    },
+    {
+        "phrase": "I've noticed unusual fan noise and overheating when running resource-intensive programs. Could this indicate a cooling system problem?",
+        "level": "B1",
+        "context": "Specific hardware issue inquiry"
+    },
+    {
+        "phrase": "What preventive maintenance would you recommend to avoid similar issues in the future?",
+        "level": "B1",
+        "context": "Preventive advice request"
+    },
+    {
+        "phrase": "Do you think it's more cost-effective to repair this laptop or to invest in a new one given its age and the required repairs?",
+        "level": "B1",
+        "context": "Cost-benefit comparison inquiry"
+    },
+    {
+        "phrase": "If you need to replace the hard drive, can you transfer all my data to the new one?",
+        "level": "B1",
+        "context": "Data migration inquiry"
+    },
+    {
+        "phrase": "After a recent software update, my webcam stopped working. Is this likely a hardware or software issue?",
+        "level": "B1",
+        "context": "Problem source inquiry"
+    },
+    {
+        "phrase": "Could you explain the difference between SSD and HDD options if I need a drive replacement?",
+        "level": "B1",
+        "context": "Component comparison request"
+    },
+    {
+        "phrase": "I've been experiencing system instability that seems to correlate with GPU-intensive tasks, particularly when external displays are connected via the DisplayPort. Could you run diagnostics to determine if this is a hardware failure or potentially a driver compatibility issue?",
+        "level": "B2",
+        "context": "Complex troubleshooting request"
+    },
+    {
+        "phrase": "Given that my system is exhibiting intermittent kernel panics during peak processing loads, I'm wondering if the issue might be related to thermal throttling or perhaps inadequate power delivery to the CPU.",
+        "level": "B2",
+        "context": "Advanced system behavior analysis"
+    },
+    {
+        "phrase": "I've implemented some stopgap measures like undervoting the CPU and limiting maximum processor state, but I'm still encountering stability issues. Could we explore whether the motherboard's VRM might be struggling to maintain consistent power delivery?",
+        "level": "B2",
+        "context": "Detailed component interaction inquiry"
+    },
+    {
+        "phrase": "If you determine that a logic board replacement is necessary, what options do I have regarding maintaining data integrity, and is there any possibility of component-level repair that might be more cost-effective?",
+        "level": "B2",
+        "context": "Repair approach alternatives"
+    },
+    {
+        "phrase": "I've noticed progressive degradation in wireless connectivity, with increasing packet loss and latency spikes even in proximity to the router. Could this indicate antenna damage or is it more likely to be a controller issue?",
+        "level": "B2",
+        "context": "Specific connectivity troubleshooting"
+    },
+    {
+        "phrase": "What kind of comprehensive testing protocol will you use to verify system stability after the repair, particularly to ensure that the intermittent issues I've been experiencing have been fully resolved?",
+        "level": "B2",
+        "context": "Post-repair validation inquiry"
+    },
+    {
+        "phrase": "I've been monitoring temperature and performance metrics, and I've observed thermal throttling occurring at increasingly lower thresholds. Could you evaluate whether repasting the CPU and GPU with a higher quality thermal compound might resolve this issue?",
+        "level": "B2",
+        "context": "Thermal management solution inquiry"
+    },
+    {
+        "phrase": "If you need to reinstall the operating system, could you configure it with the specific encryption protocols and security policies required by my company's IT department?",
+        "level": "B2",
+        "context": "Custom configuration request"
+    },
+    {
+        "phrase": "What data recovery approach would you recommend given that the drive is exhibiting S.M.A.R.T. errors but is still partially accessible? I'm particularly concerned about recovering project files in the document directory.",
+        "level": "B2",
+        "context": "Specific data recovery approach"
+    },
+    {
+        "phrase": "Based on your diagnostic findings, could you provide a comparative analysis of repair options that weighs immediate costs against long-term reliability and potential future upgrade paths?",
+        "level": "B2",
+        "context": "Strategic repair decision request"
+    },
+    {
+        "phrase": "I've been tracking the correlation between system instability and various environmental factors, and I've observed that kernel panic frequency increases significantly when ambient temperatures exceed 26°C while running containerized workloads. Could you conduct a comprehensive thermal profile analysis under controlled load conditions to identify potential architectural bottlenecks?",
+        "level": "C1",
+        "context": "Advanced environmental performance analysis"
+    },
+    {
+        "phrase": "Given the recursive memory address violations occurring during parallel compilation tasks, I'm concerned about potential architectural vulnerabilities beyond typical RAM failure. Could you implement a staged diagnostic approach that isolates memory controller behavior from the DIMMs themselves?",
+        "level": "C1",
+        "context": "Sophisticated component interaction analysis"
+    },
+    {
+        "phrase": "I've implemented a custom thermal and performance monitoring solution that's yielded some concerning metrics regarding power delivery consistency. The logs indicate micro-fluctuations in CPU core voltages that correlate with system instability. Could this suggest degradation in the voltage regulation modules?",
+        "level": "C1",
+        "context": "Detailed power system analysis"
+    },
+    {
+        "phrase": "If component-level repair becomes necessary, what considerations should I take into account regarding the sourcing of replacement microelectronics, particularly concerning lot-specific manufacturing variations that might affect compatibility with the existing board architecture?",
+        "level": "C1",
+        "context": "Microelectronic replacement considerations"
+    },
+    {
+        "phrase": "In evaluating cost-benefit scenarios for this repair, I'd appreciate your insights on calculating the total cost of ownership incorporating factors such as expected component longevity, performance degradation trajectories, and potential future incompatibilities with emerging software requirements.",
+        "level": "C1",
+        "context": "Complex cost projection request"
+    },
+    {
+        "phrase": "What data sanitization protocols do you implement for storage devices that cannot be repaired? I'm particularly interested in ensuring compliance with NIST 800-88 guidelines for media containing sensitive intellectual property.",
+        "level": "C1",
+        "context": "Specialized data security procedures"
+    },
+    {
+        "phrase": "I've been experiencing asymmetrical performance degradation across CPU cores that seems to worsen under sustained workloads. The performance metrics suggest potential issues with the heat dissipation subsystem rather than the processor itself. Could you evaluate the vapor chamber efficiency and interface material condition?",
+        "level": "C1",
+        "context": "Advanced cooling system evaluation"
+    },
+    {
+        "phrase": "Given the intermittent nature of the PCIe lane dropouts I'm experiencing, what diagnostic approach would you recommend to determine whether the issue originates at the controller level or within the physical interface implementation?",
+        "level": "C1",
+        "context": "Complex interface troubleshooting"
+    },
+    {
+        "phrase": "If you identify the need for BIOS/UEFI reconfiguration, could you implement custom parameters that optimize for computational stability over maximum performance, particularly regarding memory timing and power delivery algorithms?",
+        "level": "C1",
+        "context": "Specialized firmware optimization"
+    },
+    {
+        "phrase": "What predictive maintenance strategy would you recommend implementing based on the telemetry data collected from this repair process to maximize system longevity while minimizing unplanned downtime?",
+        "level": "C1",
+        "context": "Advanced preventive methodology"
+    },
+    {
+        "phrase": "I've been investigating the anomalous behavior in the system's power management architecture, particularly the non-deterministic response to P-state transitions when executing vectorized workloads across heterogeneous core configurations, and I'm curious whether you've encountered similar manifestations that might indicate emergent failure patterns in this particular silicon generation.",
+        "level": "C2",
+        "context": "Cutting-edge architecture analysis"
+    },
+    {
+        "phrase": "Given the stochastic nature of the memory access latency variations I've documented, I'm interested in your perspective on potential interplay between firmware-level memory training algorithms and the physical characteristics of the DRAM modules, particularly regarding signal integrity across different operating temperature gradients.",
+        "level": "C2",
+        "context": "Advanced memory subsystem analysis"
+    },
+    {
+        "phrase": "I've implemented a custom instrumentation layer to monitor SoC behavior at millisecond resolution and have observed counter-intuitive power consumption patterns that suggest potential microarchitectural anomalies in how the system negotiates between performance states and thermal constraints. Could this indicate silicon degradation at specific execution units?",
+        "level": "C2",
+        "context": "Processor microarchitecture evaluation"
+    },
+    {
+        "phrase": "In evaluating repair strategies for this particular failure mode, I'm interested in your perspective on the relative merits of component-level intervention versus board-level replacement, particularly considering the potential for latent damage propagation through shared power planes and differential thermal expansion characteristics.",
+        "level": "C2",
+        "context": "Advanced repair methodology discussion"
+    },
+    {
+        "phrase": "The system exhibits a peculiar pattern of destabilization when transitioning between discrete and integrated graphics subsystems, particularly when memory pressure exceeds certain thresholds, suggesting potential resource contention at the northbridge or inadequate power state coordination between display controllers. Have you developed any specialized diagnostic protocols for such cross-domain interactions?",
+        "level": "C2",
+        "context": "Complex subsystem interaction analysis"
+    },
+    {
+        "phrase": "I'm curious about your approach to validating repair efficacy for intermittent faults that manifest primarily under specific workload patterns, particularly regarding statistical confidence thresholds and test duration parameters necessary to minimize false negatives in quality assurance processes.",
+        "level": "C2",
+        "context": "Sophisticated repair validation methodology"
+    },
+    {
+        "phrase": "Given the system's incorporation of heterogeneous compute elements with varying thermal characteristics, what considerations inform your approach to redesigning the thermal solution to accommodate sustained mixed-workload scenarios without compromising component longevity or acoustic profile?",
+        "level": "C2",
+        "context": "Advanced thermal engineering discussion"
+    },
+    {
+        "phrase": "I've observed that conventional benchmarking methodologies fail to reproduce the specific failure conditions I've documented, which appear to involve complex interactions between memory controller states, peripheral bus power management, and dynamic frequency scaling algorithms. Could you elaborate on alternative stress testing approaches that might better isolate these interdependent subsystems?",
+        "level": "C2",
+        "context": "Specialized testing methodology inquiry"
+    },
+    {
+        "phrase": "In considering long-term reliability after repair, what are your views on the potential cumulative effects of multiple thermal cycles on BGA solder joint integrity, particularly for components with dissimilar expansion coefficients mounted on high-density multilayer substrates?",
+        "level": "C2",
+        "context": "Advanced material science considerations"
+    },
+    {
+        "phrase": "I'm interested in implementing a comprehensive telemetry system for predictive failure analysis that balances diagnostic granularity against system resource utilization. What sensor modalities and sampling methodologies would you recommend for early detection of the failure patterns you've observed in similar hardware configurations?",
+        "level": "C2",
+        "context": "Sophisticated predictive maintenance design"
+    }
+]

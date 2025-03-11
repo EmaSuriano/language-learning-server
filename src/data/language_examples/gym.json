@@ -1,0 +1,302 @@
+[
+    {
+        "phrase": "How do I use this?",
+        "level": "A1",
+        "context": "Basic equipment inquiry"
+    },
+    {
+        "phrase": "Is this correct?",
+        "level": "A1",
+        "context": "Simple form check"
+    },
+    {
+        "phrase": "I'm a beginner.",
+        "level": "A1",
+        "context": "Basic skill level statement"
+    },
+    {
+        "phrase": "How many sets?",
+        "level": "A1",
+        "context": "Basic workout question"
+    },
+    {
+        "phrase": "Show me, please.",
+        "level": "A1",
+        "context": "Simple demonstration request"
+    },
+    {
+        "phrase": "Too heavy.",
+        "level": "A1",
+        "context": "Basic difficulty statement"
+    },
+    {
+        "phrase": "How to lose weight?",
+        "level": "A1",
+        "context": "Simple goal inquiry"
+    },
+    {
+        "phrase": "When to rest?",
+        "level": "A1",
+        "context": "Basic recovery question"
+    },
+    {
+        "phrase": "I feel pain here.",
+        "level": "A1",
+        "context": "Simple discomfort indication"
+    },
+    {
+        "phrase": "Write it down, please.",
+        "level": "A1",
+        "context": "Basic plan request"
+    },
+    {
+        "phrase": "Could you show me how to use this machine safely?",
+        "level": "A2",
+        "context": "Equipment instruction request"
+    },
+    {
+        "phrase": "Am I doing this exercise correctly?",
+        "level": "A2",
+        "context": "Form verification question"
+    },
+    {
+        "phrase": "I've never worked out regularly before.",
+        "level": "A2",
+        "context": "Experience level statement"
+    },
+    {
+        "phrase": "How many sets and repetitions should I do?",
+        "level": "A2",
+        "context": "Workout structure inquiry"
+    },
+    {
+        "phrase": "Could you demonstrate the proper technique?",
+        "level": "A2",
+        "context": "Demonstration request"
+    },
+    {
+        "phrase": "This weight feels too heavy for me.",
+        "level": "A2",
+        "context": "Weight adjustment request"
+    },
+    {
+        "phrase": "What exercises are best for weight loss?",
+        "level": "A2",
+        "context": "Goal-specific exercise inquiry"
+    },
+    {
+        "phrase": "How many rest days should I take each week?",
+        "level": "A2",
+        "context": "Recovery schedule inquiry"
+    },
+    {
+        "phrase": "I'm feeling some discomfort in my lower back.",
+        "level": "A2",
+        "context": "Specific pain notification"
+    },
+    {
+        "phrase": "Could you write down my workout plan for me?",
+        "level": "A2",
+        "context": "Written plan request"
+    },
+    {
+        "phrase": "I'd like to learn how to use the equipment properly to avoid injury. Could you guide me through the correct setup and technique for the main machines I should be using?",
+        "level": "B1",
+        "context": "Comprehensive equipment guidance request"
+    },
+    {
+        "phrase": "I think I might be making some mistakes with my form. Could you watch me perform this exercise and give me specific feedback on what I need to correct?",
+        "level": "B1",
+        "context": "Detailed form assessment request"
+    },
+    {
+        "phrase": "I'm relatively new to structured fitness routines. Based on my goals of building strength and improving endurance, what kind of program would you recommend?",
+        "level": "B1",
+        "context": "Personalized program inquiry"
+    },
+    {
+        "phrase": "For my upper body workout, how many sets and reps would be appropriate, and how should I determine the right weight for each exercise?",
+        "level": "B1",
+        "context": "Specific training parameters inquiry"
+    },
+    {
+        "phrase": "Could you demonstrate this compound movement and explain what I should be feeling in each muscle group when I'm doing it correctly?",
+        "level": "B1",
+        "context": "Detailed technique demonstration request"
+    },
+    {
+        "phrase": "I'm struggling with the current weight setting. Should I reduce it to focus on form, or is it important to challenge myself even if my technique isn't perfect?",
+        "level": "B1",
+        "context": "Training philosophy question"
+    },
+    {
+        "phrase": "I'm primarily interested in losing body fat while maintaining muscle. What combination of cardio and resistance training would be most effective for this goal?",
+        "level": "B1",
+        "context": "Specific goal strategy inquiry"
+    },
+    {
+        "phrase": "How should I structure my recovery days? Should I be completely inactive or incorporate light activities like walking or stretching?",
+        "level": "B1",
+        "context": "Recovery strategy inquiry"
+    },
+    {
+        "phrase": "I notice some discomfort in my shoulder when performing this movement. Is this normal, or should I modify the exercise to avoid potential injury?",
+        "level": "B1",
+        "context": "Exercise modification inquiry"
+    },
+    {
+        "phrase": "What's the best way to track my progress? Should I be focusing on weight lifted, body measurements, or some other metrics to know if I'm improving?",
+        "level": "B1",
+        "context": "Progress tracking methods inquiry"
+    },
+    {
+        "phrase": "I'm interested in developing a comprehensive understanding of proper biomechanics for each piece of equipment in my routine. Could you provide detailed guidance on optimal body positioning, movement patterns, and common compensations to avoid for the primary compound exercises I'll be incorporating?",
+        "level": "B2",
+        "context": "Advanced biomechanical instruction request"
+    },
+    {
+        "phrase": "I'd appreciate your critical assessment of my current movement patterns. Specifically, I'm concerned about potential muscular imbalances and compensatory mechanisms that might be developing, particularly in my posterior chain during hip-hinge movements.",
+        "level": "B2",
+        "context": "Detailed movement pattern analysis request"
+    },
+    {
+        "phrase": "Given my athletic background and current fitness assessment results, I'm looking for a periodized program that addresses my specific goals of hypertrophy in certain muscle groups while improving functional strength for my recreational sports activities. How would you structure such a program?",
+        "level": "B2",
+        "context": "Sophisticated program design request"
+    },
+    {
+        "phrase": "I'm interested in understanding the physiological rationale behind different training protocols. For instance, how does the relationship between volume, intensity, and frequency influence specific adaptations, and how should I manipulate these variables based on my recovery capacity?",
+        "level": "B2",
+        "context": "Training variable optimization inquiry"
+    },
+    {
+        "phrase": "Could you provide a detailed demonstration of this complex movement pattern, highlighting the kinetic chain activation sequence and explaining how to maintain optimal tension through the eccentric phase?",
+        "level": "B2",
+        "context": "Advanced technique analysis request"
+    },
+    {
+        "phrase": "I'm contemplating the trade-offs between training to failure versus leaving repetitions in reserve. Could you elaborate on the adaptive benefits of each approach and how I might incorporate both strategies within a periodized framework?",
+        "level": "B2",
+        "context": "Advanced training philosophy discussion"
+    },
+    {
+        "phrase": "I'm working toward concurrent development of several fitness attributes—specifically, muscular endurance, power output, and body composition improvement. What evidence-based approach would you recommend for balancing these potentially competing adaptations?",
+        "level": "B2",
+        "context": "Complex training goal strategy"
+    },
+    {
+        "phrase": "I'd like to develop a more sophisticated recovery protocol that accounts for both systemic and localized fatigue. How might I implement strategic deloading, active recovery techniques, and nutritional interventions to optimize my adaptive capacity?",
+        "level": "B2",
+        "context": "Advanced recovery strategy inquiry"
+    },
+    {
+        "phrase": "I'm experiencing some impingement-like symptoms during overhead pressing movements. Could you assess my scapular kinematics and suggest corrective strategies that address potential contributing factors while allowing me to maintain training volume?",
+        "level": "B2",
+        "context": "Detailed corrective exercise consultation"
+    },
+    {
+        "phrase": "Beyond the standard metrics of progressive overload, I'm interested in implementing more nuanced progress tracking methodologies. What combination of performance metrics, biofeedback measures, and subjective assessments would provide the most comprehensive picture of my development?",
+        "level": "B2",
+        "context": "Sophisticated progress monitoring inquiry"
+    },
+    {
+        "phrase": "I'm interested in developing a sophisticated understanding of the biomechanical principles governing efficient movement patterns across various resistance training modalities. Specifically, I'd like to explore how subtle variations in joint angles, moment arms, and force vectors influence muscular recruitment patterns and potential stress distribution across connective tissues during compound movements.",
+        "level": "C1",
+        "context": "Highly specialized biomechanics consultation"
+    },
+    {
+        "phrase": "Having undergone a detailed functional movement screening, I'm seeking your expert analysis regarding potential neuromuscular inefficiencies in my movement patterns, particularly regarding the interrelationship between core stability, hip mobility, and scapular positioning during multi-planar compound exercises.",
+        "level": "C1",
+        "context": "Comprehensive movement pattern assessment"
+    },
+    {
+        "phrase": "Given my specific physiological profile, training history, and current performance metrics, I'm looking to develop a highly individualized, periodized program that optimally balances various training stimuli across mesocycles while accounting for my particular recovery capacity and adaptive response patterns.",
+        "level": "C1",
+        "context": "Advanced individualized program design consultation"
+    },
+    {
+        "phrase": "I'm seeking a more nuanced understanding of the interaction between various programming variables and their specific adaptive responses. In particular, how might I manipulate intensity, volume, frequency, exercise selection, and inter-set recovery to target specific physiological adaptations while minimizing redundant training stimuli?",
+        "level": "C1",
+        "context": "Complex programming variable optimization"
+    },
+    {
+        "phrase": "Could you provide a detailed analysis of the kinetic chain sequencing in this movement pattern, specifically addressing rate of force development considerations, optimal stretch-shortening cycle utilization, and techniques for maintaining positional integrity throughout the full range of motion under progressive loading?",
+        "level": "C1",
+        "context": "Advanced kinetic chain analysis request"
+    },
+    {
+        "phrase": "I'm interested in exploring the evidential basis for various loading strategies across different movement patterns. Specifically, how might the principle of accommodating resistance be applied to overcome sticking points and optimize the strength curve throughout the range of motion in primary compound movements?",
+        "level": "C1",
+        "context": "Advanced loading strategy consultation"
+    },
+    {
+        "phrase": "I'm attempting to optimize concurrent training methodologies for seemingly contradictory adaptive responses. Based on current research in exercise physiology, what strategies might minimize interference effects while pursuing simultaneous development of maximal strength, local muscular endurance, and mitochondrial density?",
+        "level": "C1",
+        "context": "Concurrent training optimization inquiry"
+    },
+    {
+        "phrase": "I'm developing a comprehensive recovery framework that accounts for both peripheral and central fatigue indicators. What combination of parasympathetic nervous system metrics, inflammatory biomarkers, and subjective assessment tools would provide the most accurate picture of my readiness to train various physiological systems?",
+        "level": "C1",
+        "context": "Scientific recovery monitoring consultation"
+    },
+    {
+        "phrase": "I've identified what appears to be scapulohumeral rhythm dysregulation during pressing patterns. Could you conduct a detailed assessment of my glenohumeral mechanics, scapular stabilizer activation sequences, and potential thoracic mobility limitations that might be contributing to this dysfunction?",
+        "level": "C1",
+        "context": "Detailed orthopedic assessment request"
+    },
+    {
+        "phrase": "Beyond traditional performance metrics, I'm interested in implementing a multifaceted assessment framework that captures both quantitative and qualitative aspects of physiological development. What combination of performance testing, morphological assessment, and functional capacity measures would provide the most comprehensive evaluation of training effectiveness?",
+        "level": "C1",
+        "context": "Advanced progress assessment framework inquiry"
+    },
+    {
+        "phrase": "I find myself increasingly fascinated by the intersection of biomechanical efficiency and neuromuscular recruitment patterns, particularly how subtle alterations in proprioceptive awareness might influence motor unit synchronization and rate coding during complex movement patterns. I wonder if you might share your perspective on how contemporary understanding of neuromuscular physiology has evolved to recognize the role of conscious attentional focus in mediating these seemingly autonomic processes, especially in the context of resistance training.",
+        "level": "C2",
+        "context": "Philosophical neuromuscular physiology discourse"
+    },
+    {
+        "phrase": "The phenomenology of movement quality presents a fascinating domain for exploration, particularly regarding the integration of objective biomechanical parameters with subjective proprioceptive experience. I'm curious about your thoughts on how the qualitative dimensions of movement—what we might term 'movement literacy'—interact with quantifiable metrics of performance, and how this integration might inform a more holistic approach to movement pattern assessment and refinement.",
+        "level": "C2",
+        "context": "Movement quality philosophy discussion"
+    },
+    {
+        "phrase": "Recent paradigm shifts in exercise physiology have challenged many traditional heuristics regarding program design and periodization strategies. I find myself contemplating the theoretical underpinnings of various training methodologies, particularly the tension between reductionist approaches that isolate specific physiological mechanisms and more integrative frameworks that emphasize the complex interplay of systemic responses to training stimuli.",
+        "level": "C2",
+        "context": "Training philosophy theoretical discourse"
+    },
+    {
+        "phrase": "The ongoing discourse surrounding the dose-response relationship in resistance training presents an intriguing example of how emerging research can both clarify and complicate our understanding of physiological adaptation. I'm particularly interested in your perspective on how the principle of specificity might be reconciled with the seemingly contradictory evidence regarding the transfer effects between different loading parameters and movement patterns.",
+        "level": "C2",
+        "context": "Advanced exercise physiology philosophy"
+    },
+    {
+        "phrase": "The embodied cognition perspective offers a fascinating lens through which to conceptualize movement acquisition and refinement, suggesting that our understanding of technique transcends mere biomechanical efficiency to encompass broader dimensions of proprioceptive awareness and intentionality. I wonder about your thoughts on how this philosophical framework might inform our approach to movement coaching beyond the traditional emphasis on external form.",
+        "level": "C2",
+        "context": "Embodied movement philosophy discussion"
+    },
+    {
+        "phrase": "The dichotomy between deterministic and probabilistic models of training response represents an interesting tension in contemporary exercise science. I find myself contemplating how individual variability in adaptive response might be better accommodated within training frameworks that have traditionally emphasized standardized protocols and linear progression models.",
+        "level": "C2",
+        "context": "Training response philosophy discourse"
+    },
+    {
+        "phrase": "The concept of training specificity, when examined closely, reveals fascinating paradoxes regarding transfer effects and generalized adaptation. I'm particularly interested in the philosophical implications of emerging research suggesting that specific adaptations might arise from seemingly non-specific training stimuli, challenging our fundamental understanding of how the human organism responds to various movement challenges.",
+        "level": "C2",
+        "context": "Training specificity philosophy discussion"
+    },
+    {
+        "phrase": "Contemporary understandings of recovery have evolved beyond simplistic models of supercompensation toward more nuanced conceptions of physiological restoration as a complex, multi-systemic process. I find myself reflecting on how this paradigm shift might influence our approach to programming, particularly regarding the traditional demarcation between training and recovery as distinct and opposing states.",
+        "level": "C2",
+        "context": "Recovery philosophy discourse"
+    },
+    {
+        "phrase": "The integration of corrective strategies within performance-oriented training presents interesting questions about the relationship between movement quality and quantifiable outcomes. I'm curious about your perspective on navigating the sometimes competing priorities of mechanical efficiency and absolute performance, particularly in contexts where compensatory patterns might initially facilitate greater expression of certain capacities.",
+        "level": "C2",
+        "context": "Corrective approach philosophy discussion"
+    },
+    {
+        "phrase": "The metrics through which we quantify physiological development inevitably shape both training methodology and subjective experience. I find myself contemplating the epistemological assumptions underlying various assessment frameworks, particularly how different measurement approaches might privilege certain adaptations while potentially obscuring others that escape our current quantification methods.",
+        "level": "C2",
+        "context": "Assessment philosophy discourse"
+    }
+]
