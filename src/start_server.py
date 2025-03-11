@@ -18,7 +18,27 @@ from config import Config
 
 Config.print_all()
 
-app = FastAPI()
+app = FastAPI(
+    title="Language Learning Server API",
+    description="""
+This is the API for an AI-powered language learning backend that enables interactive language learning.
+
+**Features**
+
+- Conversational Practice: Engage with AI language tutors in contextual scenarios
+- Speech Recognition: Convert user speech to text using Whisper
+- Text-to-Speech: Generate natural audio responses with Kokoro TTS
+- Performance Evaluation: Assess grammar, vocabulary, fluency, and goal achievement
+- Adaptive Learning: Automatically adjust difficulty based on user performance
+
+**Related Projects**
+
+- [Github repository](https://github.com/EmaSuriano/language-learning-client) - Source code
+- [Client Application](https://github.com/EmaSuriano/language-learning-client) - Frontend interface
+- [Research Paper](https://github.com/EmaSuriano/language-learning-paper) - Academic research
+    """,
+    version="1.0.0",
+)
 
 app.add_middleware(PrettyErrorsMiddleware)
 app.add_middleware(

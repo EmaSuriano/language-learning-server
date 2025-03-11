@@ -17,10 +17,13 @@ output_dir = Path("dist")
 output_dir.mkdir(exist_ok=True)
 
 # Generate OpenAPI JSON
-print(f"Generating OpenAPI schema from FastAPI app...")
+print("Generating OpenAPI schema from FastAPI app...")
+
 openapi_schema = app.openapi()
+
 with open(output_dir / "openapi.json", "w") as f:
     json.dump(openapi_schema, f, indent=2)
+
 print(f"OpenAPI schema saved to {output_dir}/openapi.json")
 
 # Create Swagger UI HTML
@@ -59,9 +62,8 @@ swagger_html = """<!DOCTYPE html>
   </body>
 </html>"""
 
-with open(output_dir / "index.html", "w") as f:
+with open(output_dir / "swagger.html", "w") as f:
     f.write(swagger_html)
-print(f"Swagger UI saved to {output_dir}/index.html")
 
 # Create ReDoc HTML (alternative documentation UI)
 redoc_html = """<!DOCTYPE html>
@@ -81,20 +83,7 @@ redoc_html = """<!DOCTYPE html>
   </body>
 </html>"""
 
-with open(output_dir / "redoc.html", "w") as f:
+with open(output_dir / "index.html", "w") as f:
     f.write(redoc_html)
-print(f"ReDoc UI saved to {output_dir}/redoc.html")
 
-print()
 print("Documentation generation complete!")
-print(f"To view the documentation:")
-print(
-    f"  - Open file://{os.path.abspath(output_dir)}/index.html in your browser for Swagger UI"
-)
-print(
-    f"  - Open file://{os.path.abspath(output_dir)}/redoc.html in your browser for ReDoc UI"
-)
-print()
-print(
-    "To deploy the documentation, upload the contents of the 'dist' directory to any static web hosting service."
-)
