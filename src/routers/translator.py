@@ -11,9 +11,7 @@ router = APIRouter(prefix="/translator", tags=["translator"])
 
 
 @router.get("/", response_model=TranslationResponse)
-async def translate_message_get(
-    user_id: int, message: str, db: Session = Depends(get_db)
-):
+async def translate_message(user_id: int, message: str, db: Session = Depends(get_db)):
     db_user = DB.get_user(db, user_id=user_id)
     if db_user is None:
         raise HTTPException(status_code=404, detail="User not found")

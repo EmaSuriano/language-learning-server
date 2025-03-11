@@ -188,7 +188,7 @@ def _session_to_detail_schema(
 def calculate_level_change(
     db: Session, metrics: PerformanceMetrics, user: schemas.User
 ) -> str:
-    # Get recent sessions for this user (last 5 or fewer)
+    # Get recent sessions for this user
     recent_sessions = (
         db.query(models.LearningHistory)
         .filter(models.LearningHistory.user_id == user.id)
@@ -197,8 +197,17 @@ def calculate_level_change(
         .all()
     )
 
+    # Filter out the sessions that don't match the user's language level and current language,
+    # This in case he changed the language or he changed the level
+    relevant_sessions = [
+        session
+        for session in recent_sessions
+        if session.level == user.language_level
+        and session.language_id == user.current_language.id
+    ]
+
     # If there are fewer than 5 sessions, don't run the level manager
-    if len(recent_sessions) < 4:
+    if len(relevant_sessions) < 4:
         return schemas.LevelChangeType.MAINTAIN
 
     # Convert to PerformanceMetrics objects
@@ -209,7 +218,7 @@ def calculate_level_change(
             s.fluency_score / 100,
             s.goals_score / 100,
         )
-        for s in recent_sessions
+        for s in relevant_sessions
     ]
 
     metrics_history.append(metrics)
@@ -246,17 +255,31 @@ def get_learning_session_detail(
 
 
 def get_user_learning_sessions(
-    db: Session, user: models.User, skip: int = 0, limit: int = 100
+    db: Session, user_id: int, skip: int = 0, limit: int = 100
 ) -> List[schemas.LearningHistory]:
     """Get all learning sessions for a specific user"""
     sessions = (
         db.query(models.LearningHistory)
-        .filter(models.LearningHistory.user_id == user.id)
+        .filter(models.LearningHistory.user_id == user_id)
         .offset(skip)
         .limit(limit)
         .all()
     )
     return [_session_to_schema(session) for session in sessions]
+
+
+def get_user_progression(db: Session, user: schemas.User) -> str:
+    """Get all learning sessions for a specific user"""
+    latest_session = (
+        db.query(models.LearningHistory)
+        .filter(models.LearningHistory.user_id == user.id)
+        .filter(models.LearningHistory.language_id == user.current_language.id)
+        .filter(models.LearningHistory.level == user.language_level)
+        .order_by(desc(models.LearningHistory.date))
+        .first()
+    )
+
+    return latest_session.level_change if latest_session else "MAINTAIN"
 
 
 def create_learning_session(
